@@ -86,6 +86,7 @@ div#paticka {
     margin-right: 25%;
     padding: 10px;
     border-top: green 3px solid;
+    text-align: center;
 }
 
 p.blog_title, p.blogi_date {
