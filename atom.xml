@@ -1,0 +1,27 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+    <title>Tomáš Janoušek, a bug slayer</title>
+    <link href="http://work.lisk.in/atom.xml" rel="self"/>
+    <link href="http://work.lisk.in/"/>
+    <updated>{{ site.time | date_to_xmlschema }}</updated>
+    <id>http://work.lisk.in/</id>
+    <author>
+	<name>Tomáš Janoušek</name>
+	<email>tomi@nomi.cz</email>
+    </author>
+
+    {% for post in site.posts limit:5 %}
+    <entry>
+	<title>{{ post.title }}</title>
+	<link href="http://work.lisk.in{{ post.url }}"/>
+	<updated>{{ post.date | date_to_xmlschema }}</updated>
+	<id>http://work.lisk.in{{ post.id }}</id>
+	<content type="html">{{ post.content | xml_escape }}</content>
+    </entry>
+    {% endfor %}
+
+</feed>
