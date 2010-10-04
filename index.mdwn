@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Tomáš Janoušek, a bug slayer
+title: Blog
+
 ---
 
 # Nadpis.
