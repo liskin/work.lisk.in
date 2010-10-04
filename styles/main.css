@@ -15,7 +15,7 @@ a:hover { background-color: #080; color: white; text-decoration: none; }
 a.apic:hover { background-color: transparent; color: #000080; }
 img { border-width: 0px; }
 img.middle { vertical-align: middle; }
-#content p img { width: 95%; }
+#content p img { display: block; width: 95%; margin: 1.5em auto; }
 
 div { padding: 0em; margin: 0em; }
 p, h1, h2, h3, ul, ol, dl { margin: 10px 0px; padding: 0px; }
