@@ -10,7 +10,7 @@ these changes to xorg.conf and gdm.conf”, I took the best from all of them and
 put together a solution requiring no single restart of X server. What I got
 was this:
 
-<img src="http://store.lisk.in/tmp/perm/multiseat.jpg" width="100%">
+![Multiseat photo](http://store.lisk.in/tmp/perm/multiseat.jpg)
 
 Well, what's the problem? Why didn't I just take the first howto I found? I
 wanted to have a sort of “on demand” multiseat, that I can start and stop
