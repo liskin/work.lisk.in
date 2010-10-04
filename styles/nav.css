@@ -12,27 +12,29 @@ ul#nav,
 
 ul#nav {
     display: table;
-    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    /*width: 100%;*/
     table-layout: fixed;
 }
 
 ul#nav>li {
     display: table-cell;
     position: relative;
-    padding: 2px 6px;
+    padding: 2px 12px;
     vertical-align: bottom;
 }
 
-ul#nav>li:hover {
+/*ul#nav>li:hover {
     padding-right: 1px;
-}
+}*/
 
 ul#nav li>ul {
     /*Make the sub list items invisible*/
     display: none;
     position: absolute;
     max-width: 40ex;
-    margin-left: -6px;
+    margin-left: -12px;
     margin-top: 2px;
 }
 
@@ -65,26 +67,32 @@ ul#nav li:hover,
 #nav ul li a:hover,
 #nav li:hover a,
 #nav li:hover ul li a:hover {
-    background-color: #080;
-    color: #fff;
+    background-color: green;
+    color: white;
 }
 
 ul#nav li:active,
 #nav ul li a:active,
 #nav li a:active {
-    background-color: #080;
-    color: #fff;
+    background-color: green;
+    color: white;
     text-decoration: underline;
 }
 
-ul#nav {
-    border-top: 1px solid #080;
-}
-
 #nav ul {
-    border: 1px solid #080;
+    border: 1px solid green;
 }
 
 #nav a {
     text-decoration: none;
+}
+
+div#navupdiv {
+    margin: 0em -3em 1em -3em;
+}
+
+div#navdiv {
+    background-color: #bfffaf;
+    border-top: 1px solid green;
+    border-bottom: 3px solid green;
 }
