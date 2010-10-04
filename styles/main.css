@@ -1,6 +1,121 @@
+a:link { color: #000050; }
+span.email { color: #000050; }
+span.email2 { font-size: smaller; }
+a:visited { color: #000050; }
+a:hover { background-color: #080; color: white; text-decoration: none; }
+a.apic:hover { background-color: transparent; color: #000080; }
+img { border-width: 0px; }
+p, h1, h2, h3, ul, ol, dl {
+    margin: 10px 0px;
+    padding: 0px;
+}
+ul,ol,dl {
+    margin-left: 1em;
+}
+ul {
+    list-style-type: square;
+}
+hr {
+    width: 80%;
+}
+dt { margin-top: 0.5em; }
+table {
+    margin: 0.5em;
+    padding: 0em;
+    border-width: 0px;
+}
+td { padding: 0.1em 0.3em; margin: 0px; }
+th { text-align: left; }
+tr { vertical-align: top; }
 body {
-    background-color: #ffc;
+    background-color: #dfffcf;
+    text-align: justify;
+    font-family: verdana, sans-serif;
     margin: 3em;
-    font-family: sans-serif;
-    color: #000;
+}
+.mensi {
+    font-size: smaller;
+}
+.center {
+    text-align: center;
+}
+.right {
+    text-align: right;
+}
+.clear {
+    clear: both;
+}
+table.border {
+    border-width: 1px;
+}
+th.thcenter {
+    text-align: center;
+}
+td.tm {
+    background-color: #eee;
+}
+.nadpislistu {
+    margin-bottom: -10px;
+}
+.odsad {
+    margin-left: 2em;
+}
+
+div {
+    padding: 0em;
+    margin: 0em;
+}
+
+div#nadpis {
+    margin: -3em -3em 0em -3em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    background-color: #cfffbf;
+}
+
+div#hlavni {
+    margin: 10px 10% 10px 10%;
+    padding: 1em;
+    border: #4f8f4f 3px solid;
+    background-color: #cfffcf;
+}
+
+div#paticka {
+    margin-top: 2em;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 10px;
+    border-top: green 3px solid;
+}
+
+p.blog_title, p.blogi_date {
+    font-weight: bold;
+    margin-bottom: 0em;
+}
+
+p.blog_text {
+    margin-left: 1em;
+    margin-top: 0em;
+    margin-bottom: 1.5em;
+}
+
+p.blogi_title {
+    margin-left: 1em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
+div.blog_entry_highlight {
+    border-top: #4f8f4f 3px solid;
+    border-bottom: #4f8f4f 3px solid;
+    background-color: #dfffdf;
+}
+
+span.m_label {
+    font-weight: bold;
+    color: #333;
+}
+
+img.middle {
+    vertical-align: middle;
 }
