@@ -1,0 +1,13 @@
+{% assign blogtitle = page.title %}
+{% assign page.title = 'Blog' %}
+{% include header-doc.html %}
+	<title>{{ page.title }} — Tomáš Janoušek, a bug slayer</title>
+{% include header-page.html %}
+{% include top.html %}
+
+	<div id="content">
+	    <h1>{{ blogtitle }}</h1>
+	    {{ content }}
+	</div>
+
+{% include footer.html %}

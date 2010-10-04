@@ -74,16 +74,13 @@ div#nadpis {
 }
 
 div#content {
-    margin: 10px 10% 10px 10%;
-    padding: 1em;
-    border: #4f8f4f 3px solid;
-    background-color: #cfffcf;
+    margin: 3em auto;
+    max-width: 50em;
 }
 
 div#paticka {
-    margin-top: 2em;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin: 2em auto 0;
+    max-width: 50em;
     padding: 10px;
     border-top: green 3px solid;
     text-align: center;
