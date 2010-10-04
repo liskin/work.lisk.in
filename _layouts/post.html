@@ -1,12 +1,14 @@
-{% assign blogtitle = page.title %}
-{% assign page.title = 'Blog' %}
 {% include header-doc.html %}
-	<title>{{ page.title }} — Tomáš Janoušek, a bug slayer</title>
+	<title>{{ page.title }} — Blog — Tomáš Janoušek, a bug slayer</title>
 {% include header-page.html %}
-{% include top.html %}
+	<div id="nadpis">
+	    <h1 class="center">Tomáš Janoušek, a bug slayer</h1>
+	    <h2 class="center">Blog</h2>
+	</div>
+{% include nav.html %}
 
 	<div id="content">
-	    <h1>{{ blogtitle }}</h1>
+	    <h1>{{ page.title }}</h1>
 	    {{ content }}
 	</div>
 
