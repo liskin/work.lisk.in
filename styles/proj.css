@@ -3,7 +3,6 @@
     border-left: 0.5ex solid #668;
     padding: 10px 0 15px 15px;
     margin-top: 3em;
-    background-color: #dee;
 }
 
 #projects div.sec div.sec {
@@ -20,19 +19,10 @@
     font-size: 140%;
 }
 
-#projects div.sec a, #projects div#intro a {
-    color: #004;
-    text-decoration: underline;
-}
-#projects div.sec a:hover, #projects div#intro a:hover {
-    background-color: #cfc;
-}
-
 #projects div.item {
     border-left: 0.3ex solid #668;
     padding: 5px 5px 5px 10px;
     margin-top: 1em;
-    background-color: #eff;
 }
 
 #projects div.item h3 {
