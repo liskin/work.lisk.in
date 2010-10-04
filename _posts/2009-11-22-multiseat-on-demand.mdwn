@@ -18,6 +18,7 @@ whenever I want, without ever touching my main X server and its configuration,
 without losing my open windows — even without having to rearrange them.
 
 What did I need?
+
   - new enough X.org server and Xephyr server with input hotplug support
     (I used 1.6.5),
   - spare USB keyboard and mouse, spare monitor,
@@ -28,6 +29,7 @@ What did I need?
 The theory is that the other seat will run in Xephyr, using the keyboard and
 mouse I tell it to use. Xephyr can do that, nowadays, we only need to solve
 three little problems:
+
 1. main X server uses that keyboard and mouse as well, and we need to disable
    that in runtime,
 2. `/dev/input/eventN` is accessible to root only by default,
@@ -39,9 +41,9 @@ Feel tree to skip the explanation of these:
    Enabled” property is what we're looking for. Given a device id, this is how
    we disable the device in the main X server:
 
-    $ xinput list-props id | \
-    perl -ne 'if (/Device Enabled \((\d+)\):/){ print $1 }' | \
-    { read prop; xinput set-int-prop id $prop 8 0; }
+        $ xinput list-props id | \
+        perl -ne 'if (/Device Enabled \((\d+)\):/){ print $1 }' | \
+        { read prop; xinput set-int-prop id $prop 8 0; }
 
 2. Being in a hurry, I added Xephyr for my user to `/etc/sudoers`. You may
    want to create udev rules to set correct permissions instead.
@@ -57,7 +59,7 @@ devices in your main X server and launches Xephyr that uses them, fixing
 keyboard afterwards: <http://store.lisk.in/tmp/perm/multiseatxephyr>
 
 If called without parameters, it prints a short usage instructions. You'll
-have to look into i`/proc/bus/input/devices` to get event devices, and at the
+have to look into `/proc/bus/input/devices` to get event devices, and at the
 xinput list output to find input device ids. It isn't very robust, but in most
 cases you'll be interested in the last two input devices.
 

@@ -75,12 +75,12 @@ div#nadpis {
 
 div#content {
     margin: 3em auto;
-    max-width: 50em;
+    max-width: 35em;
 }
 
 div#paticka {
     margin: 2em auto 0;
-    max-width: 50em;
+    max-width: 35em;
     padding: 10px;
     border-top: green 3px solid;
     text-align: center;
@@ -128,6 +128,6 @@ ul.posts li {
 }
 
 ul.posts span {
-    color: #aaa;
+    color: #333;
     font-family: monospace;
 }
