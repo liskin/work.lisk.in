@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Multiseat on demand
+title: "Multiseat on demand: Split your computer into two whenever you want"
 
 ---
 
