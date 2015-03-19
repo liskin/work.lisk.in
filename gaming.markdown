@@ -7,9 +7,10 @@ permalink: /gaming/
 
   - [dedtools][] — a set of tools for safely running number of dedicated
     servers, contains "init" script for it and some preload hacks which make
-    some things possible, also contains needed security fixes  
-      
+    some things possible, also contains needed security fixes
+
     Here are some more important things that can be used independently:
+
       - [HLDS NO-WON/NO-STEAM fix][hlds_nowon] — simple preload hack which
         bypasses class B checks for LAN games
       - [HLDS split packet issue fix][hlds_20040707fix] — preload fix for the
@@ -21,10 +22,11 @@ permalink: /gaming/
         setuid and fork-to-background features, allowing to set up HLDS in a
         chroot jail with _only_ /dev/null – without any libraries or so
         (very useful with some chroot restrictions, see [grsecurity][grsec]
-	for example)
+        for example)
       - [MOH:AA chroot hack][mohaa_chroot] — the same for Medal of Honor:
         Allied Assault Linux dedicated server, also with a hack allowing
         mohaa\_lnxded to dump core
+
   - [hl-multimaster][] — half life master server aggregator, able to join more
     [hlmaster][hlmaster] servers into a big one
   - [hl-lanlist][] — simple tool which catches broadcast infostring requests
