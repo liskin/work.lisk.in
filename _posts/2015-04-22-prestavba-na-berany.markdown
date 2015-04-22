@@ -62,13 +62,16 @@ tam dát nemůžu, protože mám široký pláště a blatníky.
   - použít nějaký [udělátor][travelagent] na změnu tahu lanka
   - koupit si páčky [Gevenalle][] (časovkářská řadící páčka přidělaná na
     Tektro brzdy)
+  - koupit si páčky [Tektro RL-520][rl520] a dolů do beranů strčit
+    [časovkářské páčky][sl-bs77]
   - koupit si páčky [Tektro RL-520][rl520] a řazení prostě nějak
     [uhackovat][rohloff] z existujícího SRAM Attack gripshiftu
 
 Cantilevery mi známí nedoporučovali, Travel Agent nejde v Česku sehnat,
-Gevenalle je zbytečně drahý (€150), takže vyhrálo ponechání gripshiftu, a to
-ve víceméně podobné poloze (tzn. vlevo od místa, kde mám běžně pravou ruku),
-jako bylo dřív. Ve výsledku to vypadá takhle:
+Gevenalle je zbytečně drahý (€150), časovkářský páčky na to, jak jsou (takhle
+použitý) neergonomický, taky, takže vyhrálo ponechání gripshiftu, a to ve
+víceméně podobné poloze (tzn. vlevo od místa, kde mám běžně pravou ruku), jako
+bylo dřív. Ve výsledku to vypadá takhle:
 
 [![][berany_final_detail_small]][berany_final_detail]
 
@@ -79,6 +82,7 @@ zvednout ruku z brzd. No, asi to mohlo být i horší... :-)
 [dropvbrake]: http://www.phred.org/~alex/bikes/brakes.html
 [travelagent]: http://problemsolversbike.com/products/travel_agents/
 [Gevenalle]: http://gevenalle.com/product-category/shifters/
+[sl-bs77]: http://www.jensonusa.com/Shimano-SL-BS77-9-SPEED-Bar-End-Shifters
 [rohloff]: http://cyclingabout.com/rohloff-hubs-with-drop-handlebars/
 
 # Fotky z montáže
