@@ -63,7 +63,7 @@ tam dát nemůžu, protože mám široký pláště a blatníky.
   - koupit si páčky [Gevenalle][] (časovkářská řadící páčka přidělaná na
     Tektro brzdy)
   - koupit si páčky [Tektro RL-520][rl520] a dolů do beranů strčit
-    [časovkářské páčky][sl-bs77]
+    [časovkářské páčky][sl-bs77] tak, jak to má třeba [Trek 520][trek520]
   - koupit si páčky [Tektro RL-520][rl520] a řazení prostě nějak
     [uhackovat][rohloff] z existujícího SRAM Attack gripshiftu
 
@@ -83,6 +83,7 @@ zvednout ruku z brzd. No, asi to mohlo být i horší... :-)
 [travelagent]: http://problemsolversbike.com/products/travel_agents/
 [Gevenalle]: http://gevenalle.com/product-category/shifters/
 [sl-bs77]: http://www.jensonusa.com/Shimano-SL-BS77-9-SPEED-Bar-End-Shifters
+[trek520]: http://www.trekbikes.com/us/en/bikes/road/touring/520/
 [rohloff]: http://cyclingabout.com/rohloff-hubs-with-drop-handlebars/
 
 # Fotky z montáže
