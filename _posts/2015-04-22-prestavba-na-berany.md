@@ -32,6 +32,10 @@ title: Přestavba Agang Sin City na berany
 [berany_uchyt7_small]: http://store.lisk.in/tmp/perm/berany_uchyt7_small.jpg
 [berany_uchyt8]: http://store.lisk.in/tmp/perm/berany_uchyt8.jpg
 [berany_uchyt8_small]: http://store.lisk.in/tmp/perm/berany_uchyt8_small.jpg
+[berany_barrel1]: http://store.lisk.in/tmp/perm/berany_barrel1.jpg
+[berany_barrel1_small]: http://store.lisk.in/tmp/perm/berany_barrel1_small.jpg
+[berany_barrel2]: http://store.lisk.in/tmp/perm/berany_barrel2.jpg
+[berany_barrel2_small]: http://store.lisk.in/tmp/perm/berany_barrel2_small.jpg
 
 Včera/dneska jsem na moje [kolo][sincity] dal místo rovných řídítek silniční
 berany.
@@ -121,11 +125,17 @@ Nakonec omotávka a zkušební jízda:
 [![][berany_final_detail_small]][berany_final_detail]
 [![][berany_final_small]][berany_final]
 
+V pátek ještě přišly [stavěcí šrouby][token], ovšem brzdové nejdou sehnat,
+takže je třeba ty řadící trochu upravit:  
+[![][berany_barrel1_small]][berany_barrel1]
+[![][berany_barrel2_small]][berany_barrel2]
+
 # Za kolik?
 
   - [řídítka Pro PLT][proplt] z [blešáku][blesak]: 500 Kč
   - [páčky Tektro RL-520][rl520] + poštovné: 534 Kč
   - nová lanka, bowdeny, vodítka: 200 Kč
+  - [stavěcí šrouby na bowdeny][token]: 200 Kč
   - objímka ze staré brzdové páčky: 100 Kč
   - omotávka: 160 Kč
   - [hliníková trubička][trubka] (a jedna navíc pro jistotu): 15 Kč
@@ -135,5 +145,6 @@ Nakonec omotávka a zkušební jízda:
 [blesak]: https://www.facebook.com/events/869841896392719/
 [rl520]: http://www.wiggle.com/tektro-rl520-drop-bar-brake-lever/
 [trubka]: http://www.ferona.cz/cze/katalog/detail.php?id=25430
+[token]: http://dily.maxbike.cz/eshop/staveci-doraz-bowdenu-token-cerne-2ks
 
-Celkem: **1503 Kč**
+Celkem: **1703 Kč**
