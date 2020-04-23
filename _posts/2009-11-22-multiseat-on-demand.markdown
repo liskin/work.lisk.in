@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Multiseat on demand: Split your computer into two whenever you want"
 
 ---
