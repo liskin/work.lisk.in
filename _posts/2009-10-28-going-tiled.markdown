@@ -4,19 +4,19 @@ title: Going tiled.
 
 ---
 
-[goingtiled1]:      http://store.lisk.in/tmp/perm/goingtiled_1.png
-[goingtiled1small]: http://store.lisk.in/tmp/perm/goingtiled_1_small.jpg
-[goingtiled2]:      http://store.lisk.in/tmp/perm/goingtiled_2.png
-[goingtiled2small]: http://store.lisk.in/tmp/perm/goingtiled_2_small.jpg
-[goingtiled3]:      http://store.lisk.in/tmp/perm/goingtiled_3.png
-[goingtiled3small]: http://store.lisk.in/tmp/perm/goingtiled_3_small.jpg
-[goingtiled4]:      http://store.lisk.in/tmp/perm/goingtiled_4.png
-[goingtiled4small]: http://store.lisk.in/tmp/perm/goingtiled_4_small.jpg
-[goingtiled5]:      http://store.lisk.in/tmp/perm/goingtiled_5.png
-[goingtiled5small]: http://store.lisk.in/tmp/perm/goingtiled_5_small.jpg
+[goingtiled1]:      https://store.lisk.in/tmp/perm/goingtiled_1.png
+[goingtiled1small]: https://store.lisk.in/tmp/perm/goingtiled_1_small.jpg
+[goingtiled2]:      https://store.lisk.in/tmp/perm/goingtiled_2.png
+[goingtiled2small]: https://store.lisk.in/tmp/perm/goingtiled_2_small.jpg
+[goingtiled3]:      https://store.lisk.in/tmp/perm/goingtiled_3.png
+[goingtiled3small]: https://store.lisk.in/tmp/perm/goingtiled_3_small.jpg
+[goingtiled4]:      https://store.lisk.in/tmp/perm/goingtiled_4.png
+[goingtiled4small]: https://store.lisk.in/tmp/perm/goingtiled_4_small.jpg
+[goingtiled5]:      https://store.lisk.in/tmp/perm/goingtiled_5.png
+[goingtiled5small]: https://store.lisk.in/tmp/perm/goingtiled_5_small.jpg
 
 [Fluxbox]: http://fluxbox.org/
-[xmonad]: http://xmonad.org/
+[xmonad]: https://xmonad.org/
 
 I had been using [Fluxbox][] for 7 years when I finally decided it's time for
 change last Friday. As my friends expected, I left it for [xmonad][]. Seven

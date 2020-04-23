@@ -10,7 +10,7 @@ these changes to xorg.conf and gdm.conf”, I took the best from all of them and
 put together a solution requiring no single restart of X server. What I got
 was this:
 
-![Multiseat photo](http://store.lisk.in/tmp/perm/multiseat.jpg)
+![Multiseat photo](https://store.lisk.in/tmp/perm/multiseat.jpg)
 
 Well, what's the problem? Why didn't I just take the first howto I found? I
 wanted to have a sort of “on demand” multiseat, that I can start and stop
@@ -56,7 +56,7 @@ Feel tree to skip the explanation of these:
 
 Having solved these problems, I wrote a small script that disables the input
 devices in your main X server and launches Xephyr that uses them, fixing
-keyboard afterwards: <http://store.lisk.in/tmp/perm/multiseatxephyr>
+keyboard afterwards: <https://store.lisk.in/tmp/perm/multiseatxephyr>
 
 If called without parameters, it prints a short usage instructions. You'll
 have to look into `/proc/bus/input/devices` to get event devices, and at the
@@ -67,4 +67,4 @@ Xephyr is running, with access control disabled, all you need to do now is to
 su to another user, `export DISPLAY=:1` and run `startkde` (or anything else).
 
 If in trouble, consult the documentation. There are a few links at the X.org
-wiki: <http://www.x.org/wiki/Development/Documentation/Multiseat>
+wiki: <https://www.x.org/wiki/Development/Documentation/Multiseat>
