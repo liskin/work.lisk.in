@@ -1,14 +1,50 @@
-{% include header-doc.html %}
-	<title>{{ page.title }} — Tomáš Janoušek, a bug slayer</title>
-{% include header-page.html %}
-	<div id="nadpis">
-	    <h1 class="center">Tomáš Janoušek, a bug slayer</h1>
-	    <h2 class="center">{{ page.title }}</h2>
-	</div>
-{% include nav.html %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Tomáš Janoušek" />
+		<meta name="keywords" content="Tomas Janousek, Liskni_si, lisk.in, liskin">
 
-	<div id="content">
-	    {{ content }}
-	</div>
+		<link rel="stylesheet" type="text/css" href="/main.css">
+		<link href="/atom.xml" rel="alternate" title="Tomáš Janoušek, a bug slayer" type="application/atom+xml">
 
-{% include footer.html %}
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-18918784-1']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+		<script src="/js/hyphenate.js" type="text/javascript"></script>
+
+		<title>{{ page.title }} — {% if page.date %} Blog - {% endif %} Tomáš Janoušek, a bug slayer</title>
+	</head>
+	<body>
+		<div id="nadpis">
+			<h1 class="center">Tomáš Janoušek, a bug slayer</h1>
+			<h2 class="center">{% if page.date %}Blog{% else %}{{ page.title }}{% endif %}</h2>
+		</div>
+
+		<div id="navupdiv"><div id="navdiv"><ul id="nav">
+			<li><a href="/"><strong>Blog</strong></a></li>
+			<li><a href="https://github.com/liskin?tab=repositories"><strong>Projects</strong></a></li>
+			<li><a href="/contact/"><strong>Contact</strong></a></li>
+			<li><a href="http://store.lisk.in/tmp/perm/janousek_cv_en.pdf"><strong>My CV</strong></a></li>
+		</ul></div></div>
+
+{% if page.date %}
+		<article id="content" class="hyphenate" {% if page.lang %} lang="{{ page.lang }}" {% endif %} >
+			<h1>{{ page.title }}</h1>
+			{{ content }}
+		</div>
+{% else %}
+		<div id="content">
+			{{ content }}
+		</div>
+{% endif %}
+	</body>
+</html>

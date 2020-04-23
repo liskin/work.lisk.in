@@ -50,14 +50,6 @@ div#content, article#content {
     border: 1px solid #dedede;
 }
 
-div#paticka {
-    margin: 2em auto 0;
-    max-width: 40em;
-    padding: 1em;
-    border-top: green 3px solid;
-    text-align: center;
-}
-
 
 ul.posts {
     list-style-type: none;
