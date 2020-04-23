@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Přestavba Agang Sin City na berany
+lang: cs
 
 ---
 
@@ -48,13 +49,13 @@ Po:
 
 [sincity]: http://www.agang.eu/2010/city-bike/sincity.htm
 
-# Proč?
+### Proč?
 
 Protože mě bolívá za krkem a mám pocit, že by nemuselo, kdybych to moh držet
 jinak. A protože to prostě stejně chci mít možnost držet jinak. Ostatně,
 fitnessovej rám to asi má, silniční řídítka tomu nemůžou moc uškodit.
 
-# Jak?
+### Jak?
 
 Problém je, že silniční brzdy potřebují poloviční tah lanka a skoro všechny
 páčky, zejména [dualy][], tak nejdou použít s mými V-brzdami. Silniční brzdy
@@ -90,7 +91,7 @@ zvednout ruku z brzd. No, asi to mohlo být i horší... :-)
 [trek520]: http://www.trekbikes.com/us/en/bikes/road/touring/520/
 [rohloff]: http://cyclingabout.com/rohloff-hubs-with-drop-handlebars/
 
-# Fotky z montáže
+### Fotky z montáže
 
 Když jsem si ještě neuvědomoval, jak moc velký průšvih je, že ve Feroně neměli
 trubku s průměrem 22 mm a vzal jsem jen 20 mm:  
@@ -130,7 +131,7 @@ takže je třeba ty řadící trochu upravit:
 [![][berany_barrel1_small]][berany_barrel1]
 [![][berany_barrel2_small]][berany_barrel2]
 
-# Za kolik?
+### Za kolik?
 
   - [řídítka Pro PLT][proplt] z [blešáku][blesak]: 500 Kč
   - [páčky Tektro RL-520][rl520] + poštovné: 534 Kč
