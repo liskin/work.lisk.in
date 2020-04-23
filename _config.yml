@@ -1,2 +1,5 @@
 markdown: kramdown
-highlighter: pygments
+
+exclude:
+  - 'CNAME'
+  - 'Makefile'
