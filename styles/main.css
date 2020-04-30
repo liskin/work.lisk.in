@@ -2,6 +2,7 @@ body {
     background-color: #dfffcf;
     text-align: justify;
     margin: 3em;
+    line-height: 1.3;
 }
 
 .mensi  { font-size: smaller; }
@@ -12,17 +13,20 @@ body {
 a:link { color: #000050; }
 a:visited { color: #000050; }
 a:hover { background-color: #080; color: white; text-decoration: none; }
-a.apic:hover { background-color: transparent; color: #000080; }
+svg a:hover { opacity: 0.5; }
+
 img { border-width: 0px; }
 img.middle { vertical-align: middle; }
-#content p img { display: block; width: 95%; margin: 1.5em auto; }
 
 div { padding: 0em; margin: 0em; }
 p, h1, h2, h3, ul, ol, dl { margin: 10px 0px; padding: 0px; }
 ul,ol,dl { margin-left: 2em; }
 ul { list-style-type: square; }
+ul ul { margin-bottom: 0; }
+li:not(:last-child) { margin-bottom: 0.5em; }
 hr { width: 80%; }
 dt { margin-top: 0.5em; }
+blockquote { border-left: 2px solid green; padding-left: 1ex; margin-left: 1ex; }
 
 table {
     margin: 0.5em;
@@ -47,16 +51,72 @@ div#content, article#content {
     max-width: 40em;
     padding: 2em;
     background-color: #eeffe6;
+    border: 2px solid #dedede;
+}
+
+#content img, #content svg {
+    display: block;
+    width: 97%;
+    margin: 1.5em auto;
+}
+
+#content figure {
+    width: 97%;
+    margin: 1em auto;
+}
+
+#content figure img, #content figure svg, #content figure pre, #content figure p {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+}
+
+#content figure figcaption {
+    text-align: center;
+}
+
+#content pre {
+    margin: 1em 0;
+    background-color: #f8f8ff;
+    border: 1px solid #dedede;
+    padding: .5em;
+    overflow: auto;
+    color: #222;
+}
+
+#content code {
+    background-color: #f8f8ff;
+    color: #222;
+    padding: 0 .2em;
+    border: 1px solid #dedede;
+}
+
+#content pre code {
+    padding: 0;
+    border: none;
+}
+
+details#toc {
+    margin: 1em 0;
+    padding: .5em;
+    border: 1px solid transparent;
+}
+
+details#toc summary {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #000050;
+}
+
+details#toc[open] {
+    background-color: #f8f8ff;
     border: 1px solid #dedede;
 }
 
 
 ul.posts {
     list-style-type: none;
-}
-
-ul.posts li {
-    line-height: 1.75em;
+    text-align: left;
 }
 
 ul.posts span {
