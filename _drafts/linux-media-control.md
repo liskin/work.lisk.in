@@ -259,6 +259,6 @@ YouTube are running at the same time, both are paused/unpaused.
 
 ---
 
-*[UX]: user experienc
+*[UX]: user experience
 *[ToS]: Terms of Service
 *[meatspace]: Deriving from cyberpunk novels, meatspace is the world outside of the 'net-- that is to say, the real world, where you do things with your body rather than with your keyboard.
