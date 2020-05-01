@@ -67,7 +67,7 @@ After some hacking, my setup looks like this (all the icons and some of the
 arrows are clickable):
 
 <figure markdown="block">
-{% include_relative svg/linux-media-control.svg %}
+{% include_relative _svg/linux-media-control.svg %}
 <figcaption>diagram of my setup</figcaption>
 </figure>
 
