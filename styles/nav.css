@@ -2,36 +2,36 @@
 
 ul#nav,
 #nav ul {
-    /*Remove all spacings from the list items*/
-    margin: 0;
-    padding: 0;
-    cursor: default;
-    list-style-type: none;
-    display: inline;
+	/*Remove all spacings from the list items*/
+	margin: 0;
+	padding: 0;
+	cursor: default;
+	list-style-type: none;
+	display: inline;
 }
 
 ul#nav {
-    display: table;
-    margin-left: auto;
-    margin-right: auto;
-    /*width: 100%;*/
-    table-layout: fixed;
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+	/*width: 100%;*/
+	table-layout: fixed;
 }
 
 ul#nav>li {
-    display: table-cell;
-    position: relative;
-    padding: 2px 12px;
-    vertical-align: bottom;
+	display: table-cell;
+	position: relative;
+	padding: 2px 12px;
+	vertical-align: bottom;
 }
 
 #nav ul li a {
-    /*Make the hyperlinks as a block element, sort of a hover effect*/
-    display: block;
-    padding: 2px 10px;
+	/*Make the hyperlinks as a block element, sort of a hover effect*/
+	display: block;
+	padding: 2px 10px;
 }
 ul#nav li a {
-    display: block;
+	display: block;
 }
 
 /*** Menu colors (customizable) ***/
@@ -41,39 +41,39 @@ ul#nav,
 #nav ul li a,
 #nav li a,
 #nav li:hover ul li a {
-    background-color: #bfffaf;
-    color: #139;
+	background-color: #bfffaf;
+	color: #139;
 }
 
 ul#nav li:hover,
 #nav ul li a:hover,
 #nav li:hover a {
-    background-color: green;
-    color: white;
+	background-color: green;
+	color: white;
 }
 
 ul#nav li:active,
 #nav ul li a:active,
 #nav li a:active {
-    background-color: green;
-    color: white;
-    text-decoration: underline;
+	background-color: green;
+	color: white;
+	text-decoration: underline;
 }
 
 #nav ul {
-    border: 1px solid green;
+	border: 1px solid green;
 }
 
 #nav a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 div#navupdiv {
-    margin: 0em -3em 1em -3em;
+	margin: 0em -3em 1em -3em;
 }
 
 div#navdiv {
-    background-color: #bfffaf;
-    border-top: 1px solid green;
-    border-bottom: 3px solid green;
+	background-color: #bfffaf;
+	border-top: 1px solid green;
+	border-bottom: 3px solid green;
 }
