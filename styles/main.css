@@ -55,6 +55,10 @@ div#content, article#content {
 		background-color: #eeffe6;
 		border-bottom: 2px solid #dedede;
 	}
+
+	div.utterances {
+		max-width: 45em;
+	}
 }
 
 @media screen and (min-width: 45em) {
@@ -68,6 +72,12 @@ div#content, article#content {
 
 	article#content p, article#content li, dl#posts p {
 		text-align: justify;
+	}
+}
+
+@media print {
+	div.utterances {
+		visibility: hidden;
 	}
 }
 

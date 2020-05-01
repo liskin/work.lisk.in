@@ -2,6 +2,7 @@
 layout: default
 title: Přestavba Agang Sin City na berany
 lang: cs
+comments_issue: 5
 
 ---
 

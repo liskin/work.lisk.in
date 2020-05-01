@@ -36,15 +36,18 @@
 			<li><a href="http://store.lisk.in/tmp/perm/janousek_cv_en.pdf"><strong>My CV</strong></a></li>
 		</ul></div>
 
-{% if page.date %}
+		{% if page.date %}
 		<article id="content" class="hyphenate" {% if page.lang %} lang="{{ page.lang }}" {% endif %} >
 			<h1>{{ page.title }}</h1>
 			{{ content }}
-		</div>
-{% else %}
+		</article>
+		{% if page.comments_issue %}
+		<script src="https://utteranc.es/client.js" repo="liskin/liskin.github.com" issue-number="{{ page.comments_issue }}" theme="github-light" crossorigin="anonymous" async></script>
+		{% endif %}
+		{% else %}
 		<div id="content">
 			{{ content }}
 		</div>
-{% endif %}
+		{% endif %}
 	</body>
 </html>

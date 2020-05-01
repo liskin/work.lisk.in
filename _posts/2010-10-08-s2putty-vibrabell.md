@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Vibration bell for PuTTY for Symbian
+comments_issue: 4
 
 ---
 
