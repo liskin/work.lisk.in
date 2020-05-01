@@ -68,12 +68,14 @@ ul#nav li:active,
 	text-decoration: none;
 }
 
-div#navupdiv {
-	margin: 0em -3em 1em -3em;
-}
-
 div#navdiv {
 	background-color: #bfffaf;
 	border-top: 1px solid green;
 	border-bottom: 3px solid green;
+}
+
+@media print {
+	div#navdiv {
+		visibility: hidden;
+	}
 }
