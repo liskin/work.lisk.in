@@ -4,12 +4,6 @@ title: Vibration bell for PuTTY for Symbian
 
 ---
 
-[putty]: http://bd.kicks-ass.net/koodaus/putty/
-[mutt]: http://www.mutt.org/
-[irssi]: http://www.irssi.org/
-[bitlbee]: http://www.bitlbee.org/
-[screen]: http://www.gnu.org/software/screen/
-
 [PuTTY][putty] is probably the most used application on my phone. I use it to
 connect to my server where I read/write e-mails in [mutt][] and communicate
 with the outer world using [irssi][] and [bitlbee][]. I suppose most PuTTY
@@ -29,4 +23,9 @@ here: <http://github.com/liskin/s2putty>. A prebuilt package for s60v5 is in
 [downloads][]. Let me know if you need a binary for some other version of
 Symbian.
 
+[putty]: http://bd.kicks-ass.net/koodaus/putty/
+[mutt]: http://www.mutt.org/
+[irssi]: http://www.irssi.org/
+[bitlbee]: http://www.bitlbee.org/
+[screen]: http://www.gnu.org/software/screen/
 [downloads]: http://github.com/liskin/s2putty/downloads

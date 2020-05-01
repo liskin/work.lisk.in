@@ -4,11 +4,6 @@ title: Linux, media keys and multiple players (mpd, chromium, mpv, vlc, …)
 
 ---
 
-<figure markdown="block">
-[![media-keys](https://user-images.githubusercontent.com/300342/81182729-8237d500-8fae-11ea-89eb-81ca7b3598fe.jpg)](https://user-images.githubusercontent.com/300342/81182740-8663f280-8fae-11ea-9b0d-db91eb6febaf.jpg)
-<figcaption>ThinkPad 25 media keys</figcaption>
-</figure>
-
 This post explains how to get [media keys][] (play, pause, …) on [keyboards][]
 and bluetooth headphones work with a bare [X window manager][] (as opposed to
 a full [desktop environment][]) and how to make them control multiple media
@@ -24,6 +19,11 @@ get right out of the box.
 [bandcamp]: https://bandcamp.com/
 [myNoise]: https://mynoise.net/
 [mpd]: https://www.musicpd.org/
+
+<figure markdown="block">
+[![media-keys](https://user-images.githubusercontent.com/300342/81182729-8237d500-8fae-11ea-89eb-81ca7b3598fe.jpg)](https://user-images.githubusercontent.com/300342/81182740-8663f280-8fae-11ea-9b0d-db91eb6febaf.jpg)
+<figcaption>ThinkPad 25 media keys</figcaption>
+</figure>
 
 {% include toc.md %}
 
