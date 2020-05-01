@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Linux, media keys and multiple players (mpd, chromium, mpv, vlc, …)
+comments_issue: 1
 
 ---
 

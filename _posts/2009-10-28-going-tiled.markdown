@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Going tiled.
+comments_issue: 2
 
 ---
 
