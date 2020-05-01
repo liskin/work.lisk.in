@@ -1,5 +1,5 @@
 lsi: false
-safe: true
+#safe: true
 highlighter: rouge
 gist:
   noscript: false

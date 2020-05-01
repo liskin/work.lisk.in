@@ -5,39 +5,6 @@ lang: cs
 
 ---
 
-[berany_final_detail]: https://store.lisk.in/tmp/perm/berany_final_detail.jpg
-[berany_final_detail_small]: https://store.lisk.in/tmp/perm/berany_final_detail_small.jpg
-[berany_final]: https://store.lisk.in/tmp/perm/berany_final.jpg
-[berany_final_small]: https://store.lisk.in/tmp/perm/berany_final_small.jpg
-[berany_packy1]: https://store.lisk.in/tmp/perm/berany_packy1.jpg
-[berany_packy1_small]: https://store.lisk.in/tmp/perm/berany_packy1_small.jpg
-[berany_packy2]: https://store.lisk.in/tmp/perm/berany_packy2.jpg
-[berany_packy2_small]: https://store.lisk.in/tmp/perm/berany_packy2_small.jpg
-[berany_puvodni]: https://store.lisk.in/tmp/perm/berany_puvodni.jpg
-[berany_puvodni_small]: https://store.lisk.in/tmp/perm/berany_puvodni_small.jpg
-[berany_singlespeed]: https://store.lisk.in/tmp/perm/berany_singlespeed.jpg
-[berany_singlespeed_small]: https://store.lisk.in/tmp/perm/berany_singlespeed_small.jpg
-[berany_uchyt1]: https://store.lisk.in/tmp/perm/berany_uchyt1.jpg
-[berany_uchyt1_small]: https://store.lisk.in/tmp/perm/berany_uchyt1_small.jpg
-[berany_uchyt2]: https://store.lisk.in/tmp/perm/berany_uchyt2.jpg
-[berany_uchyt2_small]: https://store.lisk.in/tmp/perm/berany_uchyt2_small.jpg
-[berany_uchyt3]: https://store.lisk.in/tmp/perm/berany_uchyt3.jpg
-[berany_uchyt3_small]: https://store.lisk.in/tmp/perm/berany_uchyt3_small.jpg
-[berany_uchyt4]: https://store.lisk.in/tmp/perm/berany_uchyt4.jpg
-[berany_uchyt4_small]: https://store.lisk.in/tmp/perm/berany_uchyt4_small.jpg
-[berany_uchyt5]: https://store.lisk.in/tmp/perm/berany_uchyt5.jpg
-[berany_uchyt5_small]: https://store.lisk.in/tmp/perm/berany_uchyt5_small.jpg
-[berany_uchyt6]: https://store.lisk.in/tmp/perm/berany_uchyt6.jpg
-[berany_uchyt6_small]: https://store.lisk.in/tmp/perm/berany_uchyt6_small.jpg
-[berany_uchyt7]: https://store.lisk.in/tmp/perm/berany_uchyt7.jpg
-[berany_uchyt7_small]: https://store.lisk.in/tmp/perm/berany_uchyt7_small.jpg
-[berany_uchyt8]: https://store.lisk.in/tmp/perm/berany_uchyt8.jpg
-[berany_uchyt8_small]: https://store.lisk.in/tmp/perm/berany_uchyt8_small.jpg
-[berany_barrel1]: https://store.lisk.in/tmp/perm/berany_barrel1.jpg
-[berany_barrel1_small]: https://store.lisk.in/tmp/perm/berany_barrel1_small.jpg
-[berany_barrel2]: https://store.lisk.in/tmp/perm/berany_barrel2.jpg
-[berany_barrel2_small]: https://store.lisk.in/tmp/perm/berany_barrel2_small.jpg
-
 Včera/dneska jsem na moje [kolo][sincity] dal místo rovných řídítek silniční
 berany.
 
@@ -149,3 +116,36 @@ takže je třeba ty řadící trochu upravit:
 [token]: http://dily.maxbike.cz/eshop/staveci-doraz-bowdenu-token-cerne-2ks
 
 Celkem: **1703 Kč**
+
+[berany_final_detail]: https://store.lisk.in/tmp/perm/berany_final_detail.jpg
+[berany_final_detail_small]: https://store.lisk.in/tmp/perm/berany_final_detail_small.jpg
+[berany_final]: https://store.lisk.in/tmp/perm/berany_final.jpg
+[berany_final_small]: https://store.lisk.in/tmp/perm/berany_final_small.jpg
+[berany_packy1]: https://store.lisk.in/tmp/perm/berany_packy1.jpg
+[berany_packy1_small]: https://store.lisk.in/tmp/perm/berany_packy1_small.jpg
+[berany_packy2]: https://store.lisk.in/tmp/perm/berany_packy2.jpg
+[berany_packy2_small]: https://store.lisk.in/tmp/perm/berany_packy2_small.jpg
+[berany_puvodni]: https://store.lisk.in/tmp/perm/berany_puvodni.jpg
+[berany_puvodni_small]: https://store.lisk.in/tmp/perm/berany_puvodni_small.jpg
+[berany_singlespeed]: https://store.lisk.in/tmp/perm/berany_singlespeed.jpg
+[berany_singlespeed_small]: https://store.lisk.in/tmp/perm/berany_singlespeed_small.jpg
+[berany_uchyt1]: https://store.lisk.in/tmp/perm/berany_uchyt1.jpg
+[berany_uchyt1_small]: https://store.lisk.in/tmp/perm/berany_uchyt1_small.jpg
+[berany_uchyt2]: https://store.lisk.in/tmp/perm/berany_uchyt2.jpg
+[berany_uchyt2_small]: https://store.lisk.in/tmp/perm/berany_uchyt2_small.jpg
+[berany_uchyt3]: https://store.lisk.in/tmp/perm/berany_uchyt3.jpg
+[berany_uchyt3_small]: https://store.lisk.in/tmp/perm/berany_uchyt3_small.jpg
+[berany_uchyt4]: https://store.lisk.in/tmp/perm/berany_uchyt4.jpg
+[berany_uchyt4_small]: https://store.lisk.in/tmp/perm/berany_uchyt4_small.jpg
+[berany_uchyt5]: https://store.lisk.in/tmp/perm/berany_uchyt5.jpg
+[berany_uchyt5_small]: https://store.lisk.in/tmp/perm/berany_uchyt5_small.jpg
+[berany_uchyt6]: https://store.lisk.in/tmp/perm/berany_uchyt6.jpg
+[berany_uchyt6_small]: https://store.lisk.in/tmp/perm/berany_uchyt6_small.jpg
+[berany_uchyt7]: https://store.lisk.in/tmp/perm/berany_uchyt7.jpg
+[berany_uchyt7_small]: https://store.lisk.in/tmp/perm/berany_uchyt7_small.jpg
+[berany_uchyt8]: https://store.lisk.in/tmp/perm/berany_uchyt8.jpg
+[berany_uchyt8_small]: https://store.lisk.in/tmp/perm/berany_uchyt8_small.jpg
+[berany_barrel1]: https://store.lisk.in/tmp/perm/berany_barrel1.jpg
+[berany_barrel1_small]: https://store.lisk.in/tmp/perm/berany_barrel1_small.jpg
+[berany_barrel2]: https://store.lisk.in/tmp/perm/berany_barrel2.jpg
+[berany_barrel2_small]: https://store.lisk.in/tmp/perm/berany_barrel2_small.jpg

@@ -4,24 +4,13 @@ title: Going tiled.
 
 ---
 
-[goingtiled1]:      https://store.lisk.in/tmp/perm/goingtiled_1.png
-[goingtiled1small]: https://store.lisk.in/tmp/perm/goingtiled_1_small.jpg
-[goingtiled2]:      https://store.lisk.in/tmp/perm/goingtiled_2.png
-[goingtiled2small]: https://store.lisk.in/tmp/perm/goingtiled_2_small.jpg
-[goingtiled3]:      https://store.lisk.in/tmp/perm/goingtiled_3.png
-[goingtiled3small]: https://store.lisk.in/tmp/perm/goingtiled_3_small.jpg
-[goingtiled4]:      https://store.lisk.in/tmp/perm/goingtiled_4.png
-[goingtiled4small]: https://store.lisk.in/tmp/perm/goingtiled_4_small.jpg
-[goingtiled5]:      https://store.lisk.in/tmp/perm/goingtiled_5.png
-[goingtiled5small]: https://store.lisk.in/tmp/perm/goingtiled_5_small.jpg
-
-[Fluxbox]: http://fluxbox.org/
-[xmonad]: https://xmonad.org/
-
 I had been using [Fluxbox][] for 7 years when I finally decided it's time for
 change last Friday. As my friends expected, I left it for [xmonad][]. Seven
 years is a long time and for me it meant that I became a Fluxbox developer.
 Therefore, I should say some nice goodbye.
+
+[Fluxbox]: http://fluxbox.org/
+[xmonad]: https://xmonad.org/
 
 It all started in 2002 when a friend of mine switched me to Linux. I installed
 it onto my father's laptop, which only had 32 MB of memory and quickly
@@ -89,3 +78,14 @@ My workspace now looks like this:
 
 So, again, thanks and goodbye to Fluxbox, and I'm looking forward to having
 some fun with xmonad :-).
+
+[goingtiled1]:      https://store.lisk.in/tmp/perm/goingtiled_1.png
+[goingtiled1small]: https://store.lisk.in/tmp/perm/goingtiled_1_small.jpg
+[goingtiled2]:      https://store.lisk.in/tmp/perm/goingtiled_2.png
+[goingtiled2small]: https://store.lisk.in/tmp/perm/goingtiled_2_small.jpg
+[goingtiled3]:      https://store.lisk.in/tmp/perm/goingtiled_3.png
+[goingtiled3small]: https://store.lisk.in/tmp/perm/goingtiled_3_small.jpg
+[goingtiled4]:      https://store.lisk.in/tmp/perm/goingtiled_4.png
+[goingtiled4small]: https://store.lisk.in/tmp/perm/goingtiled_4_small.jpg
+[goingtiled5]:      https://store.lisk.in/tmp/perm/goingtiled_5.png
+[goingtiled5small]: https://store.lisk.in/tmp/perm/goingtiled_5_small.jpg
