@@ -65,10 +65,10 @@ div#content, article#content {
 		max-width: 45em;
 		border: 2px solid #dedede;
 	}
-}
 
-article#content p, article#content li {
-	text-align: justify;
+	article#content p, article#content li, dl#posts p {
+		text-align: justify;
+	}
 }
 
 dl#posts {
