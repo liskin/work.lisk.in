@@ -212,16 +212,39 @@ either.)
 Out of curiosity, I wanted to know if this is a solved problem if one uses a
 less weird operating system or desktop environment. Turns out, not really… :-)
 
-#### GNOME (popular Linux desktop environment)
+#### [GNOME][] (popular Linux desktop environment)
 
-Only one player is controlled, and not the last one that played, just the
-first one that started.
+Media keys (and presumably also headphone buttons, not tested) appear to work
+out of the box, including when the desktop is locked. Unfortunately it only
+works reliably (predictably) when there's just one media player application.
+When there's more than one (e.g. YouTube in Chromium and music in
+[Rhythmbox][]), only the one that started first (application launch, not
+necessarily start of playing) is controlled, regardless of whether this one
+player is stopped/playing/paused, or whether it has any playable media at all.
 
-> TODO: recheck
->
-> TODO: locked?
->
-> TODO: bluetooth
+In practice, this means that a browser that had once visited YouTube blocks
+other apps from being controlled by media keys. This is further complicated by
+the fact that [gnome-settings-daemon][] has two different APIs for media keys:
+[MPRIS][] and [GSD media keys API][] and prefers MPRIS players. Therefore
+Chromium are Rhythmbox are preferred to [Totem][] (GNOME's movie player) even
+when launched later, which means that a user needs to understand all these
+complicated bits to have any hope of knowing what player will act upon a
+play/pause button press. Oh and Totem does support MPRIS in fact, it's a
+plugin that may be manually enabled in its preferences.
+
+It is _a bit_ of a mess.
+
+(I tested this on [Fedora][] 32 with [GNOME][] 3.36. Recordings of some of
+those experiments: <https://youtu.be/1fN6NMDBFNI>, <https://youtu.be/FCStseDBwC4>)
+
+[GNOME]: https://www.gnome.org/gnome-3/
+[Rhythmbox]: https://wiki.gnome.org/Apps/Rhythmbox
+[Totem]: https://wiki.gnome.org/Apps/Videos
+[GSD media keys API]: https://gitlab.gnome.org/GNOME/gnome-settings-daemon/-/blob/28ce4225535329dee6a9aff8c44bd1671ce9d2de/plugins/media-keys/README.media-keys-API
+[gnome-settings-daemon]: https://gitlab.gnome.org/GNOME/gnome-settings-daemon/-/tree/28ce4225535329dee6a9aff8c44bd1671ce9d2de/plugins/media-keys
+[Fedora]: https://getfedora.org/
+
+<!-- TODO: note about KDE and <https://github.com/KDE/plasma-browser-integration> -->
 
 #### Windows 10
 
