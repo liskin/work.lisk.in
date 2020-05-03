@@ -234,8 +234,11 @@ plugin that may be manually enabled in its preferences.
 
 It is _a bit_ of a mess.
 
-(I tested this on [Fedora][] 32 with [GNOME][] 3.36. Recordings of some of
-those experiments: <https://youtu.be/1fN6NMDBFNI>, <https://youtu.be/FCStseDBwC4>)
+<i>
+(I tested this on a [Fedora][] 32 live DVD with [GNOME][] 3.36. Recordings of
+some of those experiments: <https://youtu.be/1fN6NMDBFNI>,
+<https://youtu.be/FCStseDBwC4>)
+</i>
 
 [GNOME]: https://www.gnome.org/gnome-3/
 [Rhythmbox]: https://wiki.gnome.org/Apps/Rhythmbox
@@ -248,16 +251,47 @@ those experiments: <https://youtu.be/1fN6NMDBFNI>, <https://youtu.be/FCStseDBwC4
 
 #### Windows 10
 
-* Windows Media Player: reacts to media keys
-* Edge: doesn't
-* Edge Chromium (81.0.416.64): does
+Similarly to GNOME, media keys appear to work fine at first glance, but when
+multiple/specific apps are involved, minor problems appear.
 
-Media keys control all players at once. If Media Player and Edge Chromium with
-YouTube are running at the same time, both are paused/unpaused.
+Windows 10 have their equivalent of [MPRIS][] called [System Media Transport
+Controls][SMTC] and this is supported by [Chromium][chrome-mpris], and
+therefore by both [Chrome][] and the [new Chromium-based Edge][Edge-chromium].
+It's not supported by the (deprecated) [Windows Media Player][WMP], but that's
+probably fine as the modern replacement [Movies/Films & TV][MoviesTV] supports
+it very well.
 
-> TODO: locked?
->
-> TODO: bluetooth
+As opposed to GNOME, an application not supporting the [SMTC API][SMTC] does
+not mean it doesn't react to media keys. Windows Media Player
+[does, quite well actually](https://youtu.be/9DN2tcZGsHU) (even on lock
+screen), but it doesn't grab the keys so when there's another app, media keys
+[control both of them](https://youtu.be/aPSkMTZcy8w). On the other hand,
+[vlc][] only [handles the keys when focused](https://youtu.be/FQAFurnLUVU).
+Finally and not suprisingly, [old Edge][Edge-old] and [Internet Explorer][IE]
+don't [handle them at all](https://youtu.be/uKRqZ3p76Gw).
+
+Handling of multiple apps that all support SMTC is
+[good](https://youtu.be/1-m0kECqt38), but there's a bug that would make this
+completely unusable for my podcast use case: it's not possible to continue
+playing from the lock screen if it'd been paused for more than a few seconds.
+This bug does not affect [Movies/Films & TV][MoviesTV], though.
+
+Were it not for this issue, I'd say it's perfectly usable, as old players and
+browsers can easily be avoided and I wouldn't mind not being able to use vlc
+for background playback.
+
+[SMTC]: https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/integrate-with-systemmediatransportcontrols
+[IE]: https://en.wikipedia.org/wiki/Internet_Explorer
+[Edge-old]: https://en.wikipedia.org/wiki/Microsoft_Edge#Spartan_(2014%E2%80%932019)
+[Edge-chromium]: https://blogs.windows.com/windowsexperience/2020/01/15/new-year-new-browser-the-new-microsoft-edge-is-out-of-preview-and-now-available-for-download/
+[MoviesTV]: https://en.wikipedia.org/wiki/Microsoft_Movies_%26_TV
+[WMP]: https://en.wikipedia.org/wiki/Windows_Media_Player
+
+<i>
+(I tested this on a clean Windows 10 Pro version 1909 with no vendor-specific
+bloatware. Recordings of the experiments are linked from the preceding
+paragraphs.)
+</i>
 
 #### Mac OS X
 
