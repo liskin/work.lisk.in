@@ -100,6 +100,11 @@ dl#posts {
 	margin: 0;
 }
 
+article#content header p {
+	text-align: right;
+	color: #888;
+}
+
 #content img, #content svg {
 	display: block;
 	width: 97%;
