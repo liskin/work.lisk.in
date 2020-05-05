@@ -6,7 +6,7 @@ comments_issue: 1
 ---
 
 This post explains how to get [media keys][] (play, pause, …) on [keyboards][]
-and bluetooth headphones work with a bare [X window manager][] (as opposed to
+and Bluetooth headphones work with a bare [X window manager][] (as opposed to
 a full [desktop environment][]) and how to make them control multiple media
 players including the web browser (YouTube, [bandcamp][], [myNoise][], etc.)
 which is something that even majority [operating systems](#windows-10) and
@@ -207,6 +207,13 @@ either.)
 [Web Audio API]: https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API
 [mynoise-chrome]: https://github.com/liskin/dotfiles/blob/7c89ed287af7f73411ab0dbb36cf948957a17d71/src-webextensions/myNoise-chrome-improvements.user.js
 
+<figure markdown="block" class="video">
+<div class="iframe iframe-16x9">
+<iframe src="https://www.youtube-nocookie.com/embed/VYQOnKIvGgA" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<figcaption markdown="span">demonstration of my setup</figcaption>
+</figure>
+
 ### State of the art
 
 Out of curiosity, I wanted to know if this is a solved problem if one uses a
@@ -225,7 +232,7 @@ player is stopped/playing/paused, or whether it has any playable media at all.
 In practice, this means that a browser that had once visited YouTube blocks
 other apps from being controlled by media keys. This is further complicated by
 the fact that [gnome-settings-daemon][] has two different APIs for media keys:
-[MPRIS][] and [GSD media keys API][] and prefers MPRIS players. Therefore
+[MPRIS][] and [GSD media keys API][] and prefers MPRIS players. Therefore,
 Chromium are Rhythmbox are preferred to [Totem][] (GNOME's movie player) even
 when launched later, which means that a user needs to understand all these
 complicated bits to have any hope of knowing what player will act upon a
@@ -262,13 +269,13 @@ probably fine as the modern replacement [Movies/Films & TV][MoviesTV] supports
 it very well.
 
 As opposed to GNOME, an application not supporting the [SMTC API][SMTC] does
-not mean it doesn't react to media keys. Windows Media Player
-[does, quite well actually](https://youtu.be/9DN2tcZGsHU) (even on lock
-screen), but it doesn't grab the keys so when there's another app, media keys
-[control both of them](https://youtu.be/aPSkMTZcy8w). On the other hand,
-[vlc][] only [handles the keys when focused](https://youtu.be/FQAFurnLUVU).
-Finally and not suprisingly, [old Edge][Edge-old] and [Internet Explorer][IE]
-don't [handle them at all](https://youtu.be/uKRqZ3p76Gw).
+not mean it doesn't react to media keys. Windows Media Player [does, quite
+well actually](https://youtu.be/9DN2tcZGsHU) (even on lock screen), but it
+doesn't grab the keys so when there's another app, media keys [control both of
+them](https://youtu.be/aPSkMTZcy8w). On the other hand, [vlc][] only [handles
+the keys when focused](https://youtu.be/FQAFurnLUVU). Finally and not
+surprisingly, [old Edge][Edge-old] and [Internet Explorer][IE] don't [handle
+them at all](https://youtu.be/uKRqZ3p76Gw).
 
 Handling of multiple apps that all support SMTC is
 [good](https://youtu.be/1-m0kECqt38), but there's a bug that would make this
