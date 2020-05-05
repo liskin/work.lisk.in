@@ -92,7 +92,7 @@ div#content, article#content {
 	}
 
 	div.utterances {
-		visibility: hidden;
+		display: none;
 	}
 }
 
@@ -151,8 +151,8 @@ article#content header p {
 }
 
 @media print {
-	#content img, #content svg, #content figure img {
-		width: auto;
+	#content img, #content svg {
+		object-fit: contain;
 		max-height: 7cm;
 	}
 }
@@ -173,5 +173,41 @@ details#toc summary {
 	details#toc[open] {
 		background-color: #f8f8ff;
 		border: 1px solid #dedede;
+	}
+}
+
+div.iframe {
+	position: relative;
+	overflow: hidden;
+}
+
+div.iframe-16x9 {
+	padding-top: 56.25%;
+}
+
+div.iframe iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+@media print {
+	figure.video {
+		display: none;
+	}
+}
+
+@media screen {
+	:target {
+		animation: highlight 2s;
+	}
+
+	@keyframes highlight {
+		0% { background: transparent; }
+		10% { background: #f88; }
+		100% { background: transparent; }
 	}
 }
