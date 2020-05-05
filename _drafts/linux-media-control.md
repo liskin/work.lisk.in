@@ -150,8 +150,10 @@ function action-prev { p=$(get-mpris-playing); playerctl -p "$p" previous; }
 
 [liskin-media-commands]: https://github.com/liskin/dotfiles/blob/15c2cd83ce7297c38830053a9fd2be2f3678f4b0/bin/liskin-media#L56-L100
 
-_Note that similar logic is also implemented by [mpris2controller][], which I
-unfortunately haven't found until I started writing this post._
+<i>
+Note that similar logic is also implemented by [mpris2controller][], which I
+unfortunately haven't found until I started writing this post.
+</i>
 
 [mpris2controller]: https://github.com/icasdri/mpris2controller
 
@@ -297,20 +299,43 @@ for background playback.
 <i>
 (I tested this on a clean Windows 10 Pro version 1909 with no vendor-specific
 bloatware. Recordings of the experiments are linked from the preceding
-paragraphs.)
+paragraphs, and for completeness also listed here:
+<https://youtu.be/9DN2tcZGsHU>, <https://youtu.be/1-m0kECqt38>,
+<https://youtu.be/aPSkMTZcy8w>, <https://youtu.be/FQAFurnLUVU>,
+<https://youtu.be/uKRqZ3p76Gw>.)
 </i>
 
-#### Mac OS X
+#### macOS Catalina
 
-> TODO: Safari
->
-> TODO: Chrome
->
-> TODO: browser & media player
->
-> TODO: locked
->
-> TODO: bluetooth
+I expected this to work almost flawlessly as Apple is known for their focus on
+UX, but it seems worse than Windows 10, unfortunately. Worse than Windows 10
+with the _optional_ upgrade to the [new Chromium-based Edge][Edge-chromium],
+that is.
+
+My experience as a user of macOS is very limited, and as a developer
+non-existent, so I won't attempt to go into technical details and I'll only
+describe observed behaviour.
+
+Media keys work in every app I tried (but I haven't tried any that don't come
+pre-installed, like [vlc][]), and they work on lock screen as well, regardless
+of how long it's been paused/locked. Unfortunately they only start controlling
+the app after I've interacted with the play/pause button at least once, so
+when I open a video and press the play/pause key on the keyboard, instead of
+pausing the video, the Music app opens.
+
+When multiple players are open, the last one that I interacted with is
+controlled, as it should be. When one of them is closed, however, the control
+isn't transferred to the other one, unless the application is terminated
+entirely or I manually interact with the other one. Strangely, it works well
+when a music-playing tab in Safari is closed.
+
+<i>
+(I tested this on a clean [macOS Catalina][catalina] 10.15.4 with no
+additional software installed. Recordings of some of those experiments:
+<https://youtu.be/VN7-eZsIpOE>, <https://youtu.be/oIo21HRPfhM>)
+</i>
+
+[catalina]: https://en.wikipedia.org/wiki/MacOS_Catalina
 
 #### Android
 
