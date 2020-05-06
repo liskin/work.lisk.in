@@ -389,6 +389,13 @@ volume effectively becomes 14-bit. [pulseaudio][] doesn't do this, but
 [Marshall Monitor Bluetooth]: https://www.marshallheadphones.com/us/en/monitor-bluetooth.html
 [Sony MDR-XB950BT]: https://www.sony.com/electronics/headband-headphones/mdr-xb950bt
 
+#### Summary
+
+None of the mainstream environments supports media keys/buttons well enough to
+cover my use cases. It seems, therefore, that niche X window managers aren't
+at a very big disadvantage — their target demographic is used to tweaking
+things to their liking, after all.
+
 ---
 
 *[UX]: user experience
