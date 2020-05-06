@@ -258,7 +258,7 @@ some of those experiments: <https://youtu.be/1fN6NMDBFNI>,
 
 <!-- TODO: note about KDE and <https://github.com/KDE/plasma-browser-integration> -->
 
-#### Windows 10
+#### [Windows 10][]
 
 Similarly to GNOME, media keys appear to work fine at first glance, but when
 multiple/specific apps are involved, minor problems appear.
@@ -295,17 +295,18 @@ use vlc for background playback.
 [Edge-chromium]: https://blogs.windows.com/windowsexperience/2020/01/15/new-year-new-browser-the-new-microsoft-edge-is-out-of-preview-and-now-available-for-download/
 [MoviesTV]: https://en.wikipedia.org/wiki/Microsoft_Movies_%26_TV
 [WMP]: https://en.wikipedia.org/wiki/Windows_Media_Player
+[Windows 10]: https://en.wikipedia.org/wiki/Windows_10
 
 <i>
-(I tested this on a clean Windows 10 Pro version 1909 with no vendor-specific
-bloatware. Recordings of the experiments are linked from the preceding
-paragraphs, and for completeness also listed here:
+(I tested this on a clean [Windows 10][] Pro version 1909 with no
+vendor-specific bloatware. Recordings of the experiments are linked from the
+preceding paragraphs, and for completeness also listed here:
 <https://youtu.be/9DN2tcZGsHU>, <https://youtu.be/1-m0kECqt38>,
 <https://youtu.be/aPSkMTZcy8w>, <https://youtu.be/FQAFurnLUVU>,
 <https://youtu.be/uKRqZ3p76Gw>.)
 </i>
 
-#### macOS Catalina
+#### [macOS Catalina][]
 
 I expected this to work almost flawlessly as Apple is known for their focus on
 UX, but it seems worse than Windows 10, unfortunately. Worse than Windows 10
@@ -318,10 +319,10 @@ describe observed behaviour.
 
 Media keys work in every app I tried (but I haven't tried any that don't come
 pre-installed, like [vlc][]), and they work on lock screen as well, regardless
-of how long it's been paused/locked. Unfortunately they only start controlling
+of how long it's been paused/locked. Unfortunately, they only start controlling
 the app after I've interacted with the play/pause button at least once, so
 when I open a video and press the play/pause key on the keyboard, instead of
-pausing the video, the Music app opens.
+pausing, the Music app opens.
 
 When multiple players are open, the last one that I interacted with is
 controlled, as it should be. When one of them is closed, however, the control
@@ -330,12 +331,12 @@ entirely or I manually interact with the other one. Strangely, it works well
 when a music-playing tab in Safari is closed.
 
 <i>
-(I tested this on a clean [macOS Catalina][catalina] 10.15.4 with no
-additional software installed. Recordings of some of those experiments:
+(I tested this on a clean [macOS Catalina][] 10.15.4 with no additional
+software installed. Recordings of some of those experiments:
 <https://youtu.be/VN7-eZsIpOE>, <https://youtu.be/oIo21HRPfhM>)
 </i>
 
-[catalina]: https://en.wikipedia.org/wiki/MacOS_Catalina
+[macOS Catalina]: https://en.wikipedia.org/wiki/MacOS_Catalina
 
 #### Android 10 (Samsung One UI 2.1)
 
@@ -357,8 +358,8 @@ one](https://youtu.be/2vQAbaMpXfM). Unlike in macOS, quitting the application
 (force close) doesn't help either. Like in macOS, closing a browser tab does
 transfer control to a music player.
 
-What's worse, when a media playing in the browser (Chrome) is paused and the
-device is locked, it [disappears after a while and can't be
+What's worse, when a media playing in the browser ([Chrome][mobile-chrome]) is
+paused and the device is locked, it [disappears after a while and can't be
 continued](https://youtu.be/UOXvDx6Dvas), similarly to Windows 10.
 
 <i>
@@ -388,6 +389,7 @@ volume effectively becomes 14-bit. [pulseaudio][] doesn't do this, but
 [liskin-media-volume]: https://github.com/liskin/dotfiles/blob/15c2cd83ce7297c38830053a9fd2be2f3678f4b0/bin/liskin-media#L8-L41
 [Marshall Monitor Bluetooth]: https://www.marshallheadphones.com/us/en/monitor-bluetooth.html
 [Sony MDR-XB950BT]: https://www.sony.com/electronics/headband-headphones/mdr-xb950bt
+[mobile-chrome]: https://play.google.com/store/apps/details?id=com.android.chrome
 
 #### Summary
 
