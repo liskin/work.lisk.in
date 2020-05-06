@@ -211,3 +211,27 @@ div.iframe iframe {
 		100% { background: transparent; }
 	}
 }
+
+@media screen {
+	abbr[title] {
+		text-decoration: underline solid #888;
+		cursor: help;
+	}
+
+	/* chrome on android has hover: hover :-( */
+	@media not all and (pointer: fine) {
+		abbr[title]:hover::after, abbr[title]:focus::after {
+			content: " (" attr(title) ")";
+		}
+	}
+}
+
+@media print {
+	abbr[title] {
+		text-decoration: none;
+	}
+
+	abbr[title]::after {
+		content: " (" attr(title) ")";
+	}
+}
