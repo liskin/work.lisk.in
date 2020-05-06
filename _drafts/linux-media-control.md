@@ -285,9 +285,9 @@ completely unusable for my podcast use case: it's not possible to continue
 playing from the lock screen if it'd been paused for more than a few seconds.
 This bug does not affect [Movies/Films & TV][MoviesTV], though.
 
-Were it not for this issue, I'd say it's perfectly usable, as old players and
-browsers can easily be avoided and I wouldn't mind not being able to use vlc
-for background playback.
+Were it not for this issue, I'd say it's perfectly usable, as deprecated
+players/browsers can easily be avoided and I wouldn't mind not being able to
+use vlc for background playback.
 
 [SMTC]: https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/integrate-with-systemmediatransportcontrols
 [IE]: https://en.wikipedia.org/wiki/Internet_Explorer
@@ -337,15 +337,57 @@ additional software installed. Recordings of some of those experiments:
 
 [catalina]: https://en.wikipedia.org/wiki/MacOS_Catalina
 
-#### Android
+#### Android 10 (Samsung One UI 2.1)
 
-> TODO: Chrome
->
-> TODO: browser & media player
->
-> TODO: lockscreen
->
-> TODO: bluetooth
+Had I not been a longtime Android user, I would expect this to work flawlessly
+as smartphones are the primary means of media consumption for many (most?)
+people. Turns out there are issues, too. There always are.
+
+My Android device does not have a dedicated play/pause button, but my
+Bluetooth headphones do, so that's what I tested (wired headphones will likely
+behave the same). Obviously, most apps (including [vlc][]) react to play/pause
+just fine. Additionally, pressing play in one app pauses any other that is
+currently playing, which is something that desktop systems don't do and that
+isn't implemented (yet) in my setup either. Also, an incoming/outgoing call
+pauses any playing media. So far so good.
+
+Interaction between multiple players is a bit weird, though. Like in macOS,
+after closing one of them, [control is not transferred to the other
+one](https://youtu.be/2vQAbaMpXfM). Unlike in macOS, quitting the application
+(force close) doesn't help either. Like in macOS, closing a browser tab does
+transfer control to a music player.
+
+What's worse, when a media playing in the browser (Chrome) is paused and the
+device is locked, it [disappears after a while and can't be
+continued](https://youtu.be/UOXvDx6Dvas), similarly to Windows 10.
+
+<i>
+(I tested this on a not at all clean, but fully updated [Samsung Galaxy
+S10e][]. This is not vanilla Android 10, but Samsung's [One UI][] 2.1, so it's
+possible other devices will behave better (or worse). Recordings of the
+experiments are linked from the preceding paragraphs, and for completeness
+also listed here: <https://youtu.be/2vQAbaMpXfM>,
+<https://youtu.be/UOXvDx6Dvas>.)
+</i>
+
+<i>
+(Completely unrelated, but perhaps worth noting: to ensure high-quality
+playback, Android sends audio at 100% volume to Bluetooth headphones[^btvol]
+and lets them adjust volume themselves. Without this, 16-bit audio at 25%
+volume effectively becomes 14-bit. [pulseaudio][] doesn't do this, but
+[liskin-media does][liskin-media-volume].)
+</i>
+
+[^btvol]:
+    Not all of them, however. I tried [Marshall Monitor Bluetooth][] and [Sony
+    MDR-XB950BT][] and it's only done for the former.
+
+[Samsung Galaxy S10e]: https://www.gsmarena.com/samsung_galaxy_s10e-9537.php
+[One UI]: https://en.wikipedia.org/wiki/One_UI
+[pulseaudio]: https://www.freedesktop.org/wiki/Software/PulseAudio/
+[liskin-media-volume]: https://github.com/liskin/dotfiles/blob/15c2cd83ce7297c38830053a9fd2be2f3678f4b0/bin/liskin-media#L8-L41
+[Marshall Monitor Bluetooth]: https://www.marshallheadphones.com/us/en/monitor-bluetooth.html
+[Sony MDR-XB950BT]: https://www.sony.com/electronics/headband-headphones/mdr-xb950bt
 
 ---
 
