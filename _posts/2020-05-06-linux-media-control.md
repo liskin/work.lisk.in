@@ -348,6 +348,10 @@ Had I not been a longtime Android user, I would expect this to work flawlessly
 as smartphones are the primary means of media consumption for many (most?)
 people. Turns out there are issues, too. There always are.
 
+Android's API for media control: “A [MediaSession][android-mediasession]
+should be created when an app wants to publish media playback information or
+handle media keys.”
+
 My Android device does not have a dedicated play/pause button, but my
 Bluetooth headphones do, so that's what I tested (wired headphones will likely
 behave the same). Obviously, most apps (including [vlc][]) react to play/pause
@@ -398,6 +402,7 @@ volume effectively becomes 14-bit. [pulseaudio][] doesn't do this, but
 [Marshall Monitor Bluetooth]: https://www.marshallheadphones.com/us/en/monitor-bluetooth.html
 [Sony MDR-XB950BT]: https://www.sony.com/electronics/headband-headphones/mdr-xb950bt
 [mobile-chrome]: https://play.google.com/store/apps/details?id=com.android.chrome
+[android-mediasession]: https://developer.android.com/reference/android/media/session/MediaSession
 
 #### Summary
 
