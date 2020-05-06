@@ -176,12 +176,14 @@ Controller][], …[^webext]
     * <https://github.com/KDE/plasma-browser-integration>
 
 [Firefox][] 75 works after enabling `media.hardwaremediakeys.enabled` in
-`about:config`, but Media Session support is still experimental (enabling it
+`about:config`, but Media Session support is still unstable (enabling it
 breaks YouTube entirely) so metadata isn't available. Also, not all websites
 can be controlled: YouTube and bandcamp works, soundcloud and plain HTML5
-`<audio>` example don't. Haven't investigated it further as I don't use
-Firefox for media playback. (Also, it keeps resetting its volume to a weird
-level.)
+`<audio>` example don't. Firefox's emerging support for media controls is
+[documented here][firefox-media-control]; there are some interesting details
+about ignoring silence, short clips, and giving up control if paused for more
+than a minute (a feature that I find undesirable and unfortunately present in
+Chrome on non-Linux platforms, as noted further).
 
 [myNoise][] can't be controlled by media keys in either browser as it uses
 plain [Web Audio API][], so I've made [a userscript][mynoise-chrome] as a
@@ -208,6 +210,7 @@ either.)
 [vlc]: https://www.videolan.org/vlc/index.html
 [Web Audio API]: https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API
 [mynoise-chrome]: https://github.com/liskin/dotfiles/blob/7c89ed287af7f73411ab0dbb36cf948957a17d71/src-webextensions/myNoise-chrome-improvements.user.js
+[firefox-media-control]: https://docs.google.com/document/d/1c4FivJpvAjjw9Uw-jn7X1UjGOoWkANXOulNyqDWs83w/edit
 
 <figure markdown="block" class="video">
 <div class="iframe iframe-16x9">
@@ -314,8 +317,8 @@ with the _optional_ upgrade to the [new Chromium-based Edge][Edge-chromium],
 that is.
 
 My experience as a user of macOS is very limited, and as a developer
-non-existent, so I won't attempt to go into technical details and I'll only
-describe observed behaviour.
+non-existent, but it seems that the macOS equivalent of MPRIS is
+[MPRemoteCommandCenter][] in the Media Player framework.
 
 Media keys work in every app I tried (but I haven't tried any that don't come
 pre-installed, like [vlc][]), and they work on lock screen as well, regardless
@@ -337,6 +340,7 @@ software installed. Recordings of some of those experiments:
 </i>
 
 [macOS Catalina]: https://en.wikipedia.org/wiki/MacOS_Catalina
+[MPRemoteCommandCenter]: https://developer.apple.com/documentation/mediaplayer/mpremotecommandcenter
 
 #### Android 10 (Samsung One UI 2.1)
 
@@ -360,7 +364,11 @@ transfer control to a music player.
 
 What's worse, when a media playing in the browser ([Chrome][mobile-chrome]) is
 paused and the device is locked, it [disappears after a while and can't be
-continued](https://youtu.be/UOXvDx6Dvas), similarly to Windows 10.
+continued](https://youtu.be/UOXvDx6Dvas), similarly to Windows 10. As noted in
+[the notes about Firefox media controls][firefox-media-control], this might be
+intentional, but I don't like this: it forces me to install an app for
+anything that I might need to pause for longer than a few seconds, and there
+isn't always (a good) one.
 
 <i>
 (I tested this on a not at all clean, but fully updated [Samsung Galaxy
