@@ -175,15 +175,18 @@ Controller][], …[^webext]
     * <https://github.com/Aaahh/browser-mpris2-firefox>
     * <https://github.com/KDE/plasma-browser-integration>
 
-[Firefox][] 75 works after enabling `media.hardwaremediakeys.enabled` in
-`about:config`, but Media Session support is still unstable (enabling it
-breaks YouTube entirely) so metadata isn't available. Also, not all websites
-can be controlled: YouTube and bandcamp works, soundcloud and plain HTML5
-`<audio>` example don't. Firefox's emerging support for media controls is
-[documented here][firefox-media-control]; there are some interesting details
-about ignoring silence, short clips, and giving up control if paused for more
-than a minute (a feature that I find undesirable and unfortunately present in
-Chrome on non-Linux platforms, as noted further).
+[Firefox][] 76 works after enabling `media.hardwaremediakeys.enabled` in
+`about:config`. This only enables play/pause/stop, however. To be able to skip
+to next/prev and to get metadata (artist, album, track), [Media Session API][]
+needs to be enabled separately via `dom.media.mediasession.enabled` (note that
+I couldn't get this to work in Firefox 75, so this is hot new experimental
+stuff and may be unstable). Also, not all websites can be controlled
+(play/pause): YouTube and bandcamp works, soundcloud and plain HTML5 `<audio>`
+example don't. Firefox's emerging support for media controls is [documented
+here][firefox-media-control]; there are some interesting details about
+ignoring silence, short clips, and giving up control if paused for more than a
+minute (a feature that I find undesirable and unfortunately present in Chrome
+on non-Linux platforms, as noted further).
 
 [myNoise][] can't be controlled by media keys in either browser as it uses
 plain [Web Audio API][], so I've made [a userscript][mynoise-chrome] as a
