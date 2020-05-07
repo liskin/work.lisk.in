@@ -8,8 +8,7 @@ body {
 .right { text-align: right; }
 .clear { clear: both; }
 
-a:link { color: #000050; }
-a:visited { color: #000050; }
+a, a:link, a:visited { color: #000050; }
 a:hover { background-color: #080; color: white; text-decoration: none; }
 svg a:hover { opacity: 0.5; }
 
@@ -100,10 +99,8 @@ dl#posts {
 	margin: 0;
 }
 
-article#content header p {
-	text-align: right;
-	color: #888;
-}
+article#content header p, article#content header a { text-align: right; color: #888; }
+article#content header a:hover { color: white; }
 
 #content img, #content svg {
 	display: block;
