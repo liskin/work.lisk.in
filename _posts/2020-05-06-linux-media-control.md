@@ -262,7 +262,44 @@ some of those experiments: <https://youtu.be/1fN6NMDBFNI>,
 [gnome-settings-daemon]: https://gitlab.gnome.org/GNOME/gnome-settings-daemon/-/tree/28ce4225535329dee6a9aff8c44bd1671ce9d2de/plugins/media-keys
 [Fedora]: https://getfedora.org/
 
-<!-- TODO: note about KDE and <https://github.com/KDE/plasma-browser-integration> -->
+#### [KDE Plasma 5][]
+
+KDE is the only environment out of those tested that works really well.
+(Almost.)
+
+Media keys work out of the box in all media players I tried ([Dragon][],
+[vlc][], [mpv][] + [mpv-mpris][], [Totem][] + MPRIS plugin) including lock-screen. When there are
+multiple players, the last one is controlled, and when it's closed, it
+automatically switches to another one. Additionally, there's an applet in the
+bottom panel that lets users override this automatic behaviour and force a
+selected player to be controlled.
+
+When [Firefox][] is first launched, KDE prompts the user to install the
+[Plasma Browser Integration][] extension which adds [MPRIS][] and even [Media
+Session API][] support to Firefox, presumably because this extension predates
+this support in Firefox itself. The [implementation][plasma-mediasession-shim]
+is different to the one in recent Firefox versions, so it's not entirely
+surprising that soundcloud works as well (as opposed to vanilla Firefox).
+
+Unfortunately, [Chromium][] doesn't work so well. It's visible in the list of
+media players in the panel applet, it shows what's currently playing, but the
+control buttons are grey and media keys don't do anything either. This is also
+the case if there are more players active: whenever Chromium is the active
+player, media keys nonfunctional. This may be an old
+[workaround][plasma-chromium-blacklist], or another issue entirely.
+
+<i>
+(I tested this on a [Fedora 32 KDE][] live DVD with KDE Plasma 5.18.3.
+Recordings of some of those experiments: <https://youtu.be/-vpHDXg5jW8>,
+<https://youtu.be/IybSl2WiNYE>)
+</i>
+
+[Dragon]: https://github.com/KDE/dragon
+[Fedora 32 KDE]: https://spins.fedoraproject.org/kde/
+[KDE Plasma 5]: https://en.wikipedia.org/wiki/KDE_Plasma_5
+[Plasma Browser Integration]: https://github.com/KDE/plasma-browser-integration/
+[plasma-mediasession-shim]: https://github.com/KDE/plasma-browser-integration/blob/64a63f2b4b96545dd1d4bcb5583dfbec9122722f/extension/content-script.js#L635-L898
+[plasma-chromium-blacklist]: https://old.reddit.com/r/kde/comments/eih9jb/if_you_use_chromium_with_kde_plasma_integration/fcqduij/
 
 #### [Windows 10][]
 
@@ -409,10 +446,10 @@ volume effectively becomes 14-bit. [pulseaudio][] doesn't do this, but
 
 #### Summary
 
-None of the mainstream environments supports media keys/buttons well enough to
-cover my use cases. It seems, therefore, that niche X window managers aren't
-at a very big disadvantage — their target demographic is used to tweaking
-things to their liking, after all.
+None of the mainstream environments except [KDE](#kde-plasma-5) supports media
+keys/buttons well enough to cover my use cases. It seems, therefore, that
+niche X window managers aren't at a very big disadvantage — their target
+demographic is used to tweaking things to their liking, after all.
 
 ---
 
