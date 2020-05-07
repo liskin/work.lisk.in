@@ -9,9 +9,8 @@ This post explains how to get [media keys][] (play, pause, …) on [keyboards][]
 and Bluetooth headphones work with a bare [X window manager][] (as opposed to
 a full [desktop environment][]) and how to make them control multiple media
 players including the web browser (YouTube, [bandcamp][], [myNoise][], etc.)
-which is something that even majority [operating systems](#windows-10) and
-[desktop environments](#gnome-popular-linux-desktop-environment) don't quite
-get right out of the box.
+which is something that even majority [operating systems][h4-win10] and
+[desktop environments][h4-gnome] don't quite get right out of the box.
 
 [media keys]: https://en.wikipedia.org/wiki/Computer_keyboard#Miscellaneous
 [keyboards]: https://en.wikipedia.org/wiki/ThinkPad#/media/File:Lenovo-ThinkPad-Keyboard.JPG
@@ -229,6 +228,8 @@ less weird operating system or desktop environment. Turns out, not really… :-)
 
 #### [GNOME][] (popular Linux desktop environment)
 
+[h4-gnome]: {{ page.url }}#gnome-popular-linux-desktop-environment
+
 Media keys (and presumably also headphone buttons, not tested) appear to work
 out of the box, including when the desktop is locked. Unfortunately it only
 works reliably (predictably) when there's just one media player application.
@@ -263,6 +264,8 @@ some of those experiments: <https://youtu.be/1fN6NMDBFNI>,
 [Fedora]: https://getfedora.org/
 
 #### [KDE Plasma 5][]
+
+[h4-kde]: {{ page.url }}#kde-plasma-5
 
 KDE is the only environment out of those tested that works really well.
 (Almost.)
@@ -302,6 +305,8 @@ Recordings of some of those experiments: <https://youtu.be/-vpHDXg5jW8>,
 [plasma-chromium-blacklist]: https://old.reddit.com/r/kde/comments/eih9jb/if_you_use_chromium_with_kde_plasma_integration/fcqduij/
 
 #### [Windows 10][]
+
+[h4-win10]: {{ page.url }}#windows-10
 
 Similarly to GNOME, media keys appear to work fine at first glance, but when
 multiple/specific apps are involved, minor problems appear.
@@ -446,7 +451,7 @@ volume effectively becomes 14-bit. [pulseaudio][] doesn't do this, but
 
 #### Summary
 
-None of the mainstream environments except [KDE](#kde-plasma-5) supports media
+None of the mainstream environments except [KDE][h4-kde] supports media
 keys/buttons well enough to cover my use cases. It seems, therefore, that
 niche X window managers aren't at a very big disadvantage — their target
 demographic is used to tweaking things to their liking, after all.
