@@ -197,16 +197,10 @@ div.iframe iframe {
 	}
 }
 
+/* highlight anchor targets */
 @media screen {
-	:target {
-		animation: highlight 2s;
-	}
-
-	@keyframes highlight {
-		0% { background: transparent; }
-		10% { background: #f88; }
-		100% { background: transparent; }
-	}
+	#content :target { animation: highlight 2s; }
+	@keyframes highlight { 10% { background: #f88; } }
 }
 
 @media screen {
