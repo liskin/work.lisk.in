@@ -282,14 +282,18 @@ When [Firefox][] is first launched, KDE prompts the user to install the
 Session API][] support to Firefox, presumably because this extension predates
 this support in Firefox itself. The [implementation][plasma-mediasession-shim]
 is different to the one in recent Firefox versions, so it's not entirely
-surprising that soundcloud works as well (as opposed to vanilla Firefox).
+surprising that soundcloud works as well (as opposed to vanilla Firefox). And
+it also follows that it doesn't work when a media file is opened directly; the
+extension only works in HTML pages.
 
 Unfortunately, [Chromium][] doesn't work so well. It's visible in the list of
 media players in the panel applet, it shows what's currently playing, but the
 control buttons are grey and media keys don't do anything either. This is also
 the case if there are more players active: whenever Chromium is the active
-player, media keys nonfunctional. This may be an old
-[workaround][plasma-chromium-blacklist], or another issue entirely.
+player, media keys do nothing. This may be an old
+[workaround][plasma-chromium-blacklist], or another issue entirely. Installing
+the [Plasma Browser Integration][] extension fixes this problem (for HTML
+audio/video), but in my opinion that shouldn't be necessary these days.
 
 <i>
 (I tested this on a [Fedora 32 KDE][] live DVD with KDE Plasma 5.18.3.
