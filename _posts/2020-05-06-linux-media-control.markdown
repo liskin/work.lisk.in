@@ -290,10 +290,10 @@ Unfortunately, [Chromium][] doesn't work so well. It's visible in the list of
 media players in the panel applet, it shows what's currently playing, but the
 control buttons are grey and media keys don't do anything either. This is also
 the case if there are more players active: whenever Chromium is the active
-player, media keys do nothing. This may be an old
-[workaround][plasma-chromium-blacklist], or another issue entirely. Installing
-the [Plasma Browser Integration][] extension fixes this problem (for HTML
-audio/video), but in my opinion that shouldn't be necessary these days.
+player, media keys do nothing. This is a [bug in Chromium's MPRIS
+implementation][chromium-cancontrol] that should be easy to fix. In the
+meantime, one can install the [Plasma Browser Integration][] extension as a
+workaround (for HTML audio/video).
 
 <i>
 (I tested this on a [Fedora 32 KDE][] live DVD with KDE Plasma 5.18.3.
@@ -307,6 +307,7 @@ Recordings of some of those experiments: <https://youtu.be/-vpHDXg5jW8>,
 [Plasma Browser Integration]: https://github.com/KDE/plasma-browser-integration/
 [plasma-mediasession-shim]: https://github.com/KDE/plasma-browser-integration/blob/64a63f2b4b96545dd1d4bcb5583dfbec9122722f/extension/content-script.js#L635-L898
 [plasma-chromium-blacklist]: https://old.reddit.com/r/kde/comments/eih9jb/if_you_use_chromium_with_kde_plasma_integration/fcqduij/
+[chromium-cancontrol]: https://bugs.chromium.org/p/chromium/issues/detail?id=1052609
 
 #### [Windows 10][]
 
