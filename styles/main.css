@@ -125,14 +125,12 @@ article#content header a:hover { color: white; }
 
 #content pre {
 	margin: 1em 0;
-	border: 1px solid #dedede;
 	padding: .5em;
 	overflow: auto;
 }
 
 #content code {
 	padding: 0 .2em;
-	border: 1px solid #dedede;
 }
 
 #content pre code {
@@ -144,10 +142,16 @@ article#content header a:hover { color: white; }
 	#content pre, #content code {
 		background-color: #f8f8ff;
 		color: #222;
+		border: 1px solid #dedede;
 	}
 }
 
 @media print {
+	#content pre {
+		border-top: 1px solid #dedede;
+		border-bottom: 1px solid #dedede;
+	}
+
 	#content img, #content svg {
 		object-fit: contain;
 		max-height: 7cm;
