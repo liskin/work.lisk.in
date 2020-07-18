@@ -3,11 +3,6 @@ body {
 	line-height: 1.3;
 }
 
-.mensi { font-size: smaller; }
-.center { text-align: center; }
-.right { text-align: right; }
-.clear { clear: both; }
-
 a, a:link, a:visited { color: #000050; }
 a:hover { background-color: #080; color: white; text-decoration: none; }
 svg a:hover { opacity: 0.5; }
@@ -37,9 +32,8 @@ tr { vertical-align: top; }
 table.border { border-width: 1px; }
 
 
-div#nadpis {
-	padding: 0.5em;
-}
+body > header { padding: 0.5em; }
+body > header h1 { text-align: center; }
 
 div#content, article#content {
 	padding: 1em;
@@ -47,10 +41,11 @@ div#content, article#content {
 
 @media screen {
 	body {
+		font-family: sans-serif;
 		background-color: #dfffcf;
 	}
 
-	div#nadpis {
+	body > header {
 		background-color: #cfffbf;
 	}
 
@@ -174,6 +169,12 @@ details#toc summary {
 	details#toc[open] {
 		background-color: #f8f8ff;
 		border: 1px solid #dedede;
+	}
+}
+
+@media print {
+	details#toc {
+		display: none;
 	}
 }
 
