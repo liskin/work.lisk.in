@@ -20,16 +20,16 @@ hr { width: 80%; }
 dt { margin-top: 0.5em; }
 blockquote { border-left: 2px solid green; padding-left: 1ex; margin-left: 1ex; }
 hr { width: 90%; height: 0px; border: 0; border-top: solid 1px black; background: transparent; margin: 2em auto; }
+pre { tab-size: 4; }
 
 table {
 	margin: 0.5em;
 	padding: 0em;
 	border-width: 0;
 }
-td { padding: 0.1em 0.3em; margin: 0; }
-th { text-align: left; }
+td { padding: 0.2em 0.5em; margin: 0; }
+th { text-align: center; }
 tr { vertical-align: top; }
-table.border { border-width: 1px; }
 
 
 body > header { padding: 0.5em; }
@@ -108,14 +108,34 @@ article#content header a:hover { color: white; }
 	margin: 1em auto;
 }
 
-#content figure img, #content figure svg, #content figure pre, #content figure p {
+#content figure img,
+#content figure svg,
+#content figure pre,
+#content figure p,
+#content figure table {
 	box-sizing: border-box;
 	width: 100%;
 	margin: 0 auto;
 }
 
+#content figure.no-resize img,
+#content figure.no-resize svg,
+#content figure.no-resize pre,
+#content figure.no-resize p,
+#content figure.no-resize table {
+	width: unset;
+	max-width: 100%;
+}
+
 #content figure figcaption {
 	text-align: center;
+}
+
+#content table img {
+	box-sizing: unset;
+	display: unset;
+	width: unset;
+	margin: unset;
 }
 
 #content pre {
@@ -134,7 +154,7 @@ article#content header a:hover { color: white; }
 }
 
 @media screen {
-	#content pre, #content code {
+	#content pre, #content code, #content table {
 		background-color: #f8f8ff;
 		color: #222;
 		border: 1px solid #dedede;
@@ -150,6 +170,24 @@ article#content header a:hover { color: white; }
 	#content img, #content svg {
 		object-fit: contain;
 		max-height: 7cm;
+	}
+}
+
+@media screen {
+	#content p.mark {
+		border: 0.2rem solid #c85;
+		background-color: #ffefc0;
+		padding: 1ex;
+		font-size: 110%;
+	}
+}
+
+@media print {
+	#content p.mark {
+		border-left: 0.2rem solid black;
+		border-right: 0.2rem solid black;
+		padding-left: 1ex;
+		padding-right: 1ex;
 	}
 }
 
