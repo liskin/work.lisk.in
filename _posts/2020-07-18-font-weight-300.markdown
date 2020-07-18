@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 'font-weight: 300 considered harmful + fontconfig workaround'
+title: 'font-weight: 300 considered harmful (and a fontconfig workaround)'
 comments_issue: 6
 
 ---
