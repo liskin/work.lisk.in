@@ -68,14 +68,14 @@ ul#nav li:active,
 	text-decoration: none;
 }
 
-div#navdiv {
+body > nav {
 	background-color: #bfffaf;
 	border-top: 1px solid green;
 	border-bottom: 3px solid green;
 }
 
 @media print {
-	div#navdiv {
+	body > nav {
 		visibility: hidden;
 	}
 }

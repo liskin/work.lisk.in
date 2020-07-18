@@ -25,15 +25,15 @@
 		<title>{% if page.date %}{{ page.title }} — Tomáš Janoušek, Blog{% else %}Tomáš Janoušek, {{ page.title }}{% endif %}</title>
 	</head>
 	<body>
-		<div id="nadpis">
-			<h1 class="center">Tomáš Janoušek, {% if page.date %}Blog{% else %}{{ page.title }}{% endif %}</h1>
-		</div>
+		<header>
+			<h1>Tomáš Janoušek, {% if page.date %}Blog{% else %}{{ page.title }}{% endif %}</h1>
+		</header>
 
-		<div id="navdiv"><ul id="nav">
+		<nav><ul id="nav">
 			<li><a href="/"><strong>Blog</strong></a></li>
 			<li><a href="https://github.com/liskin?tab=repositories"><strong>Projects</strong></a></li>
 			<li><a href="/contact/"><strong>Contact</strong></a></li>
-		</ul></div>
+		</ul></nav>
 
 		{% if page.date %}
 		<article id="content" class="hyphenate" {% if page.lang %} lang="{{ page.lang }}" {% endif %} >
