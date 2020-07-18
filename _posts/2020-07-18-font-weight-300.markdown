@@ -57,6 +57,7 @@ height)</figcaption>
 [^screenshots]:
     Screenshots:
 
+    [DejaVu Sans on my system](/img/{{ page.slug }}/test-linux-dejavu.png)  
     [MacOS Catalina](/img/{{ page.slug }}/test-macos.png)  
     [MacOS Catalina + subpixel antialiasing](/img/{{ page.slug }}/test-macos-subpixel.png)  
     [MacOS Catalina + disabled font smoothing](/img/{{ page.slug }}/test-macos-nosmooth.png)  
