@@ -1,7 +1,6 @@
 /*** Nav bar styles ***/
 
-ul#nav,
-#nav ul {
+ul#nav {
 	/*Remove all spacings from the list items*/
 	margin: 0;
 	padding: 0;
@@ -18,60 +17,43 @@ ul#nav {
 	table-layout: fixed;
 }
 
-ul#nav>li {
+ul#nav > li {
 	display: table-cell;
 	position: relative;
-	padding: 2px 12px;
+	padding: 0.2rem 1rem;
 	vertical-align: bottom;
 }
 
-#nav ul li a {
-	/*Make the hyperlinks as a block element, sort of a hover effect*/
-	display: block;
-	padding: 2px 10px;
-}
 ul#nav li a {
 	display: block;
 }
 
 /*** Menu colors (customizable) ***/
 
-ul#nav,
-#nav ul,
-#nav ul li a,
-#nav li a,
-#nav li:hover ul li a {
+ul#nav, ul#nav li a {
 	background-color: #bfffaf;
 	color: #139;
 }
 
-ul#nav li:hover,
-#nav ul li a:hover,
-#nav li:hover a {
+ul#nav li:hover, ul#nav li:hover a {
 	background-color: green;
 	color: white;
 }
 
-ul#nav li:active,
-#nav ul li a:active,
-#nav li a:active {
+ul#nav li:active, ul#nav li a:active {
 	background-color: green;
 	color: white;
 	text-decoration: underline;
 }
 
-#nav ul {
-	border: 1px solid green;
-}
-
-#nav a {
+ul#nav a {
 	text-decoration: none;
 }
 
 body > nav {
 	background-color: #bfffaf;
-	border-top: 1px solid green;
-	border-bottom: 3px solid green;
+	border-top: 0.1rem solid green;
+	border-bottom: 0.2rem solid green;
 }
 
 @media print {
