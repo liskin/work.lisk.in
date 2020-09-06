@@ -52,8 +52,8 @@ ul#nav a {
 
 body > nav {
 	background-color: #bfffaf;
-	border-top: 0.1rem solid green;
-	border-bottom: 0.2rem solid green;
+	border-top: 1px solid green;
+	border-bottom: 3px solid green;
 }
 
 @media print {
