@@ -80,10 +80,10 @@ we'd be a good fit[^contact].
   [mender][makers-menders], recognize where others lie on this spectrum, and
   tell what projects are (in)appropriate for whom[^makers-maintenance].
 
-* I might (and I did) agree to be on call without extra compensation for
-  software that my team builds from the ground up. Being paid extra to fix
-  our own sloppy code is a perverse incentive. On the other hand, I try to
-  avoid being on call for big chunks of code outside my control.
+* When my code breaks in the middle of the night, I fix it, and I make pretty
+  damn sure it doesn't happen again. I don't need on-call bonuses, I prefer to
+  sleep well. Naturally, I try to avoid being on call for big chunks of code
+  outside my control, as I can't ensure my undisturbed sleep then.
 
 [^study-results]:
     My study results: [Bachelor's degree programme][study1], [Master's degree
@@ -149,9 +149,9 @@ we'd be a good fit[^contact].
   self-medicated with beer, coffee, exercise and afternoon naps.
 
 * The performance difference between my motivated self and my unmotivated self
-  is hundredfold. If you manage to get me excited about something, I'll run
-  circles around your 10x devs. If you don't, I might as well take an unpaid
-  vacation.
+  is hundredfold. If you manage to get me excited about something[^exciting],
+  I'll run circles around your 10x devs. If you don't, I might as well take an
+  unpaid vacation.
 
   The consequence of this is that a full-time 9 to 5 arrangement won't work
   for either of us.
@@ -188,6 +188,22 @@ we'd be a good fit[^contact].
 
 * May need a sabbatical every few years. Took unpaid sabbaticals in 2014 and
   2020.
+
+[^exciting]:
+    I tend to get excited about things I believe are really useful. The
+    shorter the feedback loop, the easier it is for me to see that something
+    is useful.
+
+    Do I use it? Useful. Does it benefit my wife's research? Useful. Do random
+    people in the pub use it and ask me to fix something, and I can actually
+    help them? Definitely useful.
+
+    On the other hand, if your idea of product management and motivation
+    revolves around monthly all-hands presentations with pie charts and
+    personas, or something that's effectively isomorphic to that, I'm a bad
+    fit.
+
+    I _need_ short feedback loops.
 
 [neurotypical]: https://en.wikipedia.org/wiki/Neurotypical
 [FOSS]: https://en.wikipedia.org/wiki/Free_and_open-source_software
