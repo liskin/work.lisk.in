@@ -241,6 +241,22 @@ div.iframe iframe {
 	}
 }
 
+#content div.grid-2 {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 5px;
+}
+
+#content div.grid-2 img {
+	width: 100%;
+	margin: auto;
+}
+
+#content div.grid-2 > a:hover {
+	background-color: unset;
+	outline: 2px solid #080;
+}
+
 /* highlight anchor targets */
 @media screen {
 	#content :target { animation: highlight 2s; }
