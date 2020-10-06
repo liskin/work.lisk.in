@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="canonical" href="{{ page.redirect | uri_escape }}"/>
+		<meta http-equiv="refresh" content="0;url={{ page.redirect | uri_escape}}" />
+	</head>
+	<body>
+		Redirecting to <a href="{{ page.redirect | uri_escape }}">{{ page.redirect | uri_escape }}<a>
+		<script type="text/javascript">
+			window.location = '{{ page.redirect | uri_escape }}';
+		</script>
+	</body>
+</html>
