@@ -29,8 +29,8 @@ we'd be a good fit[^contact].
 
 ## Strengths
 
-* Solid background in Computer Science (my study results: [Bachelor's degree
-  programme][study1], [Master's degree programme][study2]).
+* Solid background in Computer Science, studied[^study-results] at [Masaryk
+  University][fi-muni] and [Universität Wien][univie].
 
 * Polyglot and polyparadigm. The languages I actively use today are (in
   alphabetical order): [Bash][], [C][], [Elixir][], [Erlang][], [Haskell][],
@@ -85,6 +85,11 @@ we'd be a good fit[^contact].
   our own sloppy code is a perverse incentive. On the other hand, I try to
   avoid being on call for big chunks of code outside my control.
 
+[^study-results]:
+    My study results: [Bachelor's degree programme][study1], [Master's degree
+    programme][study2]. Dropped out at the end. Didn't get the degree, only
+    the knowledge.
+
 [^not-involved-anymore]:
     No longer involved in some of these.
 
@@ -100,6 +105,8 @@ we'd be a good fit[^contact].
     It's really painful to watch [makers][makers-menders] trying to mend their
     prototype in production…
 
+[fi-muni]: https://www.fi.muni.cz/about/index.html
+[univie]: https://www.univie.ac.at/en/
 [study1]: https://is.muni.cz/student/vystavene_znamky?lang=en;studium_osoby=209545
 [study2]: https://is.muni.cz/student/vystavene_znamky?lang=en;studium_osoby=531387
 [Bash]: https://www.gnu.org/software/bash/
