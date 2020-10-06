@@ -7,7 +7,7 @@ permalink: /about/
 
 I'm an experienced polyglot programmer, free and open-source software
 enthusiast and regular contributor from the Czech Republic[^tld], currently
-based in England.
+based in England. Coding professionally since 2002.
 
 [^tld]:
     Despite the <tt>.in</tt> TLD. It's <tt>lisk.in</tt> because my GitHub
@@ -34,24 +34,33 @@ we'd be a good fit[^contact].
 
 * Polyglot and polyparadigm. The languages I actively use today are (in
   alphabetical order): [Bash][], [C][], [Elixir][], [Erlang][], [Haskell][],
-  [Perl][], [Python][].
+  [JavaScript][], [Perl][], [Python][].
 
-  On top of that, I've used [C++][], [Java][], [JavaScript][], [Prolog][],
-  [Scala][], [TeX][], but I can't claim to be an expert at these any more.
+  On top of that, in the past I've used [C++][], [Java][], [Prolog][],
+  [Scala][], [TeX][], and I can pick these up in no time.
 
   With the exception of Prolog, I've used all the mentioned languages in a
   professional setting.
 
 * I know a lot about [git][], [Linux][], [IRC][], [Jenkins][], [docker][],
-  [PostgreSQL][] (and [SQL][] in general), [X11 window management][][^x11-wm],
+  [PostgreSQL][] (and [SQL][] in general), [X11 window management][],
   [(La)TeX][TeX], [bicycles][].
+
+* Regular contributor to [free and open-source software][FOSS]. My [GitHub
+  Resume][] lists my recent contributions and projects, and my [Open Hub
+  profile][] includes contributions before/outside GitHub. I've had my fixes
+  merged to the [Linux kernel][Linux], [X11][xorg], [Vim][], and many other
+  projects. Despite mainly focusing on [my own projects][gh-repos] and
+  submitting fixes all around, I got trusted with a commit bit in
+  [fluxbox][], [xmonad][], [jenkins-job-builder][][^not-involved-anymore].
 
 * I'm deliberate about [technical debt][]: embrace it when building a
   prototype, watch it (measure and track) when maintaining a production
   codebase, actively reduce it when taking over a neglected codebase.
 
   This approach enables me to build products that sustain long-term
-  maintenance and still be friends[^violent-psychopath] with those doing it.
+  maintenance and still be friends[^violent-psychopath] with those maintaining
+  it now.
 
 * Instead of only treating symptoms (and, usually, increasing technical debt),
   I advocate finding the real [root cause][] and treating that. Similarly, I
@@ -76,9 +85,8 @@ we'd be a good fit[^contact].
   our own sloppy code is a perverse incentive. On the other hand, I try to
   avoid being on call for big chunks of code outside my control.
 
-[^x11-wm]:
-    I used to have commit bit in [fluxbox][] and I've been a regular
-    contributor to [xmonad][] since I switched in 2010.
+[^not-involved-anymore]:
+    No longer involved in some of these.
 
 [^violent-psychopath]:
     [Always code as if the person who ends up maintaining your code is a
@@ -116,8 +124,13 @@ we'd be a good fit[^contact].
 [X11 window management]: https://en.wikipedia.org/wiki/X_window_manager
 [fluxbox]: http://fluxbox.org/
 [xmonad]: https://xmonad.org/
+[gh-repos]: https://github.com/liskin?tab=repositories&type=source
+[jenkins-job-builder]: https://docs.openstack.org/infra/jenkins-job-builder/
 [TeX]: https://en.wikipedia.org/wiki/TeX
 [bicycles]: https://en.wikipedia.org/wiki/Bicycle
+[xorg]: http://www.x.org/
+[GitHub Resume]: https://resume.github.io/?liskin
+[Open Hub profile]: https://www.openhub.net/accounts/Liskni_si
 [root cause]: https://en.wikipedia.org/wiki/Root_cause_analysis
 [program by coincidence]: https://dev.to/decoeur_/programming-by-coincidence-dont-do-it-7cp
 [technical debt]: https://blog.pragmaticengineer.com/tech-debt/
@@ -133,8 +146,8 @@ we'd be a good fit[^contact].
   circles around your 10x devs. If you don't, I might as well take an unpaid
   vacation.
 
-  The consequence of this is that a full-time 9 to 5 arrangement probably
-  won't work for either of us.
+  The consequence of this is that a full-time 9 to 5 arrangement won't work
+  for either of us.
 
 * Long, boring all-hands “meetings” (actually presentations) drive me crazy
   (literally). If effective written communication isn't part of your company
@@ -143,27 +156,28 @@ we'd be a good fit[^contact].
   I still value meaningful in-person interactions: brainstorming with a
   whiteboard or over a beer is hard to replace.
 
-* Strong advocate of [free and open-source software][FOSS]. I believe all
-  software (and ideally also hardware) should be fixable by users, and I've
-  been submitting fixes to open-source software since 2002.
-
 * Obsessive about hardware/software choice. I need my [7-row ThinkPad
   keyboard][thinkpad-25], and I can't be expected to install corporate spyware
   of any kind. If you don't trust me to keep my laptop secure, why would you
   trust the code I write for you? By the way, the last time I had to reinstall
   Debian on my laptop was 2005 (netinst was 3 floppies back then).
 
+  Unsurprisingly, I'm a strong advocate of [free and open-source
+  software][FOSS]. I believe all software (and ideally also hardware) should
+  be fixable by users.
+
 * I use [Vim][]. I believe [tabs are fine][tabs] (but I don't really care,
   consistency is more important anyway). I prefer [IRC][], and yeah, I'm [that
-  _one_ guy](https://xkcd.com/1782/) (my IRC client handles [Slack][] threads
-  fine, though).
+  _one_ guy from xkcd](https://xkcd.com/1782/) (my IRC client handles
+  [Slack][] threads fine, though).
 
 * Road/gravel/urban/fixed-gear [cyclist][strava-profile]. Against cars in
   cities. Still better driver than many, though.
 
 * Not ready to relocate, I live with my [wife][] near her
-  [university][eva-uni]. Once the [world returns to normal][COVID-19], monthly
-  travel to socialize/hack together is not a problem, and in fact quite welcome.
+  [university][eva-uni]. Once the [world returns to (new) normal][COVID-19],
+  monthly travel to socialize/hack together is not a problem, and in fact
+  quite welcome.
 
 * May need a sabbatical every few years. Took unpaid sabbaticals in 2014 and
   2020.
