@@ -243,8 +243,14 @@ div.iframe iframe {
 
 #content div.grid-2 {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: 1fr 1fr;
 	grid-gap: 5px;
+}
+
+@media screen and (max-width: 40em) {
+	#content div.grid-2 {
+		grid-template-columns: 1fr;
+	}
 }
 
 #content div.grid-2 img {
