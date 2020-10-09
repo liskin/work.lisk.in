@@ -14,7 +14,7 @@ based in England. Coding professionally since 2002.
     handle is [<tt>liskin</tt>][github-liskin].
 
 <figure markdown="block">
-[![contribution activity chart](http://ghchart.rshah.org/liskin)](https://github.com/liskin)
+[![contribution activity chart](https://ghchart.rshah.org/liskin)](https://github.com/liskin)
 <figcaption>my GitHub activity</figcaption>
 </figure>
 

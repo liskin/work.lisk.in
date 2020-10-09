@@ -19,6 +19,6 @@ I'm really like](/real-me/) first.
 * [Open Hub profile](https://www.openhub.net/accounts/Liskni_si) (includes
   some older contributions)
 
-[![contribution activity chart](http://ghchart.rshah.org/liskin)](https://github.com/liskin)
+[![contribution activity chart](https://ghchart.rshah.org/liskin)](https://github.com/liskin)
 
 {% include github.md %}

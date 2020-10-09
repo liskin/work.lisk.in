@@ -5,21 +5,21 @@ layout: null
 <feed xmlns="http://www.w3.org/2005/Atom">
 
     <title>Tomáš Janoušek, a bug slayer</title>
-    <link href="http://work.lisk.in/atom.xml" rel="self"/>
-    <link href="http://work.lisk.in/"/>
+    <link href="https://work.lisk.in/atom.xml" rel="self"/>
+    <link href="https://work.lisk.in/"/>
     <updated>{{ site.time | date_to_xmlschema }}</updated>
-    <id>http://work.lisk.in/</id>
+    <id>https://work.lisk.in/</id>
     <author>
 	<name>Tomáš Janoušek</name>
 	<email>tomi@nomi.cz</email>
     </author>
 
-    {% for post in site.posts limit:5 %}
+    {% for post in site.posts limit:10 %}
     <entry>
 	<title>{{ post.title }}</title>
-	<link href="http://work.lisk.in{{ post.url }}"/>
+	<link href="https://work.lisk.in{{ post.url }}"/>
 	<updated>{{ post.date | date_to_xmlschema }}</updated>
-	<id>http://work.lisk.in{{ post.id }}</id>
+	<id>https://work.lisk.in{{ post.id }}</id>
 	<content type="html">{{ post.content | xml_escape }}</content>
     </entry>
     {% endfor %}
