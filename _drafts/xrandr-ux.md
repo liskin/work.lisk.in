@@ -1,16 +1,162 @@
 ---
 layout: default
-title: 'A better xrandr command-line experience: output globs'
+title: 'A better xrandr command-line experience'
 # comments_issue: 7
 
 ---
 
 Can we make a small improvement to [xrandr][] command-line user experience so
 that extra tools like [arandr][] (GUI for xrandr) or [autorandr][] become
-unnecessary for many people? Yes, I think that making the `--output` option a
-bit more user-friendly goes a long way, and lets me cover most use-cases with
-just three shell aliases.
+unnecessary for some people (like me)? Yes, I think that making the `--output`
+option a bit more user-friendly goes a long way, and lets me cover most
+use-cases with just four shell functions/aliases.
 
 [xrandr]: https://manpages.debian.org/buster/x11-xserver-utils/xrandr.1.en.html
 [arandr]: https://christian.amsuess.com/tools/arandr/
 [autorandr]: https://github.com/phillipberndt/autorandr
+
+<figure markdown="block">
+```bash
+function layout-vertical {
+  xrandr-smart --output 'eDP-*' --auto \
+               --output '!(eDP-*)' --auto --above 'eDP-*'
+}
+function layout-horizontal {
+  xrandr-smart --output 'eDP-*' --auto \
+               --output '!(eDP-*)' --auto --right-of 'eDP-*'
+}
+function layout-clone {
+  xrandr-smart --output 'eDP-*' --auto \
+               --output '!(eDP-*)' --auto --same-as 'eDP-*'
+}
+function layout-extonly {
+  xrandr-smart --output '!(eDP-*)' --auto
+}
+```
+<figcaption>functions/aliases I wish I could have</figcaption>
+</figure>
+
+The way monitor layouts work for most people with mainstream operating systems
+or desktop environments (like [GNOME][]) is this: you connect an external
+monitor for the first time, your desktop expands to this monitor, then you can
+change its position or turn it off in the settings, and then this setup is
+remembered so that you don't need to do it again the next time you connect it.
+People with non-mainstream [X11 window managers][x11-wm] (like [xmonad][],
+[i3][], [awesomewm][], [fluxbox][]) can get a similar experience: [arandr][]
+being the “settings UI” and [autorandr][] handling the initial expansion,
+saving and restoring.
+
+[GNOME]: https://www.gnome.org/gnome-3/
+[KDE]: https://kde.org/
+[awesomewm]: https://awesomewm.org/
+[fluxbox]: http://fluxbox.org/
+[i3]: https://i3wm.org/
+[x11-wm]: https://en.wikipedia.org/wiki/X_window_manager
+[xmonad]: https://xmonad.org/
+
+Still, many people don't know about these tools, and just use plain xrandr,
+and then look a bit too nerdy when trying to connect to a projector at some
+meetup or conference. I've got to admit I used to be one of them: I had a
+script to handle external monitors at home/work, but connecting anything else
+was so unusual that I didn't bother writing a script, and had to do it
+manually, and feel bad about myself afterwards.
+
+This year I finally decided to do something about it. Not a big deal, right?
+Just adopt autorandr and be done with it. But the script is massive (1500
+lines of code including various workarounds for X11 and driver bugs that are
+already fixed) and the format of its state/configuration files is
+undocumented, and that's a bit of a red flag as I like to keep this stuff
+cleaned up and in [version control][]. So I tried to think of something
+simpler.
+
+[version control]: https://en.wikipedia.org/wiki/Version_control
+
+The simple solution I came up with is to extend xrandr to **allow shell globs
+as output names** and **disable unspecified outputs**.
+
+So instead of having several scripts like
+
+<figure markdown="block">
+<figcaption markdown="span">[layout-home-cz-hdmi](https://github.com/liskin/dotfiles/blob/ca010423335ae885ff620e60ed37186b12354cc8/bin/layout-home-cz-hdmi)</figcaption>
+```bash
+xrandr \
+    --output HDMI-2 --mode 1920x1200 --pos 0x0 --dpi 96 \
+    --output eDP-1 --mode 1920x1080 --pos 0x1200 --dpi 96 --primary
+```
+</figure>
+
+<figure markdown="block">
+<figcaption markdown="span">[layout-home-uk-dock](https://github.com/liskin/dotfiles/blob/ca010423335ae885ff620e60ed37186b12354cc8/bin/layout-home-uk-dock)</figcaption>
+```bash
+xrandr \
+    --output DP-2-1 --mode 1920x1080 --pos 0x0 --dpi 96 \
+    --output eDP-1 --mode 1920x1080 --pos 0x1080 --dpi 96 --primary
+```
+</figure>
+
+now I just have
+
+<figure markdown="block">
+<figcaption markdown="span">[layout-vertical](https://github.com/liskin/dotfiles/blob/74fed5fca5c2f414a588d2e02880c968eb224615/bin/layout-vertical)</figcaption>
+```bash
+xrandr-smart \
+    --output 'eDP-*' --auto --dpi 96 --primary \
+    --output '!(eDP-*)' --auto --above 'eDP-*' --dpi 96
+```
+</figure>
+
+and I think that's beautiful.
+
+---
+
+### Behind the scenes
+
+[`xrandr-smart`](https://github.com/liskin/dotfiles/blob/74fed5fca5c2f414a588d2e02880c968eb224615/bin/xrandr-smart)
+invokes the [`xrandr-auto-find` function in
+`.xlayoutlib`](https://github.com/liskin/dotfiles/blob/74fed5fca5c2f414a588d2e02880c968eb224615/bin/.xlayoutlib#L84)
+which resolves output globs (if the globs match nothing or more than one
+output, it fails) and invokes the [`xrandr-auto-off`
+function](https://github.com/liskin/dotfiles/blob/74fed5fca5c2f414a588d2e02880c968eb224615/bin/.xlayoutlib#L64)
+to disable all other unspecific outputs.
+
+As an example, `layout-vertical` might translate to:
+
+```bash
+xrandr-auto-off \
+    --output eDP-1 --auto --dpi 96 --primary \
+    --output HDMI-1 --auto --above eDP-1 --dpi 96
+↓
+xrandr \
+    --output eDP-1 --auto --dpi 96 --primary \
+    --output HDMI-1 --auto --above eDP-1 --dpi 96 \
+    --output DP-1 --off \
+    --output DP-2 --off \
+    --output HDMI-2 --off
+```
+
+And that's all there is to it, really.
+
+
+### Limitations
+
+There are two significant limitations compared to [GNOME][] and [autorandr][]:
+
+1. The generic `layout-horizontal`, `layout-vertical` scripts can only support
+   the laptop panel and one external monitor. In reality, this isn't a problem
+   as triple head setups usual need [fine-tuned
+   positioning](https://github.com/liskin/dotfiles/blob/74fed5fca5c2f414a588d2e02880c968eb224615/bin/layout-work2-dock#L6-L8)
+   anyway.
+
+2. We need extra code to support layout saving and (possibly automatic)
+   restoring. Turns out that's just a few lines:
+   [`fingerprint-outputs`](https://github.com/liskin/dotfiles/blob/74fed5fca5c2f414a588d2e02880c968eb224615/bin/.xlayoutlib#L12-L23),
+   [`layout-auto`](https://github.com/liskin/dotfiles/blob/74fed5fca5c2f414a588d2e02880c968eb224615/bin/layout-auto),
+   [keybindings](https://github.com/liskin/dotfiles/blob/74fed5fca5c2f414a588d2e02880c968eb224615/.xmonad/xmonad.hs#L89-L90)[^not-auto].
+
+---
+
+[^not-auto]:
+    Yeah, I invoke this manually using a Fn-key combo. There's an endless
+    stream of bugs in the kernel, X server and GPU drivers, plus the
+    occassional security issue in a screensaver, so I feel safer to just
+    invoke it manually when I think everything is settled down.

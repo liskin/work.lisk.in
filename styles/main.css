@@ -160,6 +160,10 @@ article#content header a:hover { color: white; }
 		color: #222;
 		border: 1px solid #dedede;
 	}
+
+	#content a:hover pre, #content a:hover code {
+		outline: 2px solid #080;
+	}
 }
 
 @media print {
