@@ -29,8 +29,16 @@ function github-user-repos {
 	o github-paginate "https://api.github.com/users/${1:?user}/repos" | jq --compact-output '.[]'
 }
 
+function filter-my-repos {
+	jq --compact-output --slurp 'map(select((.private | not) and (.fork | not))) | .[]'
+}
+
 function filter-active-repos {
-	jq --compact-output --slurp 'map(select((.private | not) and (.fork | not) and (.archived | not) and (.disabled | not))) | .[]'
+	jq --compact-output --slurp 'map(select(.archived | not)) | .[]'
+}
+
+function filter-archived-repos {
+	jq --compact-output --slurp 'map(select(.archived)) | .[]'
 }
 
 function sort-by-stars {
@@ -65,19 +73,27 @@ function report {
 	hidden_gems="cervi foursquare-swarm-ical gh-problem-matcher-wrap emoji-rofi-menu"
 
 	repos=$(github-user-repos "$user")
-	active_repos=$(filter-active-repos <<<"$repos")
+	my_repos=$(filter-my-repos <<<"$repos")
+	active_repos=$(filter-active-repos <<<"$my_repos")
+	archived_repos=$(filter-archived-repos <<<"$my_repos")
 
-	starred=$(<<<"$active_repos" sort-by-stars | names | head -10)
-	hidden_gems=$(set-difference "$hidden_gems" "$starred")
+	starred_active=$(<<<"$active_repos" sort-by-stars | names | head -10)
+	hidden_gems=$(set-difference "$hidden_gems" "$starred_active")
+	starred_archived=$(<<<"$archived_repos" sort-by-stars | names | head -6)
 
 	echo '### Popular projects'
 	echo '<div markdown="span" class="grid-2">'
-	format-pins "$user" <<<"$starred"
+	format-pins "$user" <<<"$starred_active"
 	echo '</div>'
 	echo
 	echo '### Hidden gems'
 	echo '<div markdown="span" class="grid-2">'
 	format-pins "$user" <<<"$hidden_gems"
+	echo '</div>'
+	echo
+	echo '### Formerly popular, now archived projects'
+	echo '<div markdown="span" class="grid-2">'
+	format-pins "$user" <<<"$starred_archived"
 	echo '</div>'
 }
 
