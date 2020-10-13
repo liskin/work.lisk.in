@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 set -eu -o pipefail
-shopt -s lastpipe
+shopt -s lastpipe inherit_errexit
 
 function o { printf -->&2 "%s:%s\\n" "${0##*/}" "$(printf " %q" "$@")"; "$@"; }
 
