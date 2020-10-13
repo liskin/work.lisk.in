@@ -1,0 +1,25 @@
+name: Refresh
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Refresh every weekend
+    - cron: '0 2 * * 6'
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Refresh github projects
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          make github-report
+      - name: Commit, Push
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git diff --quiet --exit-code && exit
+          git commit -a -m 'Refresh github projects'
+          git push

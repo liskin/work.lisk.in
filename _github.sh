@@ -6,11 +6,11 @@ shopt -s lastpipe
 function o { printf -->&2 "%s:%s\\n" "${0##*/}" "$(printf " %q" "$@")"; "$@"; }
 
 function do-curl {
-	if [[ -z ${github_token-} ]]; then
-		github_token=$(yq -r '."github.com"[0].oauth_token' ~/.config/hub)
+	if [[ -z ${GITHUB_TOKEN-} ]]; then
+		GITHUB_TOKEN=$(yq -r '."github.com"[0].oauth_token' ~/.config/hub)
 	fi
 
-	curl --silent --show-error --fail -H "Authorization: token ${github_token}" "$@"
+	curl --silent --show-error --fail -H "Authorization: token ${GITHUB_TOKEN}" "$@"
 }
 
 function github-paginate() (
