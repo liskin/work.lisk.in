@@ -19,3 +19,13 @@
 [![gh-problem-matcher-wrap](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=gh-problem-matcher-wrap&show_owner=true)](https://github.com/liskin/gh-problem-matcher-wrap)
 [![emoji-rofi-menu](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=emoji-rofi-menu&show_owner=true)](https://github.com/liskin/emoji-rofi-menu)
 </div>
+
+### Formerly popular, now archived projects
+<div markdown="span" class="grid-2">
+[![lhnb](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=lhnb&show_owner=true)](https://github.com/liskin/lhnb)
+[![hybrid-screenclone](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=hybrid-screenclone&show_owner=true)](https://github.com/liskin/hybrid-screenclone)
+[![patches](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=patches&show_owner=true)](https://github.com/liskin/patches)
+[![git-utils](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=git-utils&show_owner=true)](https://github.com/liskin/git-utils)
+[![s2putty](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=s2putty&show_owner=true)](https://github.com/liskin/s2putty)
+[![fithesis](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=fithesis&show_owner=true)](https://github.com/liskin/fithesis)
+</div>
