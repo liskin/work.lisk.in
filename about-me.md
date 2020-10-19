@@ -11,7 +11,7 @@ lot (road, gravel, urban, fixed-gear, unicycle), read books, listen to music
 and taste beers.
 
 If you're considering contacting me about a job offer, you should [read what
-I'm really like](/real-me/) first.
+I'm really like]({{ "/real-me/" | relative_url }}) first.
 
 ## My FOSS contributions
 

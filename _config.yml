@@ -3,6 +3,8 @@ markdown: kramdown
 paginate: 10
 paginate_path: "/blog/page:num/"
 
+url: https://work.lisk.in
+
 exclude:
   - 'CNAME'
   - 'Makefile'

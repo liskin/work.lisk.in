@@ -9,7 +9,7 @@ title: Blog
 			{% for post in paginator.posts %}
 				<dt>{{ post.date | date: "%Y-%m-%d" }}</dt>
 				<dd>
-					<a href="{{ post.url }}">{{ post.title }}</a>
+					<a href="{{ post.url | relative_url }}">{{ post.title }}</a>
 					{{ post.excerpt }}
 				</dd>
 			{% endfor %}

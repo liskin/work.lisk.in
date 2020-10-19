@@ -31,7 +31,7 @@ we'd be a good fit[^contact].
 
 [github-liskin]: https://github.com/liskin
 [linkedin-pivnik]: https://www.linkedin.com/in/pivnik
-[contact]: /contact/
+[contact]: {{ "/contact/" | relative_url }}
 
 ## Strengths
 

@@ -1,2 +1,5 @@
-@import url("/styles/main.css");
-@import url("/styles/syntax.css");
+---
+---
+
+@import url("{{ "/styles/main.css" | relative_url }}");
+@import url("{{ "/styles/syntax.css" | relative_url }}");

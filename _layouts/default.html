@@ -6,8 +6,8 @@
 		<meta name="keywords" content="Tomas Janousek, Liskni_si, lisk.in, liskin">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link rel="stylesheet" type="text/css" href="/styles.css">
-		<link href="/atom.xml" rel="alternate" title="Tomáš Janoušek, a bug slayer" type="application/atom+xml">
+		<link rel="stylesheet" type="text/css" href="{{ "/styles.css" | relative_url }}">
+		<link rel="alternate" title="Tomáš Janoušek, Blog" type="application/atom+xml" href="{{ "/atom.xml" | relative_url }}">
 
 		<script type="text/javascript">
 			var _gaq = _gaq || [];
@@ -20,7 +20,7 @@
 			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 			})();
 		</script>
-		<script src="/js/hyphenate.js" type="text/javascript"></script>
+		<script src="{{ "/js/hyphenate.js" | relative_url }}" type="text/javascript"></script>
 
 		<title>{% if page.date %}{{ page.title }} — Tomáš Janoušek, Blog{% else %}Tomáš Janoušek, {{ page.title }}{% endif %}</title>
 	</head>
@@ -30,9 +30,9 @@
 		</header>
 
 		<nav><ul id="nav">
-			<li><a href="/"><strong>Blog</strong></a></li>
-			<li><a href="/about/"><strong>About me</strong></a></li>
-			<li><a href="/contact/"><strong>Contact</strong></a></li>
+			<li><a href="{{ "/" | relative_url }}"><strong>Blog</strong></a></li>
+			<li><a href="{{ "/about/" | relative_url }}"><strong>About me</strong></a></li>
+			<li><a href="{{ "/contact/" | relative_url }}"><strong>Contact</strong></a></li>
 		</ul></nav>
 
 		{% if page.date %}

@@ -228,7 +228,7 @@ less weird operating system or desktop environment. Turns out, not really… :-)
 
 #### [GNOME][] (popular Linux desktop environment)
 
-[h4-gnome]: {{ page.url }}#gnome-popular-linux-desktop-environment
+[h4-gnome]: #gnome-popular-linux-desktop-environment
 
 Media keys (and presumably also headphone buttons, not tested) appear to work
 out of the box, including when the desktop is locked. Unfortunately it only
@@ -265,7 +265,7 @@ some of those experiments: <https://youtu.be/1fN6NMDBFNI>,
 
 #### [KDE Plasma 5][]
 
-[h4-kde]: {{ page.url }}#kde-plasma-5
+[h4-kde]: #kde-plasma-5
 
 KDE is the only environment out of those tested that works really well.
 (Almost.)
@@ -311,7 +311,7 @@ Recordings of some of those experiments: <https://youtu.be/-vpHDXg5jW8>,
 
 #### [Windows 10][]
 
-[h4-win10]: {{ page.url }}#windows-10
+[h4-win10]: #windows-10
 
 Similarly to GNOME, media keys appear to work fine at first glance, but when
 multiple/specific apps are involved, minor problems appear.
