@@ -2,6 +2,9 @@
 layout: default
 title: Contact
 permalink: /contact/
+image: https://secure.gravatar.com/avatar/391a8b936b51adccd057c83e6ace7241
+description: >
+    @Liskni_si, liskin@github, Liskni_si@freenode
 
 ---
 

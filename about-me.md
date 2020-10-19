@@ -2,6 +2,9 @@
 layout: default
 title: About me
 permalink: /about/
+image: https://secure.gravatar.com/avatar/391a8b936b51adccd057c83e6ace7241
+description: >
+    Polyglot programmer, FOSS enthusiast and contributor, cyclist, beer lover.
 
 ---
 
