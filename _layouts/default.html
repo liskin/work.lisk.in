@@ -34,18 +34,8 @@
 		<link rel="stylesheet" type="text/css" href="{{ "/styles.css" | relative_url }}">
 		<link rel="alternate" title="Tomáš Janoušek, Blog" type="application/atom+xml" href="{{ "/atom.xml" | relative_url }}">
 
-		<script type="text/javascript">
-			var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', 'UA-18918784-1']);
-			_gaq.push(['_trackPageview']);
-
-			(function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-			})();
-		</script>
-		<script src="{{ "/js/hyphenate.js" | relative_url }}" type="text/javascript"></script>
+		<script async src="{{ "/js/hyphenate.js" | relative_url }}"></script>
+		<script data-goatcounter="https://liskin.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 
 		<title>{% if page.date %}{{ page.title }} — Tomáš Janoušek, Blog{% else %}Tomáš Janoušek, {{ page.title }}{% endif %}</title>
 	</head>
