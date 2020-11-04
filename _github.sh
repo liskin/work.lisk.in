@@ -73,7 +73,7 @@ function format-pins {
 }
 
 function report {
-	user=liskin
+	user=${1:-liskin}
 	hidden_gems="cervi foursquare-swarm-ical gh-problem-matcher-wrap emoji-rofi-menu"
 
 	repos=$(github-user-repos "$user")
@@ -102,7 +102,7 @@ function report {
 }
 
 function not-watching {
-	user=liskin
+	user=${1:-liskin}
 	repos=$(github-user-repos "$user" | names)
 	watching=$(github-watched-repos "$user" | names)
 	not_watching=$(set-difference "$repos" "$watching")
