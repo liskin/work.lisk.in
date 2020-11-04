@@ -29,6 +29,10 @@ function github-user-repos {
 	o github-paginate "https://api.github.com/users/${1:?user}/repos" | jq --compact-output '.[]'
 }
 
+function github-watched-repos {
+	o github-paginate "https://api.github.com/users/${1:?user}/subscriptions" | jq --compact-output '.[]'
+}
+
 function filter-my-repos {
 	jq --compact-output --slurp 'map(select((.private | not) and (.fork | not))) | .[]'
 }
@@ -95,6 +99,16 @@ function report {
 	echo '<div markdown="span" class="grid-2">'
 	format-pins "$user" <<<"$starred_archived"
 	echo '</div>'
+}
+
+function not-watching {
+	user=liskin
+	repos=$(github-user-repos "$user" | names)
+	watching=$(github-watched-repos "$user" | names)
+	not_watching=$(set-difference "$repos" "$watching")
+	for repo in $not_watching; do
+		echo "https://github.com/$user/$repo"
+	done
 }
 
 "$@"
