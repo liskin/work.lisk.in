@@ -74,7 +74,7 @@ function format-pins {
 
 function report {
 	user=${1:-liskin}
-	hidden_gems="cervi foursquare-swarm-ical gh-problem-matcher-wrap emoji-rofi-menu"
+	hidden_gems="cervi foursquare-swarm-ical gh-problem-matcher-wrap emoji-rofi-menu empty-tab"
 
 	repos=$(github-user-repos "$user")
 	my_repos=$(filter-my-repos <<<"$repos")

@@ -18,6 +18,7 @@
 [![foursquare-swarm-ical](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=foursquare-swarm-ical&show_owner=true)](https://github.com/liskin/foursquare-swarm-ical)
 [![gh-problem-matcher-wrap](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=gh-problem-matcher-wrap&show_owner=true)](https://github.com/liskin/gh-problem-matcher-wrap)
 [![emoji-rofi-menu](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=emoji-rofi-menu&show_owner=true)](https://github.com/liskin/emoji-rofi-menu)
+[![empty-tab](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=empty-tab&show_owner=true)](https://github.com/liskin/empty-tab)
 </div>
 
 ### Formerly popular, now archived projects
