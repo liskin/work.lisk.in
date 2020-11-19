@@ -10,7 +10,7 @@ title: Blog
 				<dt>{{ post.date | date: "%Y-%m-%d" }}</dt>
 				<dd>
 					<a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-					{{ post.excerpt }}
+					{% if post.summary %}{{ post.summary | markdownify }}{% else %}{{ post.excerpt }}{% endif %}
 				</dd>
 			{% endfor %}
 			</dl>
