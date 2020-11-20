@@ -1,22 +1,24 @@
 ---
 ---
 
-$link-color: #005;
-$link-hover-color: #346;
-$light-border-color: #ddd;
-$light-frame-color: #fafaff;
+:root {
+	--link-color: #005;
+	--link-hover-color: #346;
+	--light-border-color: #ddd;
+	--light-frame-color: #fafaff;
 
-$body-bg-color: #eee;
-$header-bg-color: #f8f8f8;
-$header-border-color: #ccc;
-$nav-hover-color: #000;
-$content-bg-color: #fff;
+	--body-bg-color: #eee;
+	--header-bg-color: #f8f8f8;
+	--header-border-color: #ccc;
+	--nav-hover-color: #000;
+	--content-bg-color: #fff;
 
-$mark-border-color: #ca8;
-$mark-frame-color: #fed;
+	--mark-border-color: #ca8;
+	--mark-frame-color: #fed;
+}
 
-a, a:link, a:visited { color: $link-color; }
-a:hover { background-color: $link-hover-color; color: white; text-decoration: none; }
+a, a:link, a:visited { color: var(--link-color); }
+a:hover { background-color: var(--link-hover-color); color: white; text-decoration: none; }
 svg a:hover { opacity: 0.5; }
 
 img { border-width: 0; }
@@ -52,7 +54,7 @@ body {
 
 	@media screen {
 		font-family: sans-serif;
-		background-color: $body-bg-color;
+		background-color: var(--body-bg-color);
 	}
 
 	@media print {
@@ -66,8 +68,8 @@ body > header {
 	padding: 0;
 
 	@media screen {
-		background-color: $header-bg-color;
-		border-bottom: 3px solid $header-border-color;
+		background-color: var(--header-bg-color);
+		border-bottom: 3px solid var(--header-border-color);
 	}
 
 	nav {
@@ -125,7 +127,7 @@ body > header {
 				}
 
 				&:hover, &:hover a {
-					background-color: $nav-hover-color;
+					background-color: var(--nav-hover-color);
 					color: white;
 				}
 			}
@@ -144,8 +146,8 @@ div#content, article#content {
 	@media screen {
 		margin: 0 auto;
 		padding: 0.5em;
-		background-color: $content-bg-color;
-		border-bottom: 2px solid $light-border-color;
+		background-color: var(--content-bg-color);
+		border-bottom: 2px solid var(--light-border-color);
 	}
 
 	@media screen and (min-width: 45em) {
@@ -153,7 +155,7 @@ div#content, article#content {
 		margin: 2em auto;
 		padding: 2em;
 		max-width: 45em;
-		border: 2px solid $light-border-color;
+		border: 2px solid var(--light-border-color);
 	}
 }
 
@@ -237,27 +239,27 @@ dl#posts {
 
 	@media screen {
 		pre, code, table {
-			background-color: $light-frame-color;
+			background-color: var(--light-frame-color);
 			color: #111;
-			border: 1px solid $light-border-color;
+			border: 1px solid var(--light-border-color);
 		}
 
 		a:hover pre, a:hover code {
-			outline: 2px solid $link-hover-color;
+			outline: 2px solid var(--link-hover-color);
 		}
 	}
 
 	@media print {
 		pre {
-			border-top: 1px solid $light-border-color;
-			border-bottom: 1px solid $light-border-color;
+			border-top: 1px solid var(--light-border-color);
+			border-bottom: 1px solid var(--light-border-color);
 		}
 	}
 
 	p.mark {
 		@media screen {
-			border: 3px solid $mark-border-color;
-			background-color: $mark-frame-color;
+			border: 3px solid var(--mark-border-color);
+			background-color: var(--mark-frame-color);
 			padding: 1ex;
 			font-size: 110%;
 		}
@@ -304,7 +306,7 @@ dl#posts {
 
 		> a:hover {
 			background-color: unset;
-			outline: 2px solid $link-hover-color;
+			outline: 2px solid var(--link-hover-color);
 		}
 	}
 }
@@ -322,8 +324,8 @@ details#toc {
 
 	@media screen {
 		&[open] {
-			background-color: $light-frame-color;
-			border: 1px solid $light-border-color;
+			background-color: var(--light-frame-color);
+			border: 1px solid var(--light-border-color);
 		}
 	}
 
