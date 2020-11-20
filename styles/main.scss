@@ -1,24 +1,71 @@
 ---
 ---
 
-:root {
-	--link-color: #005;
-	--link-hover-color: #346;
-	--light-border-color: #ddd;
-	--light-frame-color: #fafaff;
-
+@mixin light-color-scheme {
+	--body-color: #000;
 	--body-bg-color: #eee;
+
 	--header-bg-color: #f8f8f8;
 	--header-border-color: #ccc;
 	--nav-hover-color: #000;
+
 	--content-bg-color: #fff;
+	--content-subheader-color: #888;
+
+	--link-color: #005;
+	--link-hover-bg-color: #346;
+	--link-hover-color: #fff;
+
+	--light-border-color: #ddd;
+	--light-frame-color: #111;
+	--light-frame-bg-color: #fafaff;
 
 	--mark-border-color: #ca8;
-	--mark-frame-color: #fed;
+	--mark-frame-bg-color: #fed;
+
+	--anchor-target-highlight-color: #f88;
+	--abbr-underline-color: #888;
+	--blockquote-border-color: #bbb;
+}
+
+@mixin dark-color-scheme {
+	--body-color: #ddd;
+	--body-bg-color: #000;
+
+	--header-bg-color: #080808;
+	--header-border-color: #333;
+	--nav-hover-color: #ddd;
+
+	--content-bg-color: #111;
+	--content-light-bg-color: #f8f8f8;
+	--content-subheader-color: #aaa;
+
+	--link-color: #eec;
+	--link-hover-bg-color: #fed;
+	--link-hover-color: #000;
+
+	--light-border-color: #333;
+	--light-frame-color: #eee;
+	--light-frame-bg-color: #1a1a1a;
+
+	--mark-border-color: #862;
+	--mark-frame-bg-color: #321;
+
+	--anchor-target-highlight-color: #820;
+	--abbr-underline-color: #aaa;
+	--blockquote-border-color: #555;
+}
+
+:root {
+	@include light-color-scheme;
+
+	@media (prefers-color-scheme: dark) {
+		@include dark-color-scheme;
+	}
 }
 
 a, a:link, a:visited { color: var(--link-color); }
-a:hover { background-color: var(--link-hover-color); color: white; text-decoration: none; }
+a:hover { background-color: var(--link-hover-bg-color); color: var(--link-hover-color); text-decoration: none; }
 svg a:hover { opacity: 0.5; }
 
 img { border-width: 0; }
@@ -31,8 +78,8 @@ ul ul { margin-bottom: 0; }
 li:not(:last-child) { margin-bottom: 0.5em; }
 hr { width: 80%; }
 dt { margin-top: 0.5em; }
-blockquote { border-left: 2px solid green; padding-left: 1ex; margin-left: 1ex; }
-hr { width: 90%; height: 0; border: 0; border-top: solid 1px black; background: transparent; margin: 2em auto; }
+blockquote { border-left: 2px solid var(--blockquote-border-color); padding-left: 1ex; margin-left: 1ex; }
+hr { width: 90%; height: 0; border: 0; border-top: solid 1px var(--body-color); background: transparent; margin: 2em auto; }
 pre { tab-size: 4; }
 sup { line-height: 0;  }
 
@@ -49,6 +96,7 @@ table {
 }
 
 body {
+	color: var(--body-color);
 	margin: 0;
 	line-height: 1.4;
 
@@ -128,7 +176,7 @@ body > header {
 
 				&:hover, &:hover a {
 					background-color: var(--nav-hover-color);
-					color: white;
+					color: var(--link-hover-color);
 				}
 			}
 		}
@@ -165,8 +213,8 @@ article#content p, article#content li, dl#posts p {
 }
 
 article#content header {
-	p, a { text-align: right; color: #888; }
-	a:hover { color: white; }
+	p, a { text-align: right; color: var(--content-subheader-color); }
+	a:hover { color: var(--link-hover-color); }
 }
 
 dl#posts {
@@ -210,6 +258,14 @@ dl#posts {
 			}
 		}
 
+		&.transparent-bg-light {
+			img, svg, pre, p, table {
+				@media (prefers-color-scheme: dark) {
+					background-color: var(--content-light-bg-color);
+				}
+			}
+		}
+
 		@media print {
 			&.video { display: none; }
 		}
@@ -239,13 +295,13 @@ dl#posts {
 
 	@media screen {
 		pre, code, table {
-			background-color: var(--light-frame-color);
-			color: #111;
+			background-color: var(--light-frame-bg-color);
+			color: var(--light-frame-color);
 			border: 1px solid var(--light-border-color);
 		}
 
 		a:hover pre, a:hover code {
-			outline: 2px solid var(--link-hover-color);
+			outline: 2px solid var(--link-hover-bg-color);
 		}
 	}
 
@@ -259,7 +315,7 @@ dl#posts {
 	p.mark {
 		@media screen {
 			border: 3px solid var(--mark-border-color);
-			background-color: var(--mark-frame-color);
+			background-color: var(--mark-frame-bg-color);
 			padding: 1ex;
 			font-size: 110%;
 		}
@@ -306,7 +362,7 @@ dl#posts {
 
 		> a:hover {
 			background-color: unset;
-			outline: 2px solid var(--link-hover-color);
+			outline: 2px solid var(--link-hover-bg-color);
 		}
 	}
 }
@@ -319,12 +375,12 @@ details#toc {
 	summary {
 		text-decoration: underline;
 		cursor: pointer;
-		color: #000050;
+		color: var(--link-color);
 	}
 
 	@media screen {
 		&[open] {
-			background-color: var(--light-frame-color);
+			background-color: var(--light-frame-bg-color);
 			border: 1px solid var(--light-border-color);
 		}
 	}
@@ -337,12 +393,12 @@ details#toc {
 /* highlight anchor targets */
 @media screen {
 	#content :target { animation: highlight 2s; }
-	@keyframes highlight { 10% { background: #f88; } }
+	@keyframes highlight { 10% { background: var(--anchor-target-highlight-color); } }
 }
 
 abbr[title] {
 	@media screen {
-		text-decoration: underline solid #888;
+		text-decoration: underline solid var(--abbr-underline-color);
 		cursor: help;
 	}
 

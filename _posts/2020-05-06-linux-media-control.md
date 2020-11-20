@@ -68,7 +68,7 @@ scripts to wire it all together and everything should just work.
 After some hacking, my setup looks like this (all the icons and some of the
 arrows are clickable):
 
-<figure markdown="block">
+<figure markdown="block" class="transparent-bg-light">
 {% include {{ page.slug }}/setup-diagram.svg %}
 <figcaption>diagram of my setup</figcaption>
 </figure>
