@@ -7,9 +7,8 @@ $light-border-color: #ddd;
 $light-frame-color: #fafaff;
 
 $body-bg-color: #eee;
-$header-bg-color: #f0f8ff; // FIXME
-$nav-bg-color: #f8f8ff; // FIXME
-$nav-border-color: #aaa;
+$header-bg-color: #f8f8f8;
+$header-border-color: #ccc;
 $nav-hover-color: #000;
 $content-bg-color: #fff;
 
@@ -60,49 +59,76 @@ body {
 		font-family: serif;
 		margin: 0 1cm;
 	}
-
-	> header {
-		padding: 0.5em;
-		@media screen { background-color: $header-bg-color; }
-
-		h1 { text-align: center; }
-	}
 }
 
-body > nav {
-	background-color: $nav-bg-color;
-	border-top: 1px solid $nav-border-color;
-	border-bottom: 3px solid $nav-border-color;
-
-	@media print {
-		visibility: hidden;
-	}
-}
-
-ul#nav {
-	display: table;
-	table-layout: fixed;
-
-	margin: 0 auto;
+body > header {
+	margin: 0;
 	padding: 0;
 
-	list-style-type: none;
+	@media screen {
+		background-color: $header-bg-color;
+		border-bottom: 3px solid $header-border-color;
+	}
 
-	li {
-		display: table-cell;
-		position: relative;
-		padding: 0.2rem 1rem;
-		vertical-align: bottom;
+	nav {
+		h1 {
+			text-align: center;
+			margin: 0;
+			padding: 0.5em 1rem;
+			font-size: 1.2em;
 
-		a {
-			display: block;
-			text-decoration: none;
-			color: #139;
+			@media print {
+				padding: 0;
+				text-align: right;
+			}
 		}
 
-		&:hover, &:hover a {
-			background-color: $nav-hover-color;
-			color: white;
+		@media screen and (min-width: 45em) {
+			max-width: 50em;
+			margin: 0 auto;
+
+			display: grid;
+			grid-template-columns: auto min-content;
+
+			h1 {
+				text-align: left;
+			}
+
+			ul {
+				white-space: nowrap;
+				align-self: end;
+			}
+		}
+
+		ul {
+			@media print {
+				visibility: hidden;
+			}
+
+			display: table;
+			table-layout: fixed;
+
+			margin: 0 auto;
+			padding: 0;
+
+			list-style-type: none;
+
+			li {
+				display: table-cell;
+				position: relative;
+				padding: 0.2rem 1rem;
+				vertical-align: bottom;
+
+				a {
+					display: block;
+					text-decoration: none;
+				}
+
+				&:hover, &:hover a {
+					background-color: $nav-hover-color;
+					color: white;
+				}
+			}
 		}
 	}
 }
