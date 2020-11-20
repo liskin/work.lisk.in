@@ -52,7 +52,7 @@ unusually long.
 #### man
 
 In my case, that command was `man -w`, specifically [this piece of my
-`.bashrc.d/10_env.sh`](https://github.com/liskin/dotfiles/blob/7d14190467fe22bf5d4f85a7b202118d2341e3ed/.bashrc.d/10_env.sh#L8-L10):
+`.bashrc.d/​10_env.sh`](https://github.com/liskin/dotfiles/blob/7d14190467fe22bf5d4f85a7b202118d2341e3ed/.bashrc.d/10_env.sh#L8-L10):
 
 ```bash
 export MANPATH=$HOME/.local/share/man:
@@ -61,7 +61,7 @@ MANPATH=$(man -w)
 ```
 
 Turns out none of this is needed any more, `man` and `manpath` now add
-`~/.local/share/man` automatically so I can just drop it and save more than
+`~/.local/​share/​man` automatically so I can just drop it and save more than
 100 ms[^man-seccomp].
 
 [^man-seccomp]:
@@ -113,22 +113,24 @@ Let's see what happens…
 
 #### completions
 
-11 ms in `31_completion.sh` which loads [bash-completion][]. That's certainly
-better than Daniel's 235 ms, probably because up-to-date bash-completion only
-loads a few necessary completions and defers everything else to being loaded
-on demand. I couldn't live without the completions, so 11 ms is a fair price.
+11 ms in `31_​completion.sh` which loads [bash-completion][]. That's
+certainly better than Daniel's 235 ms, probably because up-to-date
+bash-completion only loads a few necessary completions and defers everything
+else to being loaded on demand. I couldn't live without the completions, so
+11 ms is a fair price.
 
 [bash-completion]: https://github.com/scop/bash-completion
 
-8 ms for `50_git_dotfiles.sh`, which defines a few aliases and sets up git
-completions for my `git-dotfiles` alias, seems too much, though. Good news is
-that we don't need to drop this. We can use bash-completion's on-demand
-loading. Whenever completions for command `cmd` are needed for the first time,
-bash-completion looks for `~/.local/share/bash-completion/completions/cmd` or
-`/usr/share/bash-completion/completions/cmd`.
+8 ms for `50_​git_​dotfiles.sh`, which defines a few aliases and
+sets up git completions for my `git-dotfiles` alias, seems too much, though.
+Good news is that we don't need to drop this. We can use bash-completion's
+on-demand loading. Whenever completions for command `cmd` are needed for the
+first time, bash-completion looks for
+`~/.local/​share/​bash-completion/​completions/​cmd` or
+`/usr/​share/​bash-completion/​completions/​cmd`.
 
 Therefore,
-[`~/.local/share/bash-completion/completions/git-dotfiles`](https://github.com/liskin/dotfiles/blob/68964611b4b578b646cf5f13a47a4ee77e93e740/.local/share/bash-completion/completions/git-dotfiles)
+[`~/.local/​share/​bash-completion/​completions/​git-dotfiles`](https://github.com/liskin/dotfiles/blob/68964611b4b578b646cf5f13a47a4ee77e93e740/.local/share/bash-completion/completions/git-dotfiles)
 becomes:
 
 ```
@@ -182,9 +184,10 @@ Benchmark #1: bash -i
 
 #### history
 
-Some of those additional 26 ms are spent reading my huge (`HISTSIZE=50000`)
-`.bash_history` file. I will skip the details about how I investigated this,
-because I didn't: I stumbled upon this by chance while testing something else.
+Some of those additional 26 ms are spent reading my huge
+(`HISTSIZE=​50000`) `.bash_​history` file. I will skip the details
+about how I investigated this, because I didn't: I stumbled upon this by
+chance while testing something else.
 
 We can see that using an empty history file brings us down to a little under
 40 ms:
@@ -200,7 +203,7 @@ Now, cutting 17 ms by sacrificing the shell history is probably not a good
 deal for most people. I settled for setting up a systemd
 [timer](https://github.com/liskin/dotfiles/blob/f978be7424946afebe56dbe5ecc85c9f36d1e057/.config/systemd/user/liskin-backup-bash-history.timer)
 to [back up
-`.bash_history`](https://github.com/liskin/dotfiles/blob/f978be7424946afebe56dbe5ecc85c9f36d1e057/bin/liskin-backup-bash-history)
+`.bash_​history`](https://github.com/liskin/dotfiles/blob/f978be7424946afebe56dbe5ecc85c9f36d1e057/bin/liskin-backup-bash-history)
 to git once a day and lowered `HISTSIZE` to 5000[^history]. This still keeps
 my bash startup below 40 ms:
 

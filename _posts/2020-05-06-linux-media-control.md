@@ -176,10 +176,10 @@ Controller][], …[^webext]
     * <https://github.com/Aaahh/browser-mpris2-firefox>
     * <https://github.com/KDE/plasma-browser-integration>
 
-[Firefox][] 76 works after enabling `media.hardwaremediakeys.enabled` in
+[Firefox][] 76 works after enabling `media.​hardware​media​keys.​enabled` in
 `about:config`. This only enables play/pause/stop, however. To be able to skip
 to next/prev and to get metadata (artist, album, track), [Media Session API][]
-needs to be enabled separately via `dom.media.mediasession.enabled` (note that
+needs to be enabled separately via `dom.​media.​media​session.​enabled` (note that
 I couldn't get this to work in Firefox 75, so this is hot new experimental
 stuff and may be unstable). Also, not all websites can be controlled
 (play/pause): YouTube and bandcamp works, soundcloud and plain HTML5 `<audio>`
