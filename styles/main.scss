@@ -289,6 +289,7 @@ main {
 			img, svg, pre, p, table {
 				@media screen {
 					@media (prefers-color-scheme: dark) { background-color: var(--content-light-bg-color); }
+					:root.color-scheme-light & { background-color: unset; }
 					:root.color-scheme-dark & { background-color: var(--content-light-bg-color); }
 				}
 			}
@@ -303,6 +304,9 @@ main {
 		@media screen {
 			@media (prefers-color-scheme: dark) {
 				filter: invert(1) hue-rotate(180deg) contrast(0.9) brightness(2);
+			}
+			:root.color-scheme-light & {
+				filter: unset;
 			}
 			:root.color-scheme-dark & {
 				filter: invert(1) hue-rotate(180deg) contrast(0.9) brightness(2);
