@@ -68,9 +68,7 @@ a, a:link, a:visited { color: var(--link-color); }
 a:hover { background-color: var(--link-hover-bg-color); color: var(--link-hover-color); text-decoration: none; }
 svg a:hover { opacity: 0.5; }
 
-img { border-width: 0; }
-
-div { padding: 0em; margin: 0em; }
+div { padding: 0; margin: 0; }
 p, h1, h2, h3, ul, ol, dl { margin: 1ex 0; padding: 0; }
 ul,ol,dl { margin-left: 2em; }
 ul { list-style-type: square; }
@@ -80,8 +78,7 @@ hr { width: 80%; }
 dt { margin-top: 0.5em; }
 blockquote { border-left: 2px solid var(--blockquote-border-color); padding-left: 1ex; margin-left: 1ex; }
 hr { width: 90%; height: 0; border: 0; border-top: solid 1px var(--body-color); background: transparent; margin: 2em auto; }
-pre { tab-size: 4; }
-sup { line-height: 0;  }
+pre { tab-size: 4; font-size: 90%; }
 
 emoji { font-family: emoji; }
 
@@ -172,6 +169,7 @@ body > header {
 				a {
 					display: block;
 					text-decoration: none;
+					font-weight: bold;
 				}
 
 				&:hover, &:hover a {
@@ -226,6 +224,9 @@ dl#posts {
 }
 
 #content {
+	h1 { font-size: 1.5em; }
+	h2 { font-size: 1.3em; }
+
 	img, svg {
 		display: block;
 		width: 97%;
@@ -398,7 +399,7 @@ details#toc {
 
 abbr[title] {
 	@media screen {
-		text-decoration: underline solid var(--abbr-underline-color);
+		text-decoration-color: var(--abbr-underline-color);
 		cursor: help;
 	}
 
