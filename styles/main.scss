@@ -1,16 +1,22 @@
 ---
 ---
 
-$link-hover-color: #080;
-$light-border-color: #dedede;
-$light-frame-color: #f8f8ff;
+$link-color: #005;
+$link-hover-color: #346;
+$light-border-color: #ddd;
+$light-frame-color: #fafaff;
 
-$body-bg-color: #dfffcf;
-$header-bg-color: #cfffbf;
-$nav-bg-color: #bfffaf;
-$content-bg-color: #eeffe6;
+$body-bg-color: #eee;
+$header-bg-color: #f0f8ff; // FIXME
+$nav-bg-color: #f8f8ff; // FIXME
+$nav-border-color: #aaa;
+$nav-hover-color: #000;
+$content-bg-color: #fff;
 
-a, a:link, a:visited { color: #000050; }
+$mark-border-color: #ca8;
+$mark-frame-color: #fed;
+
+a, a:link, a:visited { color: $link-color; }
 a:hover { background-color: $link-hover-color; color: white; text-decoration: none; }
 svg a:hover { opacity: 0.5; }
 
@@ -65,8 +71,8 @@ body {
 
 body > nav {
 	background-color: $nav-bg-color;
-	border-top: 1px solid green;
-	border-bottom: 3px solid green;
+	border-top: 1px solid $nav-border-color;
+	border-bottom: 3px solid $nav-border-color;
 
 	@media print {
 		visibility: hidden;
@@ -95,7 +101,7 @@ ul#nav {
 		}
 
 		&:hover, &:hover a {
-			background-color: green;
+			background-color: $nav-hover-color;
 			color: white;
 		}
 	}
@@ -202,7 +208,7 @@ dl#posts {
 	@media screen {
 		pre, code, table {
 			background-color: $light-frame-color;
-			color: #222;
+			color: #111;
 			border: 1px solid $light-border-color;
 		}
 
@@ -220,8 +226,8 @@ dl#posts {
 
 	p.mark {
 		@media screen {
-			border: 3px solid #c85;
-			background-color: #ffefc0;
+			border: 3px solid $mark-border-color;
+			background-color: $mark-frame-color;
 			padding: 1ex;
 			font-size: 110%;
 		}
