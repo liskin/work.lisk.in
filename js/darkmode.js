@@ -1,7 +1,13 @@
 function darkSwitch() {
 	const current = getComputedStyle(document.documentElement).getPropertyValue('--color-scheme').trim();
-	const next = current == 'dark' ? 'light' : 'dark';
 	document.documentElement.classList.remove('color-scheme-' + current);
-	document.documentElement.classList.add('color-scheme-' + next);
-	localStorage.setItem('color-scheme', next);
+	const automatic = getComputedStyle(document.documentElement).getPropertyValue('--color-scheme').trim();
+
+	if (current != automatic) {
+		localStorage.removeItem('color-scheme');
+	} else {
+		const next = current == 'dark' ? 'light' : 'dark';
+		document.documentElement.classList.add('color-scheme-' + next);
+		localStorage.setItem('color-scheme', next);
+	}
 }
