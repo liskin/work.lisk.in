@@ -84,7 +84,6 @@ hr { width: 80%; }
 dt { margin-top: 0.5em; }
 blockquote { border-left: 2px solid var(--blockquote-border-color); padding-left: 1ex; margin-left: 1ex; }
 hr { width: 90%; height: 0; border: 0; border-top: solid 1px var(--body-color); background: transparent; margin: 2em auto; }
-pre { tab-size: 4; font-size: 90%; }
 
 emoji { font-family: emoji; }
 
@@ -290,15 +289,20 @@ dl#posts {
 		margin: 1em 0;
 		padding: .5em;
 		overflow: auto;
+
+		tab-size: 4;
+		font-size: 90%;
 	}
 
 	code {
 		padding: 0 .2em;
+		font-size: 90%;
 	}
 
 	pre code {
 		padding: 0;
 		border: none;
+		font-size: unset;
 	}
 
 	@media screen {
