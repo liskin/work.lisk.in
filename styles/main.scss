@@ -191,7 +191,7 @@ div.utterances {
 	@media print { display: none; }
 }
 
-div#content, article#content {
+main {
 	padding: 1em;
 
 	@media screen {
@@ -208,27 +208,25 @@ div#content, article#content {
 		max-width: 45em;
 		border: 2px solid var(--light-border-color);
 	}
-}
 
-article#content p, article#content li, dl#posts p {
-	@media screen and (min-width: 45em) { text-align: justify; }
-	@media print { text-align: justify; }
-}
-
-article#content header {
-	p, a { text-align: right; color: var(--content-subheader-color); }
-	a:hover { color: var(--link-hover-color); }
-}
-
-dl#posts {
-	margin: 0;
-
-	dd a:first-child {
-		font-size: 1.1em;
+	> article p, > article #footnotes, > dl#posts p {
+		@media screen and (min-width: 45em) { text-align: justify; }
+		@media print { text-align: justify; }
 	}
-}
 
-#content {
+	dl#posts {
+		margin: 0;
+
+		dd a:first-child {
+			font-size: 1.1em;
+		}
+	}
+
+	> article > header {
+		p, a { text-align: right; color: var(--content-subheader-color); }
+		a:hover { color: var(--link-hover-color); }
+	}
+
 	h1 { font-size: 1.5em; }
 	h2 { font-size: 1.3em; }
 
@@ -415,7 +413,7 @@ details#toc {
 
 /* highlight anchor targets */
 @media screen {
-	#content :target { animation: highlight 2s; }
+	main :target { animation: highlight 2s; }
 	@keyframes highlight { 10% { background: var(--anchor-target-highlight-color); } }
 }
 
