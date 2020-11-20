@@ -35,7 +35,9 @@
 		<link rel="alternate" title="Tomáš Janoušek, Blog" type="application/atom+xml" href="{{ "/atom.xml" | relative_url }}">
 
 		<script async src="{{ "/js/hyphenate.js" | relative_url }}"></script>
+		{% if site.url contains "work.lisk.in" %}
 		<script data-goatcounter="https://liskin.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+		{% endif %}
 
 		<title>{% if page.date %}{{ page.title }} — Tomáš Janoušek, Blog{% else %}Tomáš Janoušek, {{ page.title }}{% endif %}</title>
 	</head>
