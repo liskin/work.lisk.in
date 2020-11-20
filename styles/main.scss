@@ -278,6 +278,17 @@ dl#posts {
 		}
 	}
 
+	img.dark-img-filter, .dark-img-filter img {
+		@media screen {
+			@media (prefers-color-scheme: dark) {
+				filter: invert(1) hue-rotate(180deg) contrast(0.9) brightness(2);
+			}
+			:root.color-scheme-dark & {
+				filter: invert(1) hue-rotate(180deg) contrast(0.9) brightness(2);
+			}
+		}
+	}
+
 	table img {
 		box-sizing: unset;
 		display: unset;

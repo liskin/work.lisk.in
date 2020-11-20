@@ -86,17 +86,17 @@ function report {
 	starred_archived=$(<<<"$archived_repos" sort-by-stars | names | head -6)
 
 	echo '### Popular projects'
-	echo '<div markdown="span" class="grid-2">'
+	echo '<div markdown="span" class="grid-2 dark-img-filter">'
 	format-pins "$user" <<<"$starred_active"
 	echo '</div>'
 	echo
 	echo '### Hidden gems'
-	echo '<div markdown="span" class="grid-2">'
+	echo '<div markdown="span" class="grid-2 dark-img-filter">'
 	format-pins "$user" <<<"$hidden_gems"
 	echo '</div>'
 	echo
 	echo '### Formerly popular, now archived projects'
-	echo '<div markdown="span" class="grid-2">'
+	echo '<div markdown="span" class="grid-2 dark-img-filter">'
 	format-pins "$user" <<<"$starred_archived"
 	echo '</div>'
 }

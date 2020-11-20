@@ -1,5 +1,5 @@
 ### Popular projects
-<div markdown="span" class="grid-2">
+<div markdown="span" class="grid-2 dark-img-filter">
 [![strava-map-switcher](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=strava-map-switcher&show_owner=true)](https://github.com/liskin/strava-map-switcher)
 [![dotfiles](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=dotfiles&show_owner=true)](https://github.com/liskin/dotfiles)
 [![covid19-bloom](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=covid19-bloom&show_owner=true)](https://github.com/liskin/covid19-bloom)
@@ -13,7 +13,7 @@
 </div>
 
 ### Hidden gems
-<div markdown="span" class="grid-2">
+<div markdown="span" class="grid-2 dark-img-filter">
 [![cervi](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=cervi&show_owner=true)](https://github.com/liskin/cervi)
 [![foursquare-swarm-ical](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=foursquare-swarm-ical&show_owner=true)](https://github.com/liskin/foursquare-swarm-ical)
 [![gh-problem-matcher-wrap](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=gh-problem-matcher-wrap&show_owner=true)](https://github.com/liskin/gh-problem-matcher-wrap)
@@ -22,7 +22,7 @@
 </div>
 
 ### Formerly popular, now archived projects
-<div markdown="span" class="grid-2">
+<div markdown="span" class="grid-2 dark-img-filter">
 [![lhnb](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=lhnb&show_owner=true)](https://github.com/liskin/lhnb)
 [![hybrid-screenclone](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=hybrid-screenclone&show_owner=true)](https://github.com/liskin/hybrid-screenclone)
 [![patches](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=patches&show_owner=true)](https://github.com/liskin/patches)
