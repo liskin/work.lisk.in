@@ -52,6 +52,7 @@
 				<li><a href="{{ "/about/" | relative_url }}">About me</a></li>
 				<li><a href="{{ "/contact/" | relative_url }}">Contact</a></li>
 				<li><button onclick="darkSwitch(); this.blur()">🌗</button></li>
+				<li><a href="{{ "/atom.xml" | relative_url }}">{% include icons/rss.svg %}</a></li>
 			</ul>
 		</header></nav>
 
@@ -71,6 +72,23 @@
 			{{ content }}
 		{% endif %}
 		</main>
+
+		<footer><p>
+			Ⓒ
+			{% if page.date %}{{ page.date | date: "%Y" }}{% else %}{{ site.time | date: "%Y" }}{% endif %}
+			Tomáš Janoušek
+			{% unless page.name == "contact.md" %}
+			<span class="larger">
+			|
+			<a href="mailto:tomi@nomi.cz">{% include icons/mail.svg %}</a>
+			<a href="https://twitter.com/Liskni_si">{% include icons/twitter.svg %}</a>
+			<a href="https://github.com/liskin">{% include icons/github.svg %}</a>
+			<a href="https://www.linkedin.com/in/pivnik">{% include icons/linkedin.svg %}</a>
+			<a href="https://stackoverflow.com/users/3407728/">{% include icons/stackoverflow.svg %}</a>
+			<a href="{{ "/atom.xml" | relative_url }}">{% include icons/rss.svg %}</a>
+			</span>
+			{% endunless %}
+		</p></footer>
 
 		{% if page.comments_issue %}
 		<script async src="{{ "/js/comments.js" | relative_url }}" issue-number="{{ page.comments_issue }}"></script>

@@ -86,6 +86,7 @@ blockquote { border-left: 2px solid var(--blockquote-border-color); padding-left
 hr { width: 90%; height: 0; border: 0; border-top: solid 1px var(--body-color); background: transparent; margin: 2em auto; }
 
 emoji { font-family: emoji; }
+.larger { font-size: larger; }
 
 table {
 	margin: 0.5em;
@@ -168,27 +169,49 @@ body > header {
 			li {
 				display: table-cell;
 				position: relative;
-				padding: 0.2rem 0.6rem;
+				padding: 0;
 				vertical-align: bottom;
 
 				a, button {
 					display: block;
+					padding: 0.2rem 0.6rem;
 					text-decoration: none;
 					font-weight: bold;
 				}
 
-				&:hover, &:hover a, &:hover button {
+				&:hover a, &:hover button {
 					background-color: var(--nav-hover-color);
-					color: var(--link-hover-color);
 				}
 			}
 		}
 	}
 }
 
-div.utterances {
-	@media screen { max-width: 45em; }
-	@media print { display: none; }
+body > footer, div.utterances {
+	@media screen {
+		max-width: 45em;
+		margin: 1em auto;
+	}
+
+	@media print {
+		display: none;
+	}
+}
+
+body > header, body > footer {
+	a svg {
+		vertical-align: middle;
+		height: 1em;
+		fill: var(--link-color);
+	}
+
+	a:hover svg {
+		fill: var(--link-hover-color);
+	}
+}
+
+body > footer {
+	text-align: right;
 }
 
 main {
@@ -203,10 +226,10 @@ main {
 
 	@media screen and (min-width: 45em) {
 		box-sizing: border-box;
-		margin: 2em auto;
 		padding: 2em;
 		max-width: 45em;
 		border: 2px solid var(--light-border-color);
+		border-top: none;
 	}
 
 	> article p, > article #footnotes, > dl#posts p {
