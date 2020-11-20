@@ -67,7 +67,7 @@
 			{{ content }}
 		</article>
 		{% if page.comments_issue %}
-		<script src="https://utteranc.es/client.js" repo="liskin/liskin.github.com" issue-number="{{ page.comments_issue }}" theme="github-light" crossorigin="anonymous" async></script>
+		<script async src="{{ "/js/comments.js" | relative_url }}" issue-number="{{ page.comments_issue }}"></script>
 		{% endif %}
 		{% else %}
 		<div id="content">

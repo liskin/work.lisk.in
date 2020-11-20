@@ -10,4 +10,14 @@ function darkSwitch() {
 		document.documentElement.classList.add('color-scheme-' + next);
 		localStorage.setItem('color-scheme', next);
 	}
+
+	darkSyncUtterances();
+}
+
+function darkSyncUtterances() {
+	const current = getComputedStyle(document.documentElement).getPropertyValue('--color-scheme').trim();
+	const iframe = document.querySelector('iframe.utterances-frame');
+	if (iframe) {
+		iframe.contentWindow.postMessage({type: 'set-theme', theme: 'github-' + current}, "https://utteranc.es");
+	}
 }
