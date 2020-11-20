@@ -143,6 +143,10 @@ article#content header {
 
 dl#posts {
 	margin: 0;
+
+	dd a:first-child {
+		font-size: 1.1em;
+	}
 }
 
 #content {
