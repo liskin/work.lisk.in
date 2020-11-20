@@ -39,6 +39,9 @@
 		<script data-goatcounter="https://liskin.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 		{% endif %}
 
+		<script>(s => s ? document.documentElement.classList.add('color-scheme-' + s) : null)(localStorage.getItem('color-scheme'))</script>
+		<script async src="{{ "/js/darkmode.js" | relative_url }}"></script>
+
 		<title>{% if page.date %}{{ page.title }} — Tomáš Janoušek, Blog{% else %}Tomáš Janoušek, {{ page.title }}{% endif %}</title>
 	</head>
 	<body>
@@ -48,6 +51,7 @@
 				<li><a href="{{ "/" | relative_url }}">Blog</a></li>
 				<li><a href="{{ "/about/" | relative_url }}">About me</a></li>
 				<li><a href="{{ "/contact/" | relative_url }}">Contact</a></li>
+				<li><button onclick="darkSwitch(); this.blur()">🌗</button></li>
 			</ul>
 		</header></nav>
 

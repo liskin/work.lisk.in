@@ -1,7 +1,9 @@
 ---
 ---
 
-@mixin light-color-scheme {
+@mixin color-scheme-light {
+	--color-scheme: light;
+
 	--body-color: #000;
 	--body-bg-color: #eee;
 
@@ -28,7 +30,9 @@
 	--blockquote-border-color: #bbb;
 }
 
-@mixin dark-color-scheme {
+@mixin color-scheme-dark {
+	--color-scheme: dark;
+
 	--body-color: #ddd;
 	--body-bg-color: #000;
 
@@ -57,16 +61,18 @@
 }
 
 :root {
-	@include light-color-scheme;
-
-	@media (prefers-color-scheme: dark) {
-		@include dark-color-scheme;
+	@include color-scheme-light;
+	@media screen {
+		@media (prefers-color-scheme: dark) { @include color-scheme-dark; }
+		&.color-scheme-light { @include color-scheme-light; }
+		&.color-scheme-dark { @include color-scheme-dark; }
 	}
 }
 
-a, a:link, a:visited { color: var(--link-color); }
-a:hover { background-color: var(--link-hover-bg-color); color: var(--link-hover-color); text-decoration: none; }
+a, a:link, a:visited, button { color: var(--link-color); }
+a:hover, button:hover { background-color: var(--link-hover-bg-color); color: var(--link-hover-color); text-decoration: none; }
 svg a:hover { opacity: 0.5; }
+button { border: 0; background-color: unset; padding: 0; line-height: inherit; cursor: pointer; }
 
 div { padding: 0; margin: 0; }
 p, h1, h2, h3, ul, ol, dl { margin: 1ex 0; padding: 0; }
@@ -121,7 +127,7 @@ body > header {
 		h1 {
 			text-align: center;
 			margin: 0;
-			padding: 0.5em 1rem;
+			padding: 0.5em 0.6rem;
 			font-size: 1.2em;
 
 			@media print {
@@ -163,16 +169,16 @@ body > header {
 			li {
 				display: table-cell;
 				position: relative;
-				padding: 0.2rem 1rem;
+				padding: 0.2rem 0.6rem;
 				vertical-align: bottom;
 
-				a {
+				a, button {
 					display: block;
 					text-decoration: none;
 					font-weight: bold;
 				}
 
-				&:hover, &:hover a {
+				&:hover, &:hover a, &:hover button {
 					background-color: var(--nav-hover-color);
 					color: var(--link-hover-color);
 				}
@@ -261,8 +267,9 @@ dl#posts {
 
 		&.transparent-bg-light {
 			img, svg, pre, p, table {
-				@media (prefers-color-scheme: dark) {
-					background-color: var(--content-light-bg-color);
+				@media screen {
+					@media (prefers-color-scheme: dark) { background-color: var(--content-light-bg-color); }
+					:root.color-scheme-dark & { background-color: var(--content-light-bg-color); }
 				}
 			}
 		}
