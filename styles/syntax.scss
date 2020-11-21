@@ -2,7 +2,6 @@
 ---
 
 @import "syntax-github";
-
-@media (prefers-color-scheme: dark) {
-	@import "syntax-thankful-eyes";
-}
+@media (prefers-color-scheme: dark) { @import "syntax-thankful-eyes"; }
+:root.color-scheme-light { @import "syntax-github"; }
+:root.color-scheme-dark { @import "syntax-thankful-eyes"; }
