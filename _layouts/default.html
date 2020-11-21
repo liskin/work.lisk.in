@@ -73,22 +73,32 @@
 		{% endif %}
 		</main>
 
-		<footer><p>
-			Ⓒ
-			{% if page.date %}{{ page.date | date: "%Y" }}{% else %}{{ site.time | date: "%Y" }}{% endif %}
-			Tomáš Janoušek
-			{% unless page.name == "contact.md" %}
-			<span class="larger">
-			|
-			<a href="mailto:tomi@nomi.cz">{% include icons/mail.svg %}</a>
-			<a href="https://twitter.com/Liskni_si">{% include icons/twitter.svg %}</a>
-			<a href="https://github.com/liskin">{% include icons/github.svg %}</a>
-			<a href="https://www.linkedin.com/in/pivnik">{% include icons/linkedin.svg %}</a>
-			<a href="https://stackoverflow.com/users/3407728/">{% include icons/stackoverflow.svg %}</a>
-			<a href="{{ "/atom.xml" | relative_url }}">{% include icons/rss.svg %}</a>
-			</span>
-			{% endunless %}
-		</p></footer>
+		<footer>
+			{% if page.date or page.name == "index.html" %}
+			<p>
+				Subscribe to my blog:
+				<span class="larger">
+					<a href="{{ "/atom.xml" | relative_url }}">{% include icons/rss.svg %}</a>
+					<a href="https://feedburner.google.com/fb/a/mailverify?uri=work-lisk-in&amp;loc=en_US">{% include icons/mail.svg %}</a>
+				</span>
+			</p>
+			{% endif %}
+			<p>
+				Ⓒ
+				{% if page.date %}{{ page.date | date: "%Y" }}{% else %}{{ site.time | date: "%Y" }}{% endif %}
+				Tomáš Janoušek
+				{% unless page.name == "contact.md" %}
+				<span class="larger">
+					|
+					<a href="mailto:tomi@nomi.cz">{% include icons/mail.svg %}</a>
+					<a href="https://twitter.com/Liskni_si">{% include icons/twitter.svg %}</a>
+					<a href="https://github.com/liskin">{% include icons/github.svg %}</a>
+					<a href="https://www.linkedin.com/in/pivnik">{% include icons/linkedin.svg %}</a>
+					<a href="https://stackoverflow.com/users/3407728/">{% include icons/stackoverflow.svg %}</a>
+				</span>
+				{% endunless %}
+			</p>
+		</footer>
 
 		{% if page.comments_issue %}
 		<script async src="{{ "/js/comments.js" | relative_url }}" issue-number="{{ page.comments_issue }}"></script>
