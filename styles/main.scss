@@ -81,7 +81,6 @@ ul { list-style-type: square; }
 ul ul { margin-bottom: 0; }
 li:not(:last-child) { margin-bottom: 0.5em; }
 hr { width: 80%; }
-dt { margin-top: 0.5em; }
 blockquote { border-left: 2px solid var(--blockquote-border-color); padding-left: 1ex; margin-left: 1ex; }
 hr { width: 90%; height: 0; border: 0; border-top: solid 1px var(--body-color); background: transparent; margin: 2em auto; }
 
@@ -240,9 +239,18 @@ main {
 	dl#posts {
 		margin: 0;
 
-		dd a:first-child {
-			font-size: 1.1em;
-		}
+		dt { margin-top: 0.5em; }
+		dd { margin-inline-start: 2em; }
+		dd a:first-child { font-size: 1.1em; }
+	}
+
+	dl#posts-all {
+		margin: 0;
+		display: grid;
+		grid-template-columns: max-content auto;
+		grid-gap: 0.5em;
+
+		dd { margin: 0; }
 	}
 
 	> article > header {

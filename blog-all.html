@@ -1,0 +1,16 @@
+---
+layout: default
+title: Blog
+permalink: /blog/all/
+
+---
+
+<!-- -->
+			<dl id="posts-all">
+			{% for post in site.posts %}
+				<dt>{{ post.date | date: "%Y-%m-%d" }}</dt>
+				<dd>
+					<a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+				</dd>
+			{% endfor %}
+			</dl>
