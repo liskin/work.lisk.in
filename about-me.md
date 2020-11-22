@@ -24,4 +24,8 @@ I'm really like]({{ "/real-me/" | relative_url }}) first.
 
 [![contribution activity chart](https://ghchart.rshah.org/liskin){:.dark-img-filter}](https://github.com/liskin)
 
+If you like what I'm doing or if you'd like to influence what projects I
+contribute to, please consider [funding me through GitHub
+Sponsors](https://github.com/sponsors/liskin).
+
 {% include github.md %}
