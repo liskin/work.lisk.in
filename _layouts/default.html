@@ -47,14 +47,14 @@
 	<body>
 		<header><nav>
 			<h1>Tomáš Janoušek, {% if page.date %}Blog{% else %}{{ page.title }}{% endif %}</h1>
-			<ul id="nav">
+			<ul>
 				<li><a href="{{ "/" | relative_url }}">Blog</a></li>
 				<li><a href="{{ "/about/" | relative_url }}">About me</a></li>
 				<li><a href="{{ "/contact/" | relative_url }}">Contact</a></li>
 				<li><button onclick="darkSwitch(); this.blur()">🌗</button></li>
 				<li><a href="{{ "/atom.xml" | relative_url }}">{% include icons/rss.svg %}</a></li>
 			</ul>
-		</header></nav>
+		</nav></header>
 
 		<main>
 		{% if page.date %}
