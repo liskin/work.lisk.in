@@ -61,6 +61,10 @@ function names {
 	jq --raw-output '."name"'
 }
 
+function full-names {
+	jq --raw-output '."full_name"'
+}
+
 function format-pin {
 	echo "[![${2:?}](https://github-readme-stats.vercel.app/api/pin/?username=${1:?}&repo=$2&show_owner=true)](https://github.com/$1/$2)"
 }
@@ -103,11 +107,11 @@ function report {
 
 function not-watching {
 	user=${1:-liskin}
-	repos=$(github-user-repos "$user" | names)
-	watching=$(github-watched-repos "$user" | names)
+	repos=$(github-user-repos "$user" | full-names)
+	watching=$(github-watched-repos "$user" | full-names)
 	not_watching=$(set-difference "$repos" "$watching")
 	for repo in $not_watching; do
-		echo "https://github.com/$user/$repo"
+		echo "https://github.com/$repo"
 	done
 }
 
