@@ -84,6 +84,15 @@ hr { width: 80%; }
 blockquote { border-left: 2px solid var(--blockquote-border-color); padding-left: 1ex; margin-left: 1ex; }
 hr { width: 90%; height: 0; border: 0; border-top: solid 1px var(--body-color); background: transparent; margin: 2em auto; }
 
+kbd {
+	display: inline-block;
+	border-radius: 3px;
+	border: 1px solid var(--light-border-color);
+	color: var(--light-frame-color);
+	background-color: var(--light-frame-bg-color);
+	font-weight: bold;
+}
+
 emoji { font-family: emoji; }
 .larger { font-size: larger; }
 
@@ -280,14 +289,14 @@ main {
 			text-align: center;
 		}
 
-		img, svg, pre, p, table {
+		img, svg, pre, p, table, table img {
 			box-sizing: border-box;
 			width: 100%;
 			margin: 0 auto;
 		}
 
 		&.no-resize {
-			img, svg, pre, p, table {
+			img, svg, pre, p, table, table img {
 				width: unset;
 				max-width: 100%;
 			}

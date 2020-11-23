@@ -253,3 +253,77 @@ only have diminishing returns[^latency]. <emoji>😊</emoji>
     latency](https://danluu.com/keyboard-latency/).
 
 ---
+
+### Update 1: Why not fix typing before the prompt instead?
+
+Redditor _buttellmewhynot_ (pun intended)
+[comments](https://old.reddit.com/r/linux/comments/jxfm2y/even_faster_bash_startup_165_ms_40_ms/gcxiigg/):
+
+> I feel like it shouldn't matter that the shell starts with a delay. If you
+> start a shell, the computer should assume that you want further input
+> directed there and queue somewhere to send it to the shell when it's up.
+>
+> I understand that there's probably a lot of weird quirks about how terminals
+> and shells work and how processes get created but surely there's a way to do
+> this.
+
+They're right on both points. The input is queued somewhere, and there is a
+way to fix the messed up prompt. As some might suspect, [zsh][] handles it
+fine: try running `sleep 5` and type some input in the meantime:
+
+<figure markdown="block">
+<table>
+<thead><tr><th>zsh</th><th>bash</th></tr></thead>
+<tr>
+<td markdown="span">![zsh no lf]({{ "/img" | relative_url }}/{{ page.slug }}/zsh-nolf.png)</td>
+<td markdown="span">![bash no lf]({{ "/img" | relative_url }}/{{ page.slug }}/bash-nolf.png)</td>
+</tr>
+<tr>
+<td markdown="span">![zsh lf]({{ "/img" | relative_url }}/{{ page.slug }}/zsh-lf.png)</td>
+<td markdown="span">![bash lf]({{ "/img" | relative_url }}/{{ page.slug }}/bash-lf.png)</td>
+</tr>
+</table>
+<figcaption>pending input handling without custom prompt</figcaption>
+</figure>
+
+We can see that:
+
+* in all cases, the input appears twice (bit annoying, but tolerable)
+* zsh prompt is never messed up
+* bash prompt is messed up if there's no newline after the input[^readline-assumes]
+* no input is discarded, in contrast to the first image of this post
+
+[^readline-assumes]:
+    [GNU Readline][] assumes the prompt starts in the first column so it gets
+    more messed up later e.g. when walking through history using
+    <kbd>↑</kbd>/<kbd>↓</kbd>.
+
+Turns out [my PROMPT\_COMMAND][old-prompt-command] which was meant to [ensure
+the prompt always starts on new line][ensure-newline-prompt] was discarding
+the pending input. Zsh uses [a different approach][zsh-newline-prompt],
+printing `$COLUMNS` spaces and then a carriage return
+([explanation][ensure-newline-prompt-spaces]), which I don't like as it messes
+up copy/paste. But I [managed to improve my solution][new-prompt-command] to
+correctly detect pending input and not discard it.
+
+<!--and [trying to do what zsh does][new-prompt-command] fixes
+it:-->
+
+![not messed up prompt after early typing]({{ "/img" | relative_url }}/{{ page.slug }}/earlytype.png)
+
+It's not perfect (so I'll still try to keep bash startup fast), but it's
+definitely an improvement, and it will be useful whenever I get impatient with
+a slow command and start typing the next command before the prompt appears.
+
+Thank you [_buttellmewhynot_](https://old.reddit.com/user/buttellmewhynot) for
+nudging me in the correct direction.
+
+[zsh]: https://www.zsh.org/
+[zsh-newline-prompt]: https://github.com/zsh-users/zsh/blob/19390a1ba8dc983b0a1379058e90cd51ce156815/Src/utils.c#L1599
+[GNU Readline]: https://twobithistory.org/2019/08/22/readline.html
+[old-prompt-command]: https://github.com/liskin/dotfiles/blob/460bdc3c5fa814b874c19d172ce0e3955e278207/.bashrc.d/20_prompt.sh#L13-L27
+[ensure-newline-prompt]: https://stackoverflow.com/q/19943482/3407728
+[ensure-newline-prompt-spaces]: https://serverfault.com/a/97543
+[new-prompt-command]: https://github.com/liskin/dotfiles/compare/a5db1831b37f89e00a637bcc20594a4fcf16de1d^...322ad36ec1d3ee5485c7b637e4c41fff7ea6745c
+
+---
