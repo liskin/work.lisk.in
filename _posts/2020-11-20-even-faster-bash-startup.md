@@ -306,9 +306,6 @@ printing `$COLUMNS` spaces and then a carriage return
 up copy/paste. But I [managed to improve my solution][new-prompt-command] to
 correctly detect pending input and not discard it.
 
-<!--and [trying to do what zsh does][new-prompt-command] fixes
-it:-->
-
 ![not messed up prompt after early typing]({{ "/img" | relative_url }}/{{ page.slug }}/earlytype.png)
 
 It's not perfect (so I'll still try to keep bash startup fast), but it's
