@@ -33,16 +33,38 @@ function github-watched-repos {
 	o github-paginate "https://api.github.com/users/${1:?user}/subscriptions" | jq --compact-output '.[]'
 }
 
-function filter-my-repos {
-	jq --compact-output --slurp 'map(select((.private | not) and (.fork | not))) | .[]'
+function filter-original {
+	jq --compact-output --slurp 'map(select(.fork | not)) | .[]'
 }
 
-function filter-active-repos {
+function filter-public {
+	jq --compact-output --slurp 'map(select(.private | not)) | .[]'
+}
+
+function filter-active {
 	jq --compact-output --slurp 'map(select(.archived | not)) | .[]'
 }
 
-function filter-archived-repos {
+function filter-archived {
 	jq --compact-output --slurp 'map(select(.archived)) | .[]'
+}
+
+function filter-not-owned-by {
+	jq --compact-output --slurp --arg owner "${1:?user}" 'map(select(.owner.login != $owner)) | .[]'
+}
+
+function filter-admin {
+	jq --compact-output --slurp 'map(select(.permissions.admin)) | .[]'
+}
+
+function filter-push {
+	jq --compact-output --slurp 'map(select(.permissions.push)) | .[]'
+}
+
+function filter-pushed-recently {
+	local date
+	date=$(date --iso-8601 -d "now - ${1:?ago}")
+	jq --compact-output --slurp --arg date "$date" 'map(select(.pushed_at > $date)) | .[]'
 }
 
 function sort-by-stars {
@@ -66,42 +88,53 @@ function full-names {
 }
 
 function format-pin {
-	echo "[![${2:?}](https://github-readme-stats.vercel.app/api/pin/?username=${1:?}&repo=$2&show_owner=true)](https://github.com/$1/$2)"
+	local user repo
+	: "${1:?}"
+	user=${1%%/*}
+	repo=${1#*/}
+	echo "[![$1](https://github-readme-stats.vercel.app/api/pin/?username=$user&repo=$repo&show_owner=true)](https://github.com/$1)"
 }
 
 function format-pins {
 	local r
 	while read -r r; do
-		format-pin "${1:?}" "$r"
+		format-pin "$r"
 	done
 }
 
 function report {
 	user=${1:-liskin}
-	hidden_gems="cervi foursquare-swarm-ical gh-problem-matcher-wrap emoji-rofi-menu empty-tab"
+	hidden_gems="liskin/cervi liskin/foursquare-swarm-ical liskin/gh-problem-matcher-wrap liskin/emoji-rofi-menu liskin/empty-tab"
 
-	repos=$(github-user-repos "$user")
-	my_repos=$(filter-my-repos <<<"$repos")
-	active_repos=$(filter-active-repos <<<"$my_repos")
-	archived_repos=$(filter-archived-repos <<<"$my_repos")
+	repos=$(github-user-repos "$user" | filter-public | filter-original)
+	active_repos=$(filter-active <<<"$repos")
+	archived_repos=$(filter-archived <<<"$repos")
 
-	starred_active=$(<<<"$active_repos" sort-by-stars | names | head -10)
+	starred_active=$(<<<"$active_repos" sort-by-stars | full-names | head -10)
 	hidden_gems=$(set-difference "$hidden_gems" "$starred_active")
-	starred_archived=$(<<<"$archived_repos" sort-by-stars | names | head -6)
+	starred_archived=$(<<<"$archived_repos" sort-by-stars | full-names | head -6)
 
-	echo '### Popular projects'
+	watched_active=$(github-watched-repos "$user" | filter-public | filter-original | filter-active)
+	maintained=$(<<<"$watched_active" filter-not-owned-by "$user" | filter-admin | sort-by-stars | full-names | head -10)
+
+	echo '### Popular projects (co-maintainer)'
 	echo '<div markdown="span" class="grid-2 dark-img-filter">'
-	format-pins "$user" <<<"$starred_active"
+	format-pins <<<"$maintained"
+	echo '</div>'
+	echo
+	echo '### Popular projects (author)'
+	echo '<div markdown="span" class="grid-2 dark-img-filter">'
+	format-pins <<<"$starred_active"
 	echo '</div>'
 	echo
 	echo '### Hidden gems'
 	echo '<div markdown="span" class="grid-2 dark-img-filter">'
-	format-pins "$user" <<<"$hidden_gems"
+	format-pins <<<"$hidden_gems"
 	echo '</div>'
 	echo
 	echo '### Formerly popular, now archived projects'
 	echo '<div markdown="span" class="grid-2 dark-img-filter">'
-	format-pins "$user" <<<"$starred_archived"
+	format-pins <<<"$starred_archived"
 	echo '</div>'
 }
 
