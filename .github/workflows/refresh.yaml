@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Refresh github projects
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ABOUT_GITHUB_TOKEN }}
         run: |
           make github-report
       - name: Commit, Push
