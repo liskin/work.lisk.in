@@ -20,7 +20,7 @@ function github-paginate() (
 	while [[ -n $page ]]; do
 		o do-curl --get "$@" --data-urlencode "$page" \
 			--output /dev/fd/${stdout} --dump-header /dev/fd/1 \
-			| gawk '$1 == "Link:" && match($0, /<[^<>]*[&?](page=[0-9]+)[^<>]*>; rel="next"/, m) { print m[1] }' \
+			| gawk 'tolower($1) == "link:" && match($0, /<[^<>]*[&?](page=[0-9]+)[^<>]*>; rel="next"/, m) { print m[1] }' \
 			| { read -r page || :; }
 	done
 )
