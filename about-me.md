@@ -9,9 +9,9 @@ description: >
 ---
 
 I'm an experienced polyglot programmer, free and open-source software
-enthusiast and regular contributor from the Czech Republic. I also cycle a
-lot (road, gravel, urban, fixed-gear, unicycle), read books, listen to music
-and taste beers.
+enthusiast and regular contributor from the Czech Republic, currently based in
+England. I also cycle a lot (road, gravel, urban, fixed-gear, unicycle), read
+books, listen to music and taste beers.
 
 If you're considering contacting me about a job offer, you should [read what
 I'm really like]({{ "/real-me/" | relative_url }}) first.
