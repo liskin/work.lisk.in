@@ -320,13 +320,13 @@ main {
 	img.dark-img-filter, .dark-img-filter img {
 		@media screen {
 			@media (prefers-color-scheme: dark) {
-				filter: invert(1) hue-rotate(180deg) contrast(0.9) brightness(2);
+				filter: invert(1) hue-rotate(180deg) contrast(0.9) brightness(1.7);
 			}
 			:root.color-scheme-light & {
 				filter: unset;
 			}
 			:root.color-scheme-dark & {
-				filter: invert(1) hue-rotate(180deg) contrast(0.9) brightness(2);
+				filter: invert(1) hue-rotate(180deg) contrast(0.9) brightness(1.7);
 			}
 		}
 	}
