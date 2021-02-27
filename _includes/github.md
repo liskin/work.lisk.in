@@ -34,7 +34,7 @@
 [![liskin/lhnb](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=lhnb&show_owner=true)](https://github.com/liskin/lhnb)
 [![liskin/hybrid-screenclone](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=hybrid-screenclone&show_owner=true)](https://github.com/liskin/hybrid-screenclone)
 [![liskin/patches](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=patches&show_owner=true)](https://github.com/liskin/patches)
-[![liskin/git-utils](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=git-utils&show_owner=true)](https://github.com/liskin/git-utils)
 [![liskin/s2putty](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=s2putty&show_owner=true)](https://github.com/liskin/s2putty)
+[![liskin/git-utils](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=git-utils&show_owner=true)](https://github.com/liskin/git-utils)
 [![liskin/fithesis](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=fithesis&show_owner=true)](https://github.com/liskin/fithesis)
 </div>
