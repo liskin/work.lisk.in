@@ -104,7 +104,7 @@ function format-pins {
 
 function report {
 	user=${1:-liskin}
-	hidden_gems="liskin/cervi liskin/foursquare-swarm-ical liskin/gh-problem-matcher-wrap liskin/emoji-rofi-menu liskin/empty-tab"
+	hidden_gems="liskin/arbtt-chart liskin/cervi liskin/foursquare-swarm-ical liskin/gh-problem-matcher-wrap liskin/emoji-rofi-menu liskin/empty-tab"
 
 	repos=$(github-user-repos "$user" | filter-public | filter-original)
 	active_repos=$(filter-active <<<"$repos")

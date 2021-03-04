@@ -23,6 +23,7 @@
 
 ### Hidden gems
 <div markdown="span" class="grid-2 dark-img-filter">
+[![liskin/arbtt-chart](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=arbtt-chart&show_owner=true)](https://github.com/liskin/arbtt-chart)
 [![liskin/cervi](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=cervi&show_owner=true)](https://github.com/liskin/cervi)
 [![liskin/foursquare-swarm-ical](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=foursquare-swarm-ical&show_owner=true)](https://github.com/liskin/foursquare-swarm-ical)
 [![liskin/emoji-rofi-menu](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=emoji-rofi-menu&show_owner=true)](https://github.com/liskin/emoji-rofi-menu)
