@@ -5,32 +5,12 @@ shopt -s lastpipe inherit_errexit
 
 function o { printf -->&2 "%s:%s\\n" "${0##*/}" "$(printf " %q" "$@")"; "$@"; }
 
-function do-curl {
-	if [[ -z ${GITHUB_TOKEN-} ]]; then
-		GITHUB_TOKEN=$(yq -r '."github.com"[0].oauth_token' ~/.config/hub)
-	fi
-
-	curl --silent --show-error --fail -H "Authorization: token ${GITHUB_TOKEN}" "$@"
-}
-
-function github-paginate() (
-	page="page=1"
-	exec {stdout}>&1
-
-	while [[ -n $page ]]; do
-		o do-curl --get "$@" --data-urlencode "$page" \
-			--output /dev/fd/${stdout} --dump-header /dev/fd/1 \
-			| gawk 'tolower($1) == "link:" && match($0, /<[^<>]*[&?](page=[0-9]+)[^<>]*>; rel="next"/, m) { print m[1] }' \
-			| { read -r page || :; }
-	done
-)
-
 function github-user-repos {
-	o github-paginate "https://api.github.com/users/${1:?user}/repos" | jq --compact-output '.[]'
+	o gh api --paginate users/"${1:?user}"/repos | jq --compact-output '.[]'
 }
 
 function github-watched-repos {
-	o github-paginate "https://api.github.com/users/${1:?user}/subscriptions" | jq --compact-output '.[]'
+	o gh api --paginate users/"${1:?user}"/subscriptions | jq --compact-output '.[]'
 }
 
 function filter-original {
