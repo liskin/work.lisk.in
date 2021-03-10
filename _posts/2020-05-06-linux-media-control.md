@@ -259,6 +259,14 @@ plugin that may be manually enabled in its preferences.
 
 It is _a bit_ of a mess.
 
+##### Update 2021-03-10: workaround using [playerctld][]
+
+There is now a workaround in [playerctl][playerctld]: `playerctl daemon`
+starts an [MPRIS][] proxy that provides the “last active player” logic to
+environments that don't implement it themselves, like GNOME.
+
+[playerctld]: https://github.com/altdesktop/playerctl#selecting-players-to-control
+
 <i>
 (I tested this on a [Fedora][] 32 live DVD with [GNOME][] 3.36. Recordings of
 some of those experiments: <https://youtu.be/1fN6NMDBFNI>,
