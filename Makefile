@@ -13,3 +13,7 @@ serve-public:
 .PHONY: github-report
 github-report:
 	./_github.sh report >_includes/github.md
+
+.PHONY: pushl
+pushl:
+	pushl --cache _pushl_cache -vv https://work.lisk.in/atom.xml
