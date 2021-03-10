@@ -6,7 +6,7 @@ comments_issue: 5
 
 ---
 
-Včera/dneska jsem na moje [kolo][sincity] dal místo rovných řídítek silniční
+Včera/dneska jsem na moje kolo dal místo rovných řídítek silniční
 berany.
 
 Před:  
@@ -14,8 +14,6 @@ Před:
 
 Po:  
 [![][berany_final_small]][berany_final]
-
-[sincity]: http://www.agang.eu/2010/city-bike/sincity.htm
 
 ### Proč?
 
@@ -107,13 +105,12 @@ takže je třeba ty řadící trochu upravit:
   - [stavěcí šrouby na bowdeny][token]: 200 Kč
   - objímka ze staré brzdové páčky: 100 Kč
   - omotávka: 160 Kč
-  - [hliníková trubička][trubka] (a jedna navíc pro jistotu): 15 Kč
+  - hliníková trubička (a jedna navíc pro jistotu): 15 Kč
   - šroub (a dva navíc pro jistotu): 9 Kč
 
 [proplt]: http://www.wiggle.com/pro-plt-2014-alloy-road-handlebar/
 [blesak]: https://www.facebook.com/events/869841896392719/
 [rl520]: http://www.wiggle.com/tektro-rl520-drop-bar-brake-lever/
-[trubka]: http://www.ferona.cz/cze/katalog/detail.php?id=25430
 [token]: http://dily.maxbike.cz/eshop/staveci-doraz-bowdenu-token-cerne-2ks
 
 Celkem: **1703 Kč**

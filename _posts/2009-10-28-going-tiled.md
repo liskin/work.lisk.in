@@ -17,8 +17,7 @@ It all started in 2002 when a friend of mine switched me to Linux. I installed
 it onto my father's laptop, which only had 32 MB of memory and quickly
 realized that GNOME, KDE and Mozilla aren't for me. Someone gave me a tarball
 of fluxbox 0.1.12, I installed it, and liked it. Unfortunately, I have no
-screen shots or photos from that time.  
-(just this one: <http://foto.nomi.cz/d/22669-2/ja_v_klobouku.jpg> :-))
+screen shots or photos from that time.
 
 Later that year, I installed fluxbox 0.1.14 (the last in 0.1 series) onto my
 “workstation” and it turned out that I would stick with that old version for

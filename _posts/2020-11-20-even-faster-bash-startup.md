@@ -26,7 +26,7 @@ and need to go significantly lower than Daniel, therefore different techniques
 will be needed.
 
 [Daniel Parker]: https://twitter.com/danpker
-[Faster Bash Startup]: https://danpker.com/posts/2020/faster-bash-startup/
+[Faster Bash Startup]: https://danpker.com/posts/faster-bash-startup/
 
 ### Investigation
 

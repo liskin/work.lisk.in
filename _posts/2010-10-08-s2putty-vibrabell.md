@@ -24,7 +24,7 @@ here: <http://github.com/liskin/s2putty>. A prebuilt package for s60v5 is in
 [downloads][]. Let me know if you need a binary for some other version of
 Symbian.
 
-[putty]: http://bd.kicks-ass.net/koodaus/putty/
+[putty]: http://s2putty.sourceforge.net/
 [mutt]: http://www.mutt.org/
 [irssi]: http://www.irssi.org/
 [bitlbee]: http://www.bitlbee.org/

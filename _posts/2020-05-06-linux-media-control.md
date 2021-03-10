@@ -452,7 +452,7 @@ volume effectively becomes 14-bit. [pulseaudio][] doesn't do this, but
 [pulseaudio]: https://www.freedesktop.org/wiki/Software/PulseAudio/
 [liskin-media-volume]: https://github.com/liskin/dotfiles/blob/15c2cd83ce7297c38830053a9fd2be2f3678f4b0/bin/liskin-media#L8-L41
 [Marshall Monitor Bluetooth]: https://www.marshallheadphones.com/us/en/monitor-bluetooth.html
-[Sony MDR-XB950BT]: https://www.sony.com/electronics/headband-headphones/mdr-xb950bt
+[Sony MDR-XB950BT]: https://www.sony.com/electronics/support/wireless-headphones-bluetooth-headphones/mdr-xb950bt/specifications
 [mobile-chrome]: https://play.google.com/store/apps/details?id=com.android.chrome
 [android-mediasession]: https://developer.android.com/reference/android/media/session/MediaSession
 

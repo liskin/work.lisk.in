@@ -5,7 +5,7 @@
 	const s = document.createElement('script');
 	s.async = true;
 	s.crossOrigin = 'anonymous';
-	s.setAttribute('repo', 'liskin/liskin.github.com');
+	s.setAttribute('repo', 'liskin/work.lisk.in');
 	s.setAttribute('issue-number', issue_number);
 	s.setAttribute('theme', 'github-' + theme);
 	s.src = 'https://utteranc.es/client.js';
