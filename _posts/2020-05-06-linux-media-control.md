@@ -4,6 +4,13 @@ title: Linux, media keys and multiple players (mpd, chromium, mpv, vlc, …)
 comments_issue: 1
 image: https://user-images.githubusercontent.com/300342/81182729-8237d500-8fae-11ea-89eb-81ca7b3598fe.jpg
 large_image: true
+summary:
+    This post explains how to get media keys (play, pause, …) on keyboards and
+    Bluetooth headphones work with a bare X window manager (as opposed to a
+    full desktop environment) and how to make them control multiple media
+    players including the web browser (YouTube, bandcamp, myNoise, etc.) which
+    is something that even majority operating systems and desktop environments
+    don't quite get right out of the box.
 
 ---
 
