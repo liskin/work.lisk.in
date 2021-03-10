@@ -1,0 +1,22 @@
+name: Check for broken links
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Run every weekend
+    - cron: '0 2 * * 6'
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      - name: Install linkchecker
+        run: |
+          pip3 install git+https://github.com/linkchecker/linkchecker.git
+      - name: Run linkchecker
+        run: |
+          linkchecker --check-extern --ignore-url='sony\.com' https://work.lisk.in/
