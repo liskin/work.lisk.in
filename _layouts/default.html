@@ -6,6 +6,7 @@
 		<meta name="keywords" content="Tomáš Janoušek, Tomas Janousek, Liskni_si, lisk.in, liskin, Pivník, pivnik">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
+		<!-- opengraph, twitter cards, … -->
 		<meta property="og:url" content="{{ page.url | absolute_url }}">
 		<meta property="og:site_name" content="Tomáš Janoušek">
 		<meta property="twitter:site" content="@Liskni_si">
@@ -31,16 +32,23 @@
 		<meta property="og:image" content="{{ "/img" | absolute_url }}/{{ page.slug }}/{{ page.image }}">
 		{% endif %}
 
-		<link rel="stylesheet" type="text/css" href="{{ "/styles.css" | relative_url }}">
+		<!-- atom feed -->
 		<link rel="alternate" title="Tomáš Janoušek, Blog" type="application/atom+xml" href="{{ "/atom.xml" | relative_url }}">
 
-		<script async src="{{ "/js/hyphenate.js" | relative_url }}"></script>
+		<!-- analytics -->
 		{% if site.url contains "work.lisk.in" %}
 		<script data-goatcounter="https://liskin.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 		{% endif %}
 
+		<!-- hyphenation -->
+		<script async src="{{ "/js/hyphenate.js" | relative_url }}"></script>
+
+		<!-- dark/light mode -->
 		<script>(s => s ? document.documentElement.classList.add('color-scheme-' + s) : null)(localStorage.getItem('color-scheme'))</script>
 		<script async src="{{ "/js/darkmode.js" | relative_url }}"></script>
+
+		<!-- styles -->
+		<link rel="stylesheet" type="text/css" href="{{ "/styles.css" | relative_url }}">
 
 		<title>{% if page.date %}{{ page.title }} — Tomáš Janoušek, Blog{% else %}Tomáš Janoušek, {{ page.title }}{% endif %}</title>
 	</head>
