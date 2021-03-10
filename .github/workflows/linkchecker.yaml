@@ -7,7 +7,7 @@ on:
     - cron: '0 2 * * 6'
 
 jobs:
-  refresh:
+  linkchecker:
     runs-on: ubuntu-latest
     steps:
       - name: Set up Python
@@ -20,3 +20,10 @@ jobs:
       - name: Run linkchecker
         run: |
           linkchecker --check-extern --ignore-url='sony\.com' https://work.lisk.in/
+
+  linkcheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: filiph/linkcheck@v2.0.15+1
+        with:
+          arguments: https://work.lisk.in/
