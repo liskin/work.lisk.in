@@ -18,8 +18,8 @@ I'm really like]({{ "/real-me/" | relative_url }}) first.
 
 ## My FOSS contributions
 
-* [GitHub profile](https://github.com/liskin)
-* [Open Hub profile](https://www.openhub.net/accounts/Liskni_si) (includes
+* [GitHub profile](https://github.com/liskin){:rel="me"}
+* [Open Hub profile](https://www.openhub.net/accounts/Liskni_si){:rel="me"} (includes
   some older contributions)
 
 [![contribution activity chart](https://ghchart.rshah.org/liskin){:.dark-img-filter}](https://github.com/liskin)

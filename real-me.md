@@ -17,14 +17,14 @@ based in England. Coding professionally since 2002.
     handle is [<tt>liskin</tt>][github-liskin].
 
 <figure markdown="block">
-[![contribution activity chart](https://ghchart.rshah.org/liskin)](https://github.com/liskin)
+[![contribution activity chart](https://ghchart.rshah.org/liskin)][github-liskin]{:rel="me"}
 <figcaption>my GitHub activity</figcaption>
 </figure>
 
-If you believe you might want to hire me, check my [GitHub][github-liskin] and
-[LinkedIn][linkedin-pivnik] profiles and the following sections about my
-[strengths](#strengths) and [quirks](#quirks) to get a better idea whether
-we'd be a good fit[^contact].
+If you believe you might want to hire me, check my
+[GitHub][github-liskin]{:rel="me"} and [LinkedIn][linkedin-pivnik]{:rel="me"}
+profiles and the following sections about my [strengths](#strengths) and
+[quirks](#quirks) to get a better idea whether we'd be a good fit[^contact].
 
 [^contact]:
     If you decide that indeed we are a good fit, feel free to [contact][] me
@@ -187,8 +187,8 @@ we'd be a good fit[^contact].
   _one_ guy from xkcd](https://xkcd.com/1782/) (my IRC client handles
   [Slack][] threads fine, though).
 
-* Road/gravel/urban/fixed-gear/uni [cyclist][strava-profile]. Against cars in
-  cities. Still better driver than many, though.
+* Road/gravel/urban/fixed-gear/uni [cyclist][strava-profile]{:rel="me"}.
+  Against cars in cities. Still better driver than many, though.
 
 * Not ready to relocate, I live with my [wife][] near her
   [university][eva-uni]. Once the [world returns to (new) normal][COVID-19],
