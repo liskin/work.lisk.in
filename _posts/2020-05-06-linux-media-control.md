@@ -273,7 +273,7 @@ some of those experiments: <https://youtu.be/1fN6NMDBFNI>,
 <https://youtu.be/FCStseDBwC4>)
 </i>
 
-[GNOME]: https://www.gnome.org/gnome-3/
+[GNOME]: https://www.gnome.org/
 [Rhythmbox]: https://wiki.gnome.org/Apps/Rhythmbox
 [Totem]: https://wiki.gnome.org/Apps/Videos
 [GSD media keys API]: https://gitlab.gnome.org/GNOME/gnome-settings-daemon/-/blob/28ce4225535329dee6a9aff8c44bd1671ce9d2de/plugins/media-keys/README.media-keys-API
