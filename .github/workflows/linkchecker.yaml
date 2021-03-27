@@ -7,6 +7,7 @@ on:
     - cron: '0 2 * * 6'
 
 jobs:
+  # internal and external links
   linkchecker:
     runs-on: ubuntu-latest
     steps:
@@ -17,13 +18,70 @@ jobs:
       - name: Install linkchecker
         run: |
           pip3 install git+https://github.com/linkchecker/linkchecker.git
-      - name: Run linkchecker
+
+      - id: attempt1
+        continue-on-error: true
+        name: Run linkchecker
         run: |
           linkchecker --check-extern --ignore-url='sony\.com' https://work.lisk.in/
 
+      - name: Sleep
+        if: steps.attempt1.outcome == 'failure'
+        run: sleep 30
+      - id: attempt2
+        if: steps.attempt1.outcome == 'failure'
+        continue-on-error: true
+        name: Run linkchecker
+        run: |
+          linkchecker --check-extern --ignore-url='sony\.com' https://work.lisk.in/
+
+      - name: Sleep
+        if: steps.attempt2.outcome == 'failure'
+        run: sleep 30
+      - id: attempt3
+        if: steps.attempt2.outcome == 'failure'
+        continue-on-error: true
+        name: Run linkchecker
+        run: |
+          linkchecker --check-extern --ignore-url='sony\.com' https://work.lisk.in/
+
+      - name: Fail
+        if: steps.attempt1.outcome == 'failure' && steps.attempt2.outcome == 'failure' && steps.attempt3.outcome == 'failure'
+        run: false
+
+  # internal links and anchors
   linkcheck:
     runs-on: ubuntu-latest
     steps:
-      - uses: filiph/linkcheck@v2.0.15+1
+      - id: attempt1
+        continue-on-error: true
+        name: Run linkcheck
+        uses: filiph/linkcheck@v2.0.15+1
         with:
           arguments: https://work.lisk.in/
+
+      - name: Sleep
+        if: steps.attempt1.outcome == 'failure'
+        run: sleep 30
+      - id: attempt2
+        if: steps.attempt1.outcome == 'failure'
+        continue-on-error: true
+        name: Run linkcheck
+        uses: filiph/linkcheck@v2.0.15+1
+        with:
+          arguments: https://work.lisk.in/
+
+      - name: Sleep
+        if: steps.attempt2.outcome == 'failure'
+        run: sleep 30
+      - id: attempt3
+        if: steps.attempt2.outcome == 'failure'
+        continue-on-error: true
+        name: Run linkcheck
+        uses: filiph/linkcheck@v2.0.15+1
+        with:
+          arguments: https://work.lisk.in/
+
+      - name: Fail
+        if: steps.attempt1.outcome == 'failure' && steps.attempt2.outcome == 'failure' && steps.attempt3.outcome == 'failure'
+        run: false
