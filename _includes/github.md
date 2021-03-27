@@ -17,13 +17,12 @@
 [![liskin/xchat-bttrw](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=xchat-bttrw&show_owner=true)](https://github.com/liskin/xchat-bttrw)
 [![liskin/proper_eunit](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=proper_eunit&show_owner=true)](https://github.com/liskin/proper_eunit)
 [![liskin/locus-rflkt-addon](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=locus-rflkt-addon&show_owner=true)](https://github.com/liskin/locus-rflkt-addon)
+[![liskin/arbtt-chart](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=arbtt-chart&show_owner=true)](https://github.com/liskin/arbtt-chart)
 [![liskin/udp2icmp](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=udp2icmp&show_owner=true)](https://github.com/liskin/udp2icmp)
-[![liskin/strava-segments-kml](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=strava-segments-kml&show_owner=true)](https://github.com/liskin/strava-segments-kml)
 </div>
 
 ### Hidden gems
 <div markdown="span" class="grid-2 dark-img-filter">
-[![liskin/arbtt-chart](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=arbtt-chart&show_owner=true)](https://github.com/liskin/arbtt-chart)
 [![liskin/cervi](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=cervi&show_owner=true)](https://github.com/liskin/cervi)
 [![liskin/foursquare-swarm-ical](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=foursquare-swarm-ical&show_owner=true)](https://github.com/liskin/foursquare-swarm-ical)
 [![liskin/emoji-rofi-menu](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=emoji-rofi-menu&show_owner=true)](https://github.com/liskin/emoji-rofi-menu)
