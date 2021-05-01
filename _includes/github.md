@@ -9,8 +9,8 @@
 
 ### Popular projects (author)
 <div markdown="span" class="grid-2 dark-img-filter">
-[![liskin/strava-map-switcher](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=strava-map-switcher&show_owner=true)](https://github.com/liskin/strava-map-switcher)
 [![liskin/dotfiles](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=dotfiles&show_owner=true)](https://github.com/liskin/dotfiles)
+[![liskin/strava-map-switcher](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=strava-map-switcher&show_owner=true)](https://github.com/liskin/strava-map-switcher)
 [![liskin/strava-offline](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=strava-offline&show_owner=true)](https://github.com/liskin/strava-offline)
 [![liskin/covid19-bloom](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=covid19-bloom&show_owner=true)](https://github.com/liskin/covid19-bloom)
 [![liskin/gh-problem-matcher-wrap](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=gh-problem-matcher-wrap&show_owner=true)](https://github.com/liskin/gh-problem-matcher-wrap)
