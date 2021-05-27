@@ -2,6 +2,8 @@
 layout: default
 title: The real me
 permalink: /real-me/
+redirect_from:
+    - /snowflake.html
 image: https://secure.gravatar.com/avatar/391a8b936b51adccd057c83e6ace7241
 description: >
     Experienced polyglot programmer, FOSS enthusiast and contributor.
