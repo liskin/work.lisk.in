@@ -1,0 +1,10 @@
+# https://github.com/github/pages-gem/blob/master/lib/github-pages/configuration.rb
+lsi: false
+#safe: true
+highlighter: rouge
+kramdown:
+  template: ''
+  math_engine: mathjax
+  syntax_highlighter: rouge
+gist:
+  noscript: false
