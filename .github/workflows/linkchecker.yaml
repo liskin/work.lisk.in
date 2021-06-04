@@ -7,8 +7,23 @@ on:
     - cron: '0 2 * * 6'
 
 jobs:
+  url:
+    runs-on: ubuntu-latest
+    outputs:
+      url: ${{ steps.get-url.outputs.url }}
+    steps:
+      - name: Get URL
+        id: get-url
+        env:
+          GITHUB_TOKEN: ${{ secrets.ABOUT_GITHUB_TOKEN }}
+        run: |
+          set -ex
+          url=$(gh api --jq .html_url repos/${{ github.repository }}/pages)
+          echo "::set-output name=url::$url"
+
   # internal and external links
   linkchecker:
+    needs: url
     runs-on: ubuntu-latest
     steps:
       - name: Set up Python
@@ -23,7 +38,7 @@ jobs:
         continue-on-error: true
         name: Run linkchecker
         run: |
-          linkchecker --check-extern --ignore-url='sony\.com' https://work.lisk.in/
+          linkchecker --check-extern --ignore-url='sony\.com' ${{ needs.url.outputs.url }}
 
       - name: Sleep
         if: steps.attempt1.outcome == 'failure'
@@ -33,7 +48,7 @@ jobs:
         continue-on-error: true
         name: Run linkchecker
         run: |
-          linkchecker --check-extern --ignore-url='sony\.com' https://work.lisk.in/
+          linkchecker --check-extern --ignore-url='sony\.com' ${{ needs.url.outputs.url }}
 
       - name: Sleep
         if: steps.attempt2.outcome == 'failure'
@@ -43,7 +58,7 @@ jobs:
         continue-on-error: true
         name: Run linkchecker
         run: |
-          linkchecker --check-extern --ignore-url='sony\.com' https://work.lisk.in/
+          linkchecker --check-extern --ignore-url='sony\.com' ${{ needs.url.outputs.url }}
 
       - name: Fail
         if: steps.attempt1.outcome == 'failure' && steps.attempt2.outcome == 'failure' && steps.attempt3.outcome == 'failure'
@@ -51,6 +66,7 @@ jobs:
 
   # internal links and anchors
   linkcheck:
+    needs: url
     runs-on: ubuntu-latest
     steps:
       - id: attempt1
@@ -58,7 +74,7 @@ jobs:
         name: Run linkcheck
         uses: filiph/linkcheck@v2.0.15+1
         with:
-          arguments: https://work.lisk.in/
+          arguments: ${{ needs.url.outputs.url }}
 
       - name: Sleep
         if: steps.attempt1.outcome == 'failure'
@@ -69,7 +85,7 @@ jobs:
         name: Run linkcheck
         uses: filiph/linkcheck@v2.0.15+1
         with:
-          arguments: https://work.lisk.in/
+          arguments: ${{ needs.url.outputs.url }}
 
       - name: Sleep
         if: steps.attempt2.outcome == 'failure'
@@ -80,7 +96,7 @@ jobs:
         name: Run linkcheck
         uses: filiph/linkcheck@v2.0.15+1
         with:
-          arguments: https://work.lisk.in/
+          arguments: ${{ needs.url.outputs.url }}
 
       - name: Fail
         if: steps.attempt1.outcome == 'failure' && steps.attempt2.outcome == 'failure' && steps.attempt3.outcome == 'failure'
