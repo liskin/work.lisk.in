@@ -85,6 +85,7 @@ function format-pins {
 function report {
 	user=${1:-liskin}
 	hidden_gems="liskin/arbtt-chart liskin/cervi liskin/foursquare-swarm-ical liskin/gh-problem-matcher-wrap liskin/emoji-rofi-menu liskin/empty-tab"
+	maintained_ignore="xmonad/xmonad-extras xmonad/xmonad-web xmonad/xmonad-docs"
 
 	repos=$(github-user-repos "$user" | filter-public | filter-original)
 	active_repos=$(filter-active <<<"$repos")
@@ -95,7 +96,8 @@ function report {
 	starred_archived=$(<<<"$archived_repos" sort-by-stars | full-names | head -6)
 
 	watched_active=$(github-watched-repos "$user" | filter-public | filter-original | filter-active)
-	maintained=$(<<<"$watched_active" filter-not-owned-by "$user" | filter-admin | sort-by-stars | full-names | head -10)
+	maintained=$(<<<"$watched_active" filter-not-owned-by "$user" | filter-admin | sort-by-stars | full-names)
+	maintained=$(set-difference "$maintained" "$maintained_ignore" | head -10)
 
 	echo '### Popular projects (co-maintainer)'
 	echo '<div markdown="span" class="grid-2 dark-img-filter">'
