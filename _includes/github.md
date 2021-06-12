@@ -5,6 +5,7 @@
 [![xmonad/X11](https://github-readme-stats.vercel.app/api/pin/?username=xmonad&repo=X11&show_owner=true)](https://github.com/xmonad/X11)
 [![xmonad/xmonad-extras](https://github-readme-stats.vercel.app/api/pin/?username=xmonad&repo=xmonad-extras&show_owner=true)](https://github.com/xmonad/xmonad-extras)
 [![xmonad/xmonad-web](https://github-readme-stats.vercel.app/api/pin/?username=xmonad&repo=xmonad-web&show_owner=true)](https://github.com/xmonad/xmonad-web)
+[![xmonad/xmonad-docs](https://github-readme-stats.vercel.app/api/pin/?username=xmonad&repo=xmonad-docs&show_owner=true)](https://github.com/xmonad/xmonad-docs)
 </div>
 
 ### Popular projects (author)
