@@ -321,6 +321,6 @@ nudging me in the correct direction.
 [old-prompt-command]: https://github.com/liskin/dotfiles/blob/460bdc3c5fa814b874c19d172ce0e3955e278207/.bashrc.d/20_prompt.sh#L13-L27
 [ensure-newline-prompt]: https://stackoverflow.com/q/19943482/3407728
 [ensure-newline-prompt-spaces]: https://serverfault.com/a/97543
-[new-prompt-command]: https://github.com/liskin/dotfiles/compare/a5db1831b37f89e00a637bcc20594a4fcf16de1d^...322ad36ec1d3ee5485c7b637e4c41fff7ea6745c
+[new-prompt-command]: https://github.com/liskin/dotfiles/blob/9785740f7f97d7da1f847053fb29fc5a3174d075/.bashrc.d/20_prompt.sh#L10-L27
 
 ---
