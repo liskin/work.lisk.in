@@ -1,6 +1,7 @@
 ### Popular projects (co-maintainer)
 <div markdown="span" class="grid-2 dark-img-filter">
 [![xmonad/xmonad](https://github-readme-stats.vercel.app/api/pin/?username=xmonad&repo=xmonad&show_owner=true)](https://github.com/xmonad/xmonad)
+[![tools-life/taskwiki](https://github-readme-stats.vercel.app/api/pin/?username=tools-life&repo=taskwiki&show_owner=true)](https://github.com/tools-life/taskwiki)
 [![xmonad/xmonad-contrib](https://github-readme-stats.vercel.app/api/pin/?username=xmonad&repo=xmonad-contrib&show_owner=true)](https://github.com/xmonad/xmonad-contrib)
 [![xmonad/X11](https://github-readme-stats.vercel.app/api/pin/?username=xmonad&repo=X11&show_owner=true)](https://github.com/xmonad/X11)
 </div>

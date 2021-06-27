@@ -96,7 +96,7 @@ function report {
 	starred_archived=$(<<<"$archived_repos" sort-by-stars | full-names | head -6)
 
 	watched_active=$(github-watched-repos "$user" | filter-public | filter-original | filter-active)
-	maintained=$(<<<"$watched_active" filter-not-owned-by "$user" | filter-admin | sort-by-stars | full-names)
+	maintained=$(<<<"$watched_active" filter-not-owned-by "$user" | filter-push | sort-by-stars | full-names)
 	maintained=$(set-difference "$maintained" "$maintained_ignore" | head -10)
 
 	echo '### Popular projects (co-maintainer)'
