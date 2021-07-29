@@ -1,15 +1,15 @@
 paginate: 10
 paginate_path: "/blog/page:num/"
 
+theme: null
+
 plugins:
-  - jekyll-github-metadata
-  - jekyll-paginate
   - jekyll-redirect-from
-  - jekyll-relative-links
 
 url: https://work.lisk.in
 
 exclude:
-  - 'CNAME'
-  - 'Makefile'
-  - 'NOTES.wiki'
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - Makefile

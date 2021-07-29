@@ -1,4 +1,5 @@
+/.bundle/
 /.sass-cache/
-/NOTES.wiki
+/Gemfile.lock
 /_pushl_cache/
 /_site/
