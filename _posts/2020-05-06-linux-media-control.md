@@ -81,8 +81,9 @@ arrows are clickable):
 </figure>
 
 The window manager ([xmonad][]) and screen locker
-([xsecurelock][][^xscreensaver]) bind all the keys (and thus also headphone
-buttons via [uinput][] and [bluetoothd][bluetoothd-uinput]) and call the
+([xsecurelock][][^xscreensaver]) bind all the keys (and thus also Bluetooth
+headphones buttons: they appear as a keyboard in xinput and deliver normal
+keypresses via [uinput][] and [bluetoothd][bluetoothd-uinput]) and call the
 [liskin-media][] script:
 
 [uinput]: https://www.kernel.org/doc/html/v5.4/input/uinput.html
