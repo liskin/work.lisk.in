@@ -11,6 +11,7 @@ description: >
 **Tomáš Janoušek**  
 mail: tomi@nomi.cz  
 irc: liskin@[irc.libera.chat](https://libera.chat/)  
+matrix: [@liskin:matrix.org](https://matrix.to/#/@liskin:matrix.org)  
 twitter: [@Liskni\_si](https://twitter.com/Liskni_si){:rel="me"}  
 github: [liskin](https://github.com/liskin){:rel="me"}  
 linkedin: [pivnik](https://www.linkedin.com/in/pivnik){:rel="me"}  
