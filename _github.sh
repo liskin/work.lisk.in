@@ -85,7 +85,7 @@ function format-pins {
 function report {
 	user=${1:-liskin}
 	hidden_gems="liskin/arbtt-chart liskin/cervi liskin/foursquare-swarm-ical liskin/gh-problem-matcher-wrap liskin/emoji-rofi-menu liskin/empty-tab"
-	maintained_ignore="xmonad/xmonad-extras xmonad/xmonad-web xmonad/xmonad-docs xmonad/xmonad-testing"
+	maintained_ignore="xmonad/xmonad-extras xmonad/xmonad-web xmonad/xmonad-docs xmonad/xmonad-testing xmonad/.github"
 
 	repos=$(github-user-repos "$user" | filter-public | filter-original)
 	active_repos=$(filter-active <<<"$repos")
