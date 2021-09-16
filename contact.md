@@ -2,7 +2,7 @@
 layout: default
 title: Contact
 permalink: /contact/
-image: https://secure.gravatar.com/avatar/391a8b936b51adccd057c83e6ace7241
+image: icon400.png
 description: >
     liskin@{github, gitlab, irc.libera.chat, …}, @Liskni_si@twitter
 

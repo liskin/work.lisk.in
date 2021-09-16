@@ -6,6 +6,11 @@
 		<meta name="keywords" content="Tomáš Janoušek, Tomas Janousek, Liskni_si, lisk.in, liskin, Pivník, pivnik">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
+		<!-- favicon -->
+		<link rel="icon" sizes="32x32" href="{{ "/img/icon32.png" | relative_url }}" type="image/png">
+		<link rel="icon" sizes="64x64" href="{{ "/img/icon64.png" | relative_url }}" type="image/png">
+		<link rel="icon" sizes="400x400" href="{{ "/img/icon400.png" | relative_url }}" type="image/png">
+
 		<!-- opengraph, twitter cards, … -->
 		<meta property="og:url" content="{{ page.url | absolute_url }}">
 		<meta property="og:site_name" content="Tomáš Janoušek">
@@ -28,8 +33,10 @@
 		{% endif %}
 		{% if page.image contains "https://" or page.image contains "http://" %}
 		<meta property="og:image" content="{{ page.image }}">
-		{% elsif page.image %}
+		{% elsif page.image and page.date %}
 		<meta property="og:image" content="{{ "/img" | absolute_url }}/{{ page.slug }}/{{ page.image }}">
+		{% elsif page.image %}
+		<meta property="og:image" content="{{ "/img" | absolute_url }}/{{ page.image }}">
 		{% endif %}
 
 		<!-- webmentions, pingbacks -->
