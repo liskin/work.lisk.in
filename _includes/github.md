@@ -13,15 +13,16 @@
 [![liskin/strava-offline](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=strava-offline&show_owner=true)](https://github.com/liskin/strava-offline)
 [![liskin/gh-problem-matcher-wrap](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=gh-problem-matcher-wrap&show_owner=true)](https://github.com/liskin/gh-problem-matcher-wrap)
 [![liskin/covid19-bloom](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=covid19-bloom&show_owner=true)](https://github.com/liskin/covid19-bloom)
+[![liskin/strava-gear](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=strava-gear&show_owner=true)](https://github.com/liskin/strava-gear)
 [![liskin/foursquare-swarm-ical](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=foursquare-swarm-ical&show_owner=true)](https://github.com/liskin/foursquare-swarm-ical)
 [![liskin/xchat-bttrw](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=xchat-bttrw&show_owner=true)](https://github.com/liskin/xchat-bttrw)
 [![liskin/proper_eunit](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=proper_eunit&show_owner=true)](https://github.com/liskin/proper_eunit)
 [![liskin/locus-rflkt-addon](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=locus-rflkt-addon&show_owner=true)](https://github.com/liskin/locus-rflkt-addon)
-[![liskin/arbtt-chart](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=arbtt-chart&show_owner=true)](https://github.com/liskin/arbtt-chart)
 </div>
 
 ### Hidden gems
 <div markdown="span" class="grid-2 dark-img-filter">
+[![liskin/arbtt-chart](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=arbtt-chart&show_owner=true)](https://github.com/liskin/arbtt-chart)
 [![liskin/cervi](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=cervi&show_owner=true)](https://github.com/liskin/cervi)
 [![liskin/emoji-rofi-menu](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=emoji-rofi-menu&show_owner=true)](https://github.com/liskin/emoji-rofi-menu)
 [![liskin/empty-tab](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=empty-tab&show_owner=true)](https://github.com/liskin/empty-tab)
