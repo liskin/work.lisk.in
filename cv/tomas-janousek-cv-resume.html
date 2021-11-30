@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>CV – Tomáš Janoušek</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <style type="text/css">
+html { font-size: 16px; font-family: sans; }
+:root { --print-fonts: Noto Serif, Times New Roman, serif; }
+@media print { html { font-family: var(--print-fonts); line-height: 1.4; } body { font-size: 11pt; } }
+
+
+:root {
+--header-color: #0074a3;
+--link-underline-color: #aaa;
+}
+
+body { max-width: 55em; }
+
+@media print { @page { size: A4; margin: 1cm; @bottom-center { content: counter(page); } } }
+
+header { margin-bottom: 2em; }
+header img { vertical-align: middle; }
+@media print, (min-width: 900px) {
+header { display: flex; justify-content: space-evenly; align-items: flex-end; }
+header .title { flex: 2; }
+header .subtitle { flex: 3; }
+}
+
+header a, footer a, a.ul { text-decoration: underline var(--link-underline-color); }
+header a:hover, footer a:hover, a.ul:hover { text-decoration: none; }
+a { text-decoration: none; color: unset; }
+a:hover { text-decoration: underline var(--link-underline-color); }
+
+h1 { color: var(--header-color); }
+h3 { display: flex; align-items: center; color: var(--header-color); }
+h3::after { content: ""; flex: 1; margin-left: 1em; border-bottom: 2px solid var(--header-color); }
+
+:root { --bullet-spacing: 0.2em; }
+div > p:first-child { margin-bottom: var(--bullet-spacing); }
+div > p + ul { margin-top: var(--bullet-spacing); }
+div > p + ul li p { margin-bottom: var(--bullet-spacing); margin-top: var(--bullet-spacing); }
+
+div.entry > p:first-child *:nth-child(1) { grid-area: position; }
+div.entry > p:first-child *:nth-child(2) { grid-area: location; }
+div.entry > p:first-child *:nth-child(3) { grid-area: years; }
+div.entry > p:first-child { display: grid; column-gap: 1em; }
+@media screen and (max-width: 699px) { div.entry > p:first-child { grid: "position years" "location location" / 1fr max-content; } }
+@media print, (min-width: 700px) { div.entry > p:first-child { grid: "position location years" / max(25ch, 40%) 1fr max-content; } }
+
+dt { font-weight: bold; }
+@media screen and (max-width: 499px) { dd { margin-left: 1.7em; } }
+@media print, (min-width: 500px) {
+dl { display: grid; grid-template-columns: max-content auto; }
+dt { grid-column: 1; margin-right: 1em; }
+dd { grid-column: 2; margin-left: 0; margin-bottom: var(--bullet-spacing); }
+}
+
+.page-break { break-before: page; }
+div { break-inside: avoid; }
+
+:root:not(.has-paged-js) footer { margin-left: auto; margin-right: auto; width: max-content; }
+:root:not(.has-paged-js) footer p { border-top: 2px solid var(--header-color); margin-top: 3em; }
+@media print {
+:root.has-paged-js footer { position: absolute; bottom: -1cm; right: 0; }
+:root.has-paged-js footer p { height: 1cm; margin: 0; display: table-cell; vertical-align: middle; }
+}
+
+
+
+</style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <script data-goatcounter="https://liskin.goatcounter.com/count" data-external="1" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Tomáš Janoušek</h1>
+<p class="subtitle"><a href="mailto:tomi@nomi.cz" class="email">tomi@nomi.cz</a> | Surrey, UK<br />
+<a href="https://lisk.in/" class="uri">https://lisk.in/</a> | <a href="https://github.com/liskin"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iY3VycmVudENvbG9yIiBjbGFzcz0iYmkgYmktZ2l0aHViIiB2aWV3Qm94PSIwIDAgMTYgMTYiPgogIDxwYXRoIGQ9Ik04IDBDMy41OCAwIDAgMy41OCAwIDhjMCAzLjU0IDIuMjkgNi41MyA1LjQ3IDcuNTkuNC4wNy41NS0uMTcuNTUtLjM4IDAtLjE5LS4wMS0uODItLjAxLTEuNDktMi4wMS4zNy0yLjUzLS40OS0yLjY5LS45NC0uMDktLjIzLS40OC0uOTQtLjgyLTEuMTMtLjI4LS4xNS0uNjgtLjUyLS4wMS0uNTMuNjMtLjAxIDEuMDguNTggMS4yMy44Mi43MiAxLjIxIDEuODcuODcgMi4zMy42Ni4wNy0uNTIuMjgtLjg3LjUxLTEuMDctMS43OC0uMi0zLjY0LS44OS0zLjY0LTMuOTUgMC0uODcuMzEtMS41OS44Mi0yLjE1LS4wOC0uMi0uMzYtMS4wMi4wOC0yLjEyIDAgMCAuNjctLjIxIDIuMi44Mi42NC0uMTggMS4zMi0uMjcgMi0uMjcuNjggMCAxLjM2LjA5IDIgLjI3IDEuNTMtMS4wNCAyLjItLjgyIDIuMi0uODIuNDQgMS4xLjE2IDEuOTIuMDggMi4xMi41MS41Ni44MiAxLjI3LjgyIDIuMTUgMCAzLjA3LTEuODcgMy43NS0zLjY1IDMuOTUuMjkuMjUuNTQuNzMuNTQgMS40OCAwIDEuMDctLjAxIDEuOTMtLjAxIDIuMiAwIC4yMS4xNS40Ni41NS4zOEE4LjAxMiA4LjAxMiAwIDAgMCAxNiA4YzAtNC40Mi0zLjU4LTgtOC04eiIvPgo8L3N2Zz4=" style="width:1em" alt="github" /> liskin</a> | <a href="https://www.linkedin.com/in/pivnik"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iY3VycmVudENvbG9yIiBjbGFzcz0iYmkgYmktbGlua2VkaW4iIHZpZXdCb3g9IjAgMCAxNiAxNiI+CiAgPHBhdGggZD0iTTAgMS4xNDZDMCAuNTEzLjUyNiAwIDEuMTc1IDBoMTMuNjVDMTUuNDc0IDAgMTYgLjUxMyAxNiAxLjE0NnYxMy43MDhjMCAuNjMzLS41MjYgMS4xNDYtMS4xNzUgMS4xNDZIMS4xNzVDLjUyNiAxNiAwIDE1LjQ4NyAwIDE0Ljg1NFYxLjE0NnptNC45NDMgMTIuMjQ4VjYuMTY5SDIuNTQydjcuMjI1aDIuNDAxem0tMS4yLTguMjEyYy44MzcgMCAxLjM1OC0uNTU0IDEuMzU4LTEuMjQ4LS4wMTUtLjcwOS0uNTItMS4yNDgtMS4zNDItMS4yNDgtLjgyMiAwLTEuMzU5LjU0LTEuMzU5IDEuMjQ4IDAgLjY5NC41MjEgMS4yNDggMS4zMjcgMS4yNDhoLjAxNnptNC45MDggOC4yMTJWOS4zNTljMC0uMjE2LjAxNi0uNDMyLjA4LS41ODYuMTczLS40MzEuNTY4LS44NzggMS4yMzItLjg3OC44NjkgMCAxLjIxNi42NjIgMS4yMTYgMS42MzR2My44NjVoMi40MDFWOS4yNWMwLTIuMjItMS4xODQtMy4yNTItMi43NjQtMy4yNTItMS4yNzQgMC0xLjg0NS43LTIuMTY1IDEuMTkzdi4wMjVoLS4wMTZhNS41NCA1LjU0IDAgMCAxIC4wMTYtLjAyNVY2LjE2OWgtMi40Yy4wMy42NzggMCA3LjIyNSAwIDcuMjI1aDIuNHoiLz4KPC9zdmc+" style="width:1em" alt="linkedin" /> pivnik</a> </p>
+</header>
+<h3 id="skills">Skills</h3>
+<dl>
+<dt>Languages</dt>
+<dd>Bash, C++, C, Elixir, Erlang, Haskell, Java, JavaScript, Perl, Python, SQL, Scala, TeX
+</dd>
+<dt>Technologies</dt>
+<dd>Linux, PostgreSQL, HTML, CSS, WebExtensions, X11, Android, x86 ASM, IRC
+</dd>
+<dt>Tools</dt>
+<dd>Vim, Git, GNU Make, GitHub Actions, Jenkins, QuickCheck, Docker, Ansible
+</dd>
+</dl>
+<h3 id="experience">Experience</h3>
+<div class="entry">
+<p><em><strong>sabbatical</strong></em> <span>(Guildford, UK)</span> <strong>2020–2021</strong></p>
+<ul>
+<li><p>Joined the <a href="https://xmonad.org/">XMonad</a> project as a core maintainer. Contributed fixes, features. Reviewed pull requests and helped 2 other people join the project. Directed a release. Launched crowdfunding.</p></li>
+<li><p>Implemented CI for <a href="https://github.com/tools-life/taskwiki/">taskwiki</a> (taskwarrior integration for vimwiki) using Docker and GitHub Actions. Contributed a number of fixes and became a co-maintainer.</p></li>
+<li><p>Improved Language Server Protocol support (rename, code actions) in <a href="https://github.com/dense-analysis/ale">Async Lint Engine for Vim</a>.</p></li>
+<li><p>Upped my Python skills, released <a href="https://pypi.org/project/strava-offline/">strava-offline</a>, <a href="https://pypi.org/project/strava-gear/">strava-gear</a>, <a href="https://pypi.org/project/arbtt-chart/">arbtt-chart</a>, <a href="https://pypi.org/project/foursquare-swarm-ical/">foursquare-swarm-ical</a>.</p></li>
+</ul>
+</div>
+<div class="entry">
+<p><strong>Software Engineer</strong> <span><a href="https://www.altworx.com/">Altworx</a> (Brno, CZ)</span> <strong>2019–2020</strong></p>
+<ul>
+<li><p>Collaborated on a real-time event processing system with physical and cyber security applications.</p></li>
+<li><p>Prototyped a 100× faster storage engine for the reality network (time-travelling graph database).</p></li>
+<li><p>Discovered, investigated and fixed several fundamental issues in the event processing pipeline.</p></li>
+<li><p>Addressed technical debt using static analysis tools (linting, types) and a custom testing framework.</p></li>
+<li><p><em>Tech:</em> Elixir, PostgreSQL, Kafka, Docker, Jenkins, BitBucket Pipelines</p></li>
+</ul>
+</div>
+<div class="entry">
+<p><strong>Principal Software Engineer</strong> <span><a href="https://www.gooddata.com/">GoodData</a> (Brno, CZ)</span> <strong>2017–2019</strong></p>
+<ul>
+<li><p>Ran continuous integration and deployment infrastructure and build tooling for 100 engineers.</p></li>
+<li><p>Reviewed and merged hundreds of pull requests across multiple repositories.</p></li>
+<li><p>Sped up our JIRA deployment so much that I got Thank-you emails from the grumpiest engineers.</p></li>
+<li><p>Contributed patches to <a href="https://docs.openstack.org/infra/jenkins-job-builder/">jenkins-job-builder</a> and <a href="https://pypi.org/project/python-jenkins/">python-jenkins</a>. Became a co-maintainer of both.</p></li>
+<li><p>Made builds of dozens of components more reproducible, secure and scalable using Docker.</p></li>
+<li><p>Set up a merge queue for the legacy monolith with 4-hour integration tests, saving its developers hours of wasted time every week.</p></li>
+<li><p>Built a tool for tracking individual test failures in JIRA, helping developers of shared codebases.</p></li>
+<li><p><em>Tech:</em> Python, Perl, Bash, Jenkins, Zuul, Groovy, Java, Docker, Puppet, RPM</p></li>
+</ul>
+</div>
+<div class="entry">
+<p><strong>Backend Software Engineer</strong> <span><a href="https://www.sqldep.com/">SQLdep</a> (Brno, CZ)</span> <strong>2015–2016</strong></p>
+<ul>
+<li><p>Collaborated on a multi-dialect SQL parser and visual data flow (lineage) analyzer.</p></li>
+<li><p>Administered the CI infrastructure and introduced continuous deployment for the backend.</p></li>
+<li><p>Scaled the analyzer using parallel workers and a job queue. Set up logging and monitoring.</p></li>
+<li><p>Prototyped on-premise deployment of the cloud-first product for customers in regulated industries.</p></li>
+<li><p>Tackled tech debt: refactored the codebase into independent components, sped up tests and builds.</p></li>
+<li><p><em>Tech:</em> Scala, Perl, SQL, Jenkins, Ansible</p></li>
+</ul>
+</div>
+<div class="entry">
+<p><strong>Technical Co-founder</strong> <span><a href="https://www.briskat.com/">Briskat</a> (Brno, CZ)</span> <strong>2014–2014</strong></p>
+<ul>
+<li><p>Developed a prototype of a high-performance interactive database primarily for Online Analytical Processing, capable of processing millions of rows in milliseconds on commodity hardware.</p></li>
+<li><p>Used caching and data compression (with some pre-/post-processing tricks to improve compression effectiveness) to reduce CPU work and improve memory bandwidth utilization.</p></li>
+<li><p>Designed data structures and algorithms for efficient data storage, sorting, joining and querying.</p></li>
+<li><p><em>Tech:</em> Erlang, C, x86 asm</p></li>
+</ul>
+</div>
+<div class="entry">
+<p><strong>Senior Software Engineer</strong> <span><a href="https://www.gooddata.com/">GoodData</a> (Brno, CZ)</span> <strong>2011–2014</strong></p>
+<ul>
+<li><p>Developed a second-generation Extensible Analytics Engine (XAE), the core of GoodData platform.</p></li>
+<li><p>Built an optimizing compiler from Multi-Dimension Analytical Query Language to SQL.</p></li>
+<li><p>Tested the SQL backend against a reference implementation of the semantics using QuickCheck.</p></li>
+<li><p>Set up regression testing infrastructure using both synthetic and production data. This ensured correctness, prevented performance regressions and allowed us to run performance experiments.</p></li>
+<li><p>Pioneered CI (test results within a minute of git push) and CD (using Erlang hot code reloading).</p></li>
+<li><p>Had my sleep interrupted due to production incidents less than 5 times: XAE uses small workers (microservices) with almost no moving parts, serving millions of reports daily.</p></li>
+<li><p>Promoted to Senior Software Engineer after we fully migrated to the second generation XAE.</p></li>
+<li><p><em>Tech:</em> Perl, Erlang, Haskell, PostgreSQL, Jenkins, Puppet, Splunk</p></li>
+</ul>
+</div>
+<div class="entry">
+<p><strong>Software Engineer</strong> <span><a href="https://www.redhat.com/en">Red Hat</a> (Brno, CZ)</span> <strong>2006–2008</strong></p>
+<ul>
+<li><p>Maintained RHEL and Fedora packages for Bash, Dovecot, Cyrus IMAP, BRLTTY.</p></li>
+<li><p>Fixed Xorg freezing after 49.7 days (Windows 95, 98 famously had that issue a few years earlier).</p></li>
+<li><p>Added the boot-based timer into the Linux kernel to fix uptime and process start times after sleep.</p></li>
+<li><p>Fixed a hard to reproduce race in nss_ldap which led to users seeing another user’s data (e-mails).</p></li>
+<li><p>Promoted from Associate Software Engineer to Software Engineer within 6 months.</p></li>
+<li><p><em>Tech:</em> C, Bash, RPM, CVS, Git</p></li>
+</ul>
+</div>
+<div class="entry">
+<p><strong>Programmer</strong> <span>QNet CZ (Brno, CZ)</span> <strong>2002–2006</strong></p>
+<ul>
+<li><p>Built an Internet Service Provider portal backend which configured iptables and traffic control (shaping) and showed live per-customer traffic statistics.</p></li>
+<li><p>Implemented a flexible role-based access control framework for the frontend.</p></li>
+<li><p>Shadowed the network administrator and technicians, later used the knowledge while volunteering for the <a href="https://translate.google.com/translate?sl=cs&amp;tl=en&amp;u=https://cs.wikipedia.org/wiki/CZFree.Net">CZFree.Net community network</a>.</p></li>
+<li><p><em>Tech:</em> C++, PHP, iptables</p></li>
+</ul>
+</div>
+<h3 id="education">Education</h3>
+<div class="entry">
+<p><strong>Computer Science</strong> <span><a href="https://www.fi.muni.cz/index.html.en">Masaryk University</a> (Brno, CZ)</span> <strong>2006–2013</strong></p>
+<ul>
+<li><p>Specialized in Parallel and Distributed Systems. Member of the <a href="https://paradise.fi.muni.cz/">ParaDiSe lab</a>.</p></li>
+<li><p>Redesigned the e-learning software for typesetting exam test sheets: improved layout to avoid page/column breaks in multiple-choice; added support for advanced formatting, images and mathematical formulae. The system is still in use today. <em>Tech:</em> LaTeX, Haskell</p></li>
+<li><p>Typeset the <a href="https://is.muni.cz/publication/1122631/cs/Matematika-drsne-a-svizne/Slovak-Panak-Bulant?lang=en">Brisk Guide to Mathematics</a>, a textbook for the undergraduate math curriculum.</p></li>
+<li><p>Teaching assistant for Introduction to Functional Programming; Automata and Grammars.</p></li>
+</ul>
+</div>
+<div class="entry">
+<p><strong>Scientific Computing</strong> <span>Universität Wien (Vienna, AT)</span> <strong>2010</strong></p>
+</div>
+<h3 id="personal">Personal</h3>
+<p><strong><a href="https://lisk.in/">Technical blog</a>.</strong> Popular articles: <a href="https://work.lisk.in/2020/05/06/linux-media-control.html" class="ul">Linux, media keys and multiple players</a>; <a href="https://work.lisk.in/2020/11/20/even-faster-bash-startup.html" class="ul">Even faster bash startup</a></p>
+<div>
+<p><strong><a href="https://work.lisk.in/about/#my-foss-contributions">Free and open-source software</a>.</strong> Contributed hundreds of patches, released dozens of small projects, joined several mid-sized projects as a (co-)maintainer.</p>
+<ul>
+<li><p>Maintainer of the <a href="https://xmonad.org/">XMonad</a> X11 window manager. Ex-committer to the <a href="https://github.com/fluxbox/fluxbox">Fluxbox</a> WM.</p></li>
+<li><p><a href="https://github.com/liskin/hybrid-screenclone">Prototyped</a> <a href="https://gitlab.freedesktop.org/xorg/driver/xf86-video-intel/-/commit/8067255dc9185e85b110254ffbea4d9682d3aa2d">Linux support for external monitors on dual-GPU laptops</a> (Nvidia Optimus.)</p></li>
+</ul>
+</div>
+<div>
+<p><strong>Cycling.</strong> Won 3 <a href="https://en.wikipedia.org/wiki/Alleycat_race">alleycat races</a> (and a few more podium finishes). Built several cycling-related tools:</p>
+<ul>
+<li><p><a href="https://github.com/liskin/strava-map-switcher" class="ul">strava-map-switcher</a> is a browser extension for Strava with over 4000 users adding better maps.</p></li>
+<li><p><a href="https://github.com/liskin/strava-offline" class="ul">strava-offline</a> keeps a local mirror (backup) of Strava activities for further analysis.</p></li>
+<li><p><a href="https://github.com/liskin/strava-gear" class="ul">strava-gear</a> is a rule-based tracker of gear and component wear.</p></li>
+<li><p><a href="https://github.com/liskin/locus-rflkt-addon" class="ul">locus-rflkt-addon</a> connects Locus Map (Android app) with Wahoo RLFKT (cycling computer).</p></li>
+</ul>
+</div>
+<footer>
+<p>
+<a href="https://work.lisk.in/cv/tomas-janousek-cv-resume.html">HTML version</a> | <a href="https://work.lisk.in/cv/tomas-janousek-cv-resume.pdf">PDF version</a>
+</p>
+</footer>
+</body>
+</html>
