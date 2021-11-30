@@ -158,6 +158,11 @@ html { font-size: 16px; font-family: sans; }
 
 body { max-width: 55em; }
 
+@media screen and (min-width: 1200px) {
+html { background-color: #eee; }
+body { margin: 30px auto; background-color: #fdfdfd; border: 1px solid #ccc; box-shadow: 2px 2px 4px #aaa; }
+}
+
 @media print { @page { size: A4; margin: 1cm; @bottom-center { content: counter(page); } } }
 
 header { margin-bottom: 2em; }
@@ -283,7 +288,7 @@ div { break-inside: avoid; }
 <li><p>Developed a prototype of a high-performance interactive database primarily for Online Analytical Processing, capable of processing millions of rows in milliseconds on commodity hardware.</p></li>
 <li><p>Used caching and data compression (with some pre-/post-processing tricks to improve compression effectiveness) to reduce CPU work and improve memory bandwidth utilization.</p></li>
 <li><p>Designed data structures and algorithms for efficient data storage, sorting, joining and querying.</p></li>
-<li><p><em>Tech:</em> Erlang, C, x86 asm</p></li>
+<li><p><em>Tech:</em> Erlang, C, x86 ASM</p></li>
 </ul>
 </div>
 <div class="entry">
@@ -316,7 +321,7 @@ div { break-inside: avoid; }
 <li><p>Built an Internet Service Provider portal backend which configured iptables and traffic control (shaping) and showed live per-customer traffic statistics.</p></li>
 <li><p>Implemented a flexible role-based access control framework for the frontend.</p></li>
 <li><p>Shadowed the network administrator and technicians, later used the knowledge while volunteering for the <a href="https://translate.google.com/translate?sl=cs&amp;tl=en&amp;u=https://cs.wikipedia.org/wiki/CZFree.Net">CZFree.Net community network</a>.</p></li>
-<li><p><em>Tech:</em> C++, PHP, iptables</p></li>
+<li><p><em>Tech:</em> C++, PHP, Perl, iptables, Asterisk, CVS, Subversion</p></li>
 </ul>
 </div>
 <h3 id="education">Education</h3>
