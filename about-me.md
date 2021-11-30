@@ -8,13 +8,18 @@ description: >
 
 ---
 
-I'm an experienced polyglot programmer, free and open-source software
-enthusiast and regular contributor from the Czech Republic, currently based in
-England. I also cycle a lot (road, gravel, urban, fixed-gear, unicycle), read
-books, listen to music and taste beers.
+I'm a polyglot programmer with almost two decades of experience in the
+industry, free and open-source software enthusiast and regular contributor
+from the Czech Republic, currently based in England. I also cycle a lot (road,
+gravel, urban, fixed-gear, unicycle), read books, listen to music and taste
+beers.
 
-If you're considering contacting me about a job offer, you should [read what
-I'm really like]({{ "/real-me/" | relative_url }}) first.
+## Hire me
+
+* See [my CV/Résumé]({{ "/cv/tomas-janousek-cv-resume.html" | relative_url }})
+  ([PDF version]({{ "/cv/tomas-janousek-cv-resume.pdf" | relative_url }})).
+
+* Read [more about my strengths and quirks]({{ "/real-me/" | relative_url }}).
 
 ## My FOSS contributions
 

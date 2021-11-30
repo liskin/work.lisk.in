@@ -6,13 +6,13 @@ redirect_from:
     - /snowflake.html
 image: icon400.png
 description: >
-    Experienced polyglot programmer, FOSS enthusiast and contributor.
+    Polyglot programmer with almost two decades of experience in the industry, FOSS enthusiast and contributor.
 
 ---
 
-I'm an experienced polyglot programmer, free and open-source software
-enthusiast and regular contributor from the Czech Republic[^tld], currently
-based in England. Coding professionally since 2002.
+I'm a polyglot programmer, free and open-source software enthusiast and
+regular contributor from the Czech Republic[^tld], currently based in England.
+Coding professionally since 2002.
 
 [^tld]:
     Despite the <tt>.in</tt> TLD. It's <tt>lisk.in</tt> because my GitHub
@@ -23,8 +23,10 @@ based in England. Coding professionally since 2002.
 <figcaption>my GitHub activity</figcaption>
 </figure>
 
-If you believe you might want to hire me, check my
-[GitHub][github-liskin]{:rel="me"} and [LinkedIn][linkedin-pivnik]{:rel="me"}
+If you believe you might want to hire me, see
+[my CV/Résumé]({{ "/cv/tomas-janousek-cv-resume.html" | relative_url }})
+([PDF version]({{ "/cv/tomas-janousek-cv-resume.pdf" | relative_url }})),
+check my [GitHub][github-liskin]{:rel="me"} and [LinkedIn][linkedin-pivnik]{:rel="me"}
 profiles and the following sections about my [strengths](#strengths) and
 [quirks](#quirks) to get a better idea whether we'd be a good fit[^contact].
 
