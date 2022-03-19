@@ -15,8 +15,8 @@
 [![liskin/gh-problem-matcher-wrap](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=gh-problem-matcher-wrap&show_owner=true)](https://github.com/liskin/gh-problem-matcher-wrap)
 [![liskin/covid19-bloom](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=covid19-bloom&show_owner=true)](https://github.com/liskin/covid19-bloom)
 [![liskin/strava-gear](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=strava-gear&show_owner=true)](https://github.com/liskin/strava-gear)
-[![liskin/arbtt-chart](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=arbtt-chart&show_owner=true)](https://github.com/liskin/arbtt-chart)
 [![liskin/foursquare-swarm-ical](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=foursquare-swarm-ical&show_owner=true)](https://github.com/liskin/foursquare-swarm-ical)
+[![liskin/arbtt-chart](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=arbtt-chart&show_owner=true)](https://github.com/liskin/arbtt-chart)
 [![liskin/proper_eunit](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=proper_eunit&show_owner=true)](https://github.com/liskin/proper_eunit)
 [![liskin/locus-rflkt-addon](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=locus-rflkt-addon&show_owner=true)](https://github.com/liskin/locus-rflkt-addon)
 </div>
