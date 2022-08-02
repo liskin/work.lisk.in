@@ -195,7 +195,7 @@ profiles and the following sections about my [strengths](#strengths) and
   Against cars in cities. Still better driver than many, though.
 
 * Not ready to relocate, I live with my [wife][] near her
-  [university][eva-uni]. Once the [world returns to (new) normal][COVID-19],
+  [university][eva-uni]. Now that the [world has returned to (new) normal][COVID-19],
   monthly travel to socialize/hack together is not a problem, and in fact
   quite welcome.
 
@@ -227,6 +227,6 @@ profiles and the following sections about my [strengths](#strengths) and
 [Slack]: https://slack.com/
 [wife]: https://www.linkedin.com/in/eva-janou%C5%A1kov%C3%A1-2a53a5162/
 [COVID-19]: https://en.wikipedia.org/wiki/COVID-19_pandemic
-[eva-uni]: https://www.surrey.ac.uk/school-veterinary-medicine/about/department-veterinary-epidemiology-and-public-health
+[eva-uni]: https://www.ucl.ac.uk/london
 
 ---
