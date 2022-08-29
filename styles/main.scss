@@ -250,7 +250,7 @@ main {
 
 		dt { margin-top: 0.5em; }
 		dd { margin-inline-start: 2em; }
-		dd a:first-child { font-size: 1.1em; }
+		dd > a:first-child { font-size: 1.1em; }
 	}
 
 	dl#posts-all {
