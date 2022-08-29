@@ -302,6 +302,13 @@ main {
 			}
 		}
 
+		&.half-size {
+			img, svg, pre, p, table, table img {
+				width: unset;
+				max-width: min(20em, 100%);
+			}
+		}
+
 		&.transparent-bg-light {
 			img, svg, pre, p, table {
 				@media screen {
