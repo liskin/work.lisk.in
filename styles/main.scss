@@ -240,11 +240,6 @@ main {
 		border-top: none;
 	}
 
-	> article p, > article #footnotes, > dl#posts p {
-		@media screen and (min-width: 45em) { text-align: justify; }
-		@media print { text-align: justify; }
-	}
-
 	dl#posts {
 		margin: 0;
 
