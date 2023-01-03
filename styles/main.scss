@@ -262,6 +262,10 @@ main {
 		a:hover { color: var(--link-hover-color); }
 	}
 
+	> article.hyphenate {
+		hyphens: auto;
+	}
+
 	h1 { font-size: 1.5em; }
 	h2 { font-size: 1.3em; }
 
