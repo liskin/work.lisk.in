@@ -260,19 +260,24 @@ plugin that may be manually enabled in its preferences.
 
 It is _a bit_ of a mess.
 
+<i>
+(I tested this on a [Fedora][] 32 live DVD with [GNOME][] 3.36. Recordings of
+some of those experiments: <https://youtu.be/1fN6NMDBFNI>,
+<https://youtu.be/FCStseDBwC4>)
+</i>
+
 ##### Update 2021-03-10: workaround using [playerctld][]
 
 There is now a workaround in [playerctl][playerctld]: `playerctl daemon`
 starts an [MPRIS][] proxy that provides the “last active player” logic to
 environments that don't implement it themselves, like GNOME.
 
-[playerctld]: https://github.com/altdesktop/playerctl#selecting-players-to-control
+##### Update 2023-01-03: works out of the box now
 
-<i>
-(I tested this on a [Fedora][] 32 live DVD with [GNOME][] 3.36. Recordings of
-some of those experiments: <https://youtu.be/1fN6NMDBFNI>,
-<https://youtu.be/FCStseDBwC4>)
-</i>
+Since [this commit to
+gnome-settings-daemon](https://gitlab.gnome.org/GNOME/gnome-settings-daemon/-/commit/ae95b871d2ea4409a95c750d8ce63c9e5b29a6b8),
+available in stable GNOME 3.38 (released back in 2020) and later, the “last
+active player” logic is builtin and GNOME does the right thing out of the box.
 
 [GNOME]: https://www.gnome.org/
 [Rhythmbox]: https://wiki.gnome.org/Apps/Rhythmbox
@@ -280,6 +285,7 @@ some of those experiments: <https://youtu.be/1fN6NMDBFNI>,
 [GSD media keys API]: https://gitlab.gnome.org/GNOME/gnome-settings-daemon/-/blob/28ce4225535329dee6a9aff8c44bd1671ce9d2de/plugins/media-keys/README.media-keys-API
 [gnome-settings-daemon]: https://gitlab.gnome.org/GNOME/gnome-settings-daemon/-/tree/28ce4225535329dee6a9aff8c44bd1671ce9d2de/plugins/media-keys
 [Fedora]: https://getfedora.org/
+[playerctld]: https://github.com/altdesktop/playerctl#selecting-players-to-control
 
 #### [KDE Plasma 5][]
 
