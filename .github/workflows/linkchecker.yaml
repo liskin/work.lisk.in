@@ -28,6 +28,7 @@ jobs:
     env:
       LINKCHECKER_FLAGS: >-
         --ignore-url='sony\.com'
+        --ignore-url='gnome\.org'
     steps:
       - name: Set up Python
         uses: actions/setup-python@v4
