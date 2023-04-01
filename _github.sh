@@ -93,7 +93,7 @@ function report {
 
 	starred_active=$(<<<"$active_repos" sort-by-stars | full-names | head -10)
 	hidden_gems=$(set-difference "$hidden_gems" "$starred_active")
-	starred_archived=$(<<<"$archived_repos" sort-by-stars | full-names | head -6)
+	starred_archived=$(<<<"$archived_repos" sort-by-stars | full-names | head -2)
 
 	watched_active=$(github-watched-repos "$user" | filter-public | filter-original | filter-active)
 	maintained=$(<<<"$watched_active" filter-not-owned-by "$user" | filter-push | sort-by-stars | full-names)
