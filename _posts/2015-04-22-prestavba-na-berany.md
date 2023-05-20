@@ -51,7 +51,7 @@ zvednout ruku z brzd. No, asi to mohlo být i horší... :-)
 
 [dualy]: https://en.wikipedia.org/wiki/Shimano_Total_Integration
 [dropvbrake]: http://www.phred.org/~alex/bikes/brakes.html
-[travelagent]: http://problemsolversbike.com/products/travel_agents/
+[travelagent]: https://problemsolversbike.com/products/travel-agent
 [Gevenalle]: https://gevenalle.com/product-category/shifters/
 [sl-bs77]: https://www.jensonusa.com/Shimano-SL-BS77-9-SPEED-Bar-End-Shifters
 [trek520]: https://www.trekbikes.com/us/en/bikes/road/touring/520/
