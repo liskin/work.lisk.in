@@ -30,13 +30,17 @@ jobs:
         --ignore-url='sony\.com'
         --ignore-url='gnome\.org'
     steps:
+      - uses: actions/checkout@v4
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
+          cache: 'pip'
+          cache-dependency-path: |
+            .github/workflows/linkchecker.yaml
       - name: Install linkchecker
         run: |
-          pip3 install git+https://github.com/linkchecker/linkchecker.git
+          pip3 install 'LinkChecker >= 10.2'
 
       - id: attempt1
         continue-on-error: true
