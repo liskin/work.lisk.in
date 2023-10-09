@@ -149,14 +149,14 @@ body > header {
 			margin: 0 auto;
 
 			display: grid;
-			grid-template-columns: auto min-content;
+			grid-template-columns: auto auto;
+			justify-content: space-between;
 
 			h1 {
 				text-align: left;
 			}
 
 			ul {
-				white-space: nowrap;
 				align-self: end;
 			}
 		}
@@ -166,8 +166,9 @@ body > header {
 				visibility: hidden;
 			}
 
-			display: table;
-			table-layout: fixed;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
 
 			margin: 0 auto;
 			padding: 0;
@@ -175,8 +176,8 @@ body > header {
 			list-style-type: none;
 
 			li {
-				display: table-cell;
-				position: relative;
+				display: inline-block;
+				margin-bottom: 0 !important;
 				padding: 0;
 				vertical-align: bottom;
 
