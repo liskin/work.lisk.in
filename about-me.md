@@ -4,15 +4,16 @@ title: About me
 permalink: /about/
 image: icon400.png
 description: >
-    Polyglot programmer, FOSS enthusiast and contributor, cyclist, beer lover.
+    Polyglot programmer, FOSS enthusiast and contributor, cyclist, inline
+    skater, beer lover.
 
 ---
 
 I'm a polyglot programmer with almost two decades of experience in the
 industry, free and open-source software enthusiast and regular contributor
 from the Czech Republic, currently based in England. I also cycle a lot (road,
-gravel, urban, fixed-gear, unicycle), read books, listen to music and taste
-beers.
+gravel, urban, fixed-gear, unicycle), inline skate (urban, endurance), read
+books, listen to music and taste beers.
 
 ## Hire me
 
