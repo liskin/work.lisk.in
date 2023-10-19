@@ -69,6 +69,17 @@
 	}
 }
 
+:root {
+	@media screen {
+		@media (min-width: 75em) {
+			font-size: 110%;
+		}
+		@media (min-width: 100em) {
+			font-size: 120%;
+		}
+	}
+}
+
 a, a:link, a:visited, button { color: var(--link-color); }
 a:hover, button:hover { background-color: var(--link-hover-bg-color); color: var(--link-hover-color); text-decoration: none; }
 svg a:hover { opacity: 0.5; }
