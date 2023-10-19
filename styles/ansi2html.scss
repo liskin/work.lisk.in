@@ -1,0 +1,37 @@
+---
+---
+
+/* styles for output from https://github.com/pycontribs/ansi2html */
+.ansi2html-content {
+	code { background-color: unset; color: unset; }
+	&.body_background { background-color: #000000; }
+	&.body_foreground { color: #AAAAAA; }
+
+	.ansi1 { font-weight: bold; }
+	.ansi2 { font-weight: lighter; }
+	.ansi31 { color: #aa0000; }
+	.ansi32 { color: #00aa00; }
+	.ansi33 { color: #aa5500; }
+	.ansi34 { color: #0000aa; }
+	.ansi36 { color: #00aaaa; }
+	.ansi37 { color: #F5F1DE; }
+	.ansi38-149 { color: #afd75f; }
+	.ansi38-203 { color: #ff5f5f; }
+	.ansi38-231 { color: #ffffff; }
+	.ansi38-245 { color: #8a8a8a; }
+	.ansi38-39 { color: #00afff; }
+	.ansi48-124 { background: #af0000; }
+	.ansi48-22 { background: #005f00; }
+	.ansi48-233 { background: #121212; }
+	.ansi48-235 { background: #262626; }
+	.ansi48-28 { background: #008700; }
+	.ansi48-52 { background: #5f0000; }
+	.inv_background { background-color: #AAAAAA; }
+	.inv_foreground { color: #000000; }
+	.inv31 { background-color: #aa0000; }
+	.inv33 { background-color: #aa5500; }
+	.inv35 { background-color: #E850A8; }
+	.inv36 { background-color: #00aaaa; }
+	.inv38-157 { background: #afffaf; }
+	.inv38-166 { background: #d75f00; }
+}

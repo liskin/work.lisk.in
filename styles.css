@@ -4,3 +4,4 @@
 @import url("{{ "/styles/normalize.css" | relative_url }}");
 @import url("{{ "/styles/main.css" | relative_url }}");
 @import url("{{ "/styles/syntax.css" | relative_url }}");
+@import url("{{ "/styles/ansi2html.css" | relative_url }}");

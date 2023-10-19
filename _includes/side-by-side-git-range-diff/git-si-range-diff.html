@@ -1,0 +1,37 @@
+<!--
+# resize terminal to 108 columns
+$ pipx install ansi2html
+$ DELTA_PAGER=cat ttyrec -e 'git si-range-diff wx-partial...' /tmp/rangediff2
+$ ttyrec2ansi </tmp/rangediff2 | ansi2html >/tmp/rangediff2.html
+-->
+<pre class="ansi2html-content body_foreground body_background x-smaller"><code><!--
+--><span class="ansi38-39"></span><span class="ansi38-39 ansi48-235">────────────────────────────────────────────────────────────────────────────────────────────────────────────</span>
+<span class="ansi1 ansi31">1:  05a5291e </span><span class="ansi1 ansi37">!</span><span class="ansi1 ansi36"> 1:  d5c45f98</span><span class="ansi1 ansi37"> X.Prelude: Add infinite stream type</span>
+
+<span class="ansi38-245 ansi48-235">──────────────────────────────────────────────────────────────────────────────────</span><span class="ansi38-245 ansi48-235">┐</span>
+<span class="ansi38-231"> XMonad/Prelude.hs: multimediaKeys = filter ((/= noSymbol) . snd) . map (id &amp;&amp;&amp; s </span><span class="ansi38-245 ansi48-235">│</span>
+<span class="ansi38-245 ansi48-235">──────────────────────────────────────────────────────────────────────────────────</span><span class="ansi38-245 ansi48-235">┘</span>
+<span class="ansi1 ansi38-245 ansi48-233"></span><span class="ansi38-149">+  type (Item (Stream a)) = a</span>                         <span class="ansi38-245">│ </span><span class="ansi38-149">+  type (Item (Stream a)) = a</span>
+<span class="ansi1 ansi38-245 ansi48-233"></span><span class="ansi38-149">+</span>                                                     <span class="ansi38-245">│ </span><span class="ansi38-149">+</span>
+<span class="ansi1 ansi38-245 ansi48-233"></span><span class="ansi38-149">+  fromList :: [a] -&gt; Stream a</span>                        <span class="ansi38-245">│ </span><span class="ansi38-149">+  fromList :: [a] -&gt; Stream a</span>
+<span class="ansi1 ansi38-245 ansi48-233"></span><span class="ansi38-149 ansi48-52">+  fromList []       = errorWithoutStackTrace "TODO"</span><span class="ansi48-52">  </span><span class="ansi38-245">│ </span>
+<span class="ansi1 ansi38-245 ansi48-233"></span><span class="ansi38-149">+  fromList (x : xs) = x :~ fromList xs</span>               <span class="ansi38-245">│ </span><span class="ansi38-149">+  fromList (x : xs) = x :~ fromList xs</span>
+<span class="ansi1 ansi38-245 ansi48-233"></span>                                                      <span class="ansi38-245">│ </span><span class="ansi38-149 ansi48-22">+  fromList []       = errorWithoutStackTrace "XMon</span><span class="ansi34 ansi48-22">↵</span><span class="ansi48-22"></span>
+<span class="ansi1 ansi38-245 ansi48-233"></span>                                                      <span class="ansi38-245">│ </span><span class="ansi38-149 ansi48-22">ad.Prelude.Stream.fromList: Can't create stream out</span><span class="ansi34 ansi48-22">↵</span><span class="ansi48-22"></span>
+<span class="ansi1 ansi38-245 ansi48-233"></span>                                                      <span class="ansi38-245">│ </span><span class="ansi38-149 ansi48-22"> of finite list."</span><span class="ansi48-22"></span>
+<span class="ansi1 ansi38-245 ansi48-233"></span><span class="ansi38-149">+</span>                                                     <span class="ansi38-245">│ </span><span class="ansi38-149">+</span>
+<span class="ansi1 ansi38-245 ansi48-233"></span><span class="ansi38-149">+  toList :: Stream a -&gt; [a]</span>                          <span class="ansi38-245">│ </span><span class="ansi38-149">+  toList :: Stream a -&gt; [a]</span>
+<span class="ansi1 ansi38-245 ansi48-233"></span><span class="ansi38-149">+  toList (x :~ xs) = x : toList xs</span>                   <span class="ansi38-245">│ </span><span class="ansi38-149">+  toList (x :~ xs) = x : toList xs</span>
+<span class="ansi38-39"></span><span class="ansi38-39 ansi48-235">────────────────────────────────────────────────────────────────────────────────────────────────────────────</span>
+<span class="ansi1 ansi37">2:  9dfe5594 = 2:  a11625d9 X.L.Groups: Rewrite gen using infinite streams</span>
+
+<span class="ansi38-39"></span><span class="ansi38-39 ansi48-235">────────────────────────────────────────────────────────────────────────────────────────────────────────────</span>
+<span class="ansi1 ansi37">3:  c8a08103 = 3:  06855306 Import X.Prelude unqualified if necessary</span>
+
+<span class="ansi38-39"></span><span class="ansi38-39 ansi48-235">────────────────────────────────────────────────────────────────────────────────────────────────────────────</span>
+<span class="ansi1 ansi37">4:  90f16434 = 4:  2de422fe Reduce head usage</span>
+
+<span class="ansi38-39"></span><span class="ansi38-39 ansi48-235">────────────────────────────────────────────────────────────────────────────────────────────────────────────</span>
+<span class="ansi1 ansi31">5:  00a457fd &lt; -:  -------- fixup! X.Prelude: Add infinite stream type</span>
+
+</code></pre>

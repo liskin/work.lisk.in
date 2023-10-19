@@ -1,0 +1,21 @@
+<!--
+$ pipx install ansi2html
+$ git range-diff --color=always wx-partial... | ansi2html >/tmp/rangediff1.html
+-->
+<pre class="ansi2html-content body_foreground body_background x-smaller"><code><!--
+--><span class="ansi1 ansi31">1:  05a5291e </span><span class="ansi1 ansi37">!</span><span class="ansi1 ansi36"> 1:  d5c45f98</span><span class="ansi1 ansi37"> X.Prelude: Add infinite stream type</span>
+    <span class="inv_background inv_foreground"></span><span class="ansi1 inv33 inv_foreground">@@</span> XMonad/Prelude.hs: multimediaKeys = filter ((/= noSymbol) . snd) . map (id &amp;&amp;&amp; s
+    <span class="ansi1 ansi36"> +  type (Item (Stream a)) = a</span>
+    <span class="ansi1 ansi36"> +</span>
+    <span class="ansi1 ansi36"> +  fromList :: [a] -&gt; Stream a</span>
+    <span class="inv_background inv_foreground"></span><span class="ansi1 inv31 inv_foreground">-</span><span class="ansi2 ansi32">+  fromList []       = errorWithoutStackTrace "TODO"</span>
+    <span class="ansi1 ansi36"> +  fromList (x : xs) = x :~ fromList xs</span>
+    <span class="inv_background inv_foreground"></span><span class="ansi1 inv36 inv_foreground">+</span><span class="ansi1 ansi32">+  fromList []       = errorWithoutStackTrace "XMonad.Prelude.Stream.fromList: Can't create stream out of finite list."</span>
+    <span class="ansi1 ansi36"> +</span>
+    <span class="ansi1 ansi36"> +  toList :: Stream a -&gt; [a]</span>
+    <span class="ansi1 ansi36"> +  toList (x :~ xs) = x : toList xs</span>
+<span class="ansi1 ansi37">2:  9dfe5594 = 2:  a11625d9 X.L.Groups: Rewrite gen using infinite streams</span>
+<span class="ansi1 ansi37">3:  c8a08103 = 3:  06855306 Import X.Prelude unqualified if necessary</span>
+<span class="ansi1 ansi37">4:  90f16434 = 4:  2de422fe Reduce head usage</span>
+<span class="ansi1 ansi31">5:  00a457fd &lt; -:  -------- fixup! X.Prelude: Add infinite stream type</span>
+</code></pre>
