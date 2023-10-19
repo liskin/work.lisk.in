@@ -13,3 +13,5 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - Makefile
+
+_newline: "\n"
