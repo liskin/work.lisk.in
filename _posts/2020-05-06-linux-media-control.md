@@ -284,7 +284,7 @@ active player” logic is builtin and GNOME does the right thing out of the box.
 [Totem]: https://wiki.gnome.org/Apps/Videos
 [GSD media keys API]: https://gitlab.gnome.org/GNOME/gnome-settings-daemon/-/blob/28ce4225535329dee6a9aff8c44bd1671ce9d2de/plugins/media-keys/README.media-keys-API
 [gnome-settings-daemon]: https://gitlab.gnome.org/GNOME/gnome-settings-daemon/-/tree/28ce4225535329dee6a9aff8c44bd1671ce9d2de/plugins/media-keys
-[Fedora]: https://getfedora.org/
+[Fedora]: https://fedoraproject.org/
 [playerctld]: https://github.com/altdesktop/playerctl#selecting-players-to-control
 
 #### [KDE Plasma 5][]

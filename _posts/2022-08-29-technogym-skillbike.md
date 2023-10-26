@@ -334,7 +334,7 @@ Cons:
 I think I've tried everything but still don't have a winner:
 
 * I could strap a magnifying glass to my phone and pay double the [Cycling UK
-  Household membership](https://www.cyclinguk.org/household-membership) for
+  Household membership](https://www.cyclinguk.org/membership-types) for
   Zwift. I might also figure out a way to strap a tablet onto the Skillbike
   somehow.
 * Or I can pay that amount for a Rouvy family membership and share the
