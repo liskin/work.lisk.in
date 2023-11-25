@@ -4,7 +4,12 @@
 [![tools-life/taskwiki](https://github-readme-stats.vercel.app/api/pin/?username=tools-life&repo=taskwiki&show_owner=true)](https://github.com/tools-life/taskwiki)
 [![xmonad/xmonad-contrib](https://github-readme-stats.vercel.app/api/pin/?username=xmonad&repo=xmonad-contrib&show_owner=true)](https://github.com/xmonad/xmonad-contrib)
 [![xmonad/X11](https://github-readme-stats.vercel.app/api/pin/?username=xmonad&repo=X11&show_owner=true)](https://github.com/xmonad/X11)
+[![PassFort/json-schema-to-flow-type](https://github-readme-stats.vercel.app/api/pin/?username=PassFort&repo=json-schema-to-flow-type&show_owner=true)](https://github.com/PassFort/json-schema-to-flow-type)
 [![xmonad/X11-xft](https://github-readme-stats.vercel.app/api/pin/?username=xmonad&repo=X11-xft&show_owner=true)](https://github.com/xmonad/X11-xft)
+[![PassFort/http-signatures](https://github-readme-stats.vercel.app/api/pin/?username=PassFort&repo=http-signatures&show_owner=true)](https://github.com/PassFort/http-signatures)
+[![PassFort/screening-reference-integration](https://github-readme-stats.vercel.app/api/pin/?username=PassFort&repo=screening-reference-integration&show_owner=true)](https://github.com/PassFort/screening-reference-integration)
+[![PassFort/keycloak-server-tools](https://github-readme-stats.vercel.app/api/pin/?username=PassFort&repo=keycloak-server-tools&show_owner=true)](https://github.com/PassFort/keycloak-server-tools)
+[![PassFort/integration-docs](https://github-readme-stats.vercel.app/api/pin/?username=PassFort&repo=integration-docs&show_owner=true)](https://github.com/PassFort/integration-docs)
 </div>
 
 ### Popular projects (author)
