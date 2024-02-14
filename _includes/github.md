@@ -23,6 +23,7 @@
 
 ### Hidden gems
 <div markdown="span" class="grid-2 dark-img-filter">
+[![liskin/strava-ical](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=strava-ical&show_owner=true)](https://github.com/liskin/strava-ical)
 [![liskin/cervi](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=cervi&show_owner=true)](https://github.com/liskin/cervi)
 [![liskin/emoji-rofi-menu](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=emoji-rofi-menu&show_owner=true)](https://github.com/liskin/emoji-rofi-menu)
 [![liskin/empty-tab](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=empty-tab&show_owner=true)](https://github.com/liskin/empty-tab)
