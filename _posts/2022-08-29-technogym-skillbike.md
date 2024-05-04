@@ -96,7 +96,7 @@ Cons:
   the goal of not thinking too much.
 * [Very limited selection of workouts][skillbike-workouts].
 
-[skillbike-workouts]: https://support.technogym.com/post/training-modes-with-skillbike
+[skillbike-workouts]: https://www.technogym.com/en-US/support/post/training-modes-with-skillbike/
 [Training Status]: https://support.garmin.com/en-GB/?faq=VxKazDQ2mkAmDoQbJriEBA
 [Daily Suggested Workouts]: https://support.garmin.com/en-GB/?faq=oYknGZ910l1pfBNzkDHX6A
 [mywellness]: https://www.mywellness.com/

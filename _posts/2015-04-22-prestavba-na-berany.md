@@ -108,9 +108,9 @@ takže je třeba ty řadící trochu upravit:
   - hliníková trubička (a jedna navíc pro jistotu): 15 Kč
   - šroub (a dva navíc pro jistotu): 9 Kč
 
-[proplt]: http://www.wiggle.com/pro-plt-2014-alloy-road-handlebar/
+[proplt]: https://www.pro-bikegear.com/uk/road/handlebars/plt-compact-handlebar
 [blesak]: https://www.facebook.com/events/869841896392719/
-[rl520]: http://www.wiggle.com/tektro-rl520-drop-bar-brake-lever/
+[rl520]: https://road.cc/content/review/12339-tektro-rl520-v-brake-compatible-drop-levers
 [token]: http://dily.maxbike.cz/eshop/staveci-doraz-bowdenu-token-cerne-2ks
 
 Celkem: **1703 Kč**
