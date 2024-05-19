@@ -68,4 +68,4 @@ Xephyr is running, with access control disabled, all you need to do now is to
 su to another user, `export DISPLAY=:1` and run `startkde` (or anything else).
 
 If in trouble, consult the documentation. There are a few links at the X.org
-wiki: <https://www.x.org/wiki/Development/Documentation/Multiseat>
+wiki: <https://www.x.org/wiki/Development/Documentation/Multiseat/>

@@ -25,7 +25,7 @@ books, listen to music and taste beers.
 ## My FOSS contributions
 
 * [GitHub profile](https://github.com/liskin){:rel="me"}
-* [Open Hub profile](https://www.openhub.net/accounts/Liskni_si){:rel="me"} (includes
+* [Open Hub profile](https://openhub.net/accounts/Liskni_si){:rel="me"} (includes
   some older contributions)
 
 [![contribution activity chart](https://ghchart.rshah.org/liskin){:.dark-img-filter}](https://github.com/liskin)

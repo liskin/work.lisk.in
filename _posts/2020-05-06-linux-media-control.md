@@ -22,7 +22,7 @@ which is something that even majority [operating systems][h4-win10] and
 [desktop environments][h4-gnome] don't quite get right out of the box.
 
 [media keys]: https://en.wikipedia.org/wiki/Computer_keyboard#Miscellaneous
-[keyboards]: https://en.wikipedia.org/wiki/ThinkPad#/media/File:Lenovo-ThinkPad-Keyboard.JPG
+[keyboards]: https://commons.wikimedia.org/wiki/File:Lenovo-ThinkPad-Keyboard.JPG
 [X window manager]: https://en.wikipedia.org/wiki/X_window_manager
 [desktop environment]: https://en.wikipedia.org/wiki/Desktop_environment#Desktop_environments_for_the_X_Window_System
 [bandcamp]: https://bandcamp.com/
@@ -181,7 +181,7 @@ Controller][], …[^webext]
     support in the browser whatsoever:
 
     * <https://github.com/otommod/browser-mpris2>
-    * <https://github.com/Aaahh/browser-mpris2-firefox>
+    * <https://github.com/mmhobi7/browser-mpris2-firefox>
     * <https://github.com/KDE/plasma-browser-integration>
 
 [Firefox][] 76 works after enabling `media.​hardware​media​keys.​enabled` in
@@ -207,12 +207,12 @@ workaround (chromium-only) and will try to help get it fixed upstream.
 Likewise, [mpv][] 0.32.0 needs a plugin, [mpv-mpris][] works well.
 
 [vlc][] 3.0 supports [MPRIS][] out of the box. Reportedly, [so does
-Spotify](https://wiki.archlinux.org/index.php/Spotify#MPRIS). (I don't use
+Spotify](https://wiki.archlinux.org/title/Spotify#MPRIS). (I don't use
 either.)
 
 [Firefox]: https://firefox.com/
 [Chrome]: https://www.google.com/chrome/
-[Chromium]: https://www.chromium.org/Home
+[Chromium]: https://www.chromium.org/Home/
 [Web Media Controller]: https://github.com/f1u77y/web-media-controller
 [Media Session Master]: https://github.com/Snazzah/MediaSessionMaster
 [Media Session API]: https://www.w3.org/TR/mediasession/
@@ -326,7 +326,7 @@ Recordings of some of those experiments: <https://youtu.be/-vpHDXg5jW8>,
 </i>
 
 [Dragon]: https://github.com/KDE/dragon
-[Fedora 32 KDE]: https://spins.fedoraproject.org/kde/
+[Fedora 32 KDE]: https://fedoraproject.org/spins/kde/
 [KDE Plasma 5]: https://en.wikipedia.org/wiki/KDE_Plasma_5
 [Plasma Browser Integration]: https://github.com/KDE/plasma-browser-integration/
 [plasma-mediasession-shim]: https://github.com/KDE/plasma-browser-integration/blob/64a63f2b4b96545dd1d4bcb5583dfbec9122722f/extension/content-script.js#L635-L898
@@ -366,9 +366,9 @@ Were it not for this issue, I'd say it's perfectly usable, as deprecated
 players/browsers can easily be avoided and I wouldn't mind not being able to
 use vlc for background playback.
 
-[SMTC]: https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/integrate-with-systemmediatransportcontrols
+[SMTC]: https://learn.microsoft.com/en-us/windows/uwp/audio-video-camera/integrate-with-systemmediatransportcontrols
 [IE]: https://en.wikipedia.org/wiki/Internet_Explorer
-[Edge-old]: https://en.wikipedia.org/wiki/Microsoft_Edge#Spartan_(2014%E2%80%932019)
+[Edge-old]: https://en.wikipedia.org/wiki/Microsoft_Edge#Edge_Legacy_(2014%E2%80%932019)
 [Edge-chromium]: https://blogs.windows.com/windowsexperience/2020/01/15/new-year-new-browser-the-new-microsoft-edge-is-out-of-preview-and-now-available-for-download/
 [MoviesTV]: https://en.wikipedia.org/wiki/Microsoft_Movies_%26_TV
 [WMP]: https://en.wikipedia.org/wiki/Windows_Media_Player
@@ -473,7 +473,7 @@ volume effectively becomes 14-bit. [pulseaudio][] doesn't do this, but
 [One UI]: https://en.wikipedia.org/wiki/One_UI
 [pulseaudio]: https://www.freedesktop.org/wiki/Software/PulseAudio/
 [liskin-media-volume]: https://github.com/liskin/dotfiles/blob/15c2cd83ce7297c38830053a9fd2be2f3678f4b0/bin/liskin-media#L8-L41
-[Marshall Monitor Bluetooth]: https://www.marshallheadphones.com/us/en/monitor-bluetooth.html
+[Marshall Monitor Bluetooth]: https://www.marshallheadphones.com/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwe0dadd06/images/cms-pages/user/-Marshall-Monitor-BT-User-manual-screen.pdf
 [Sony MDR-XB950BT]: https://www.sony.com/electronics/support/wireless-headphones-bluetooth-headphones/mdr-xb950bt/specifications
 [mobile-chrome]: https://play.google.com/store/apps/details?id=com.android.chrome
 [android-mediasession]: https://developer.android.com/reference/android/media/session/MediaSession

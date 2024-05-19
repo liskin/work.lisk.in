@@ -50,12 +50,12 @@ Přehazovat na těžší převod zvládám palcem a prostředníčkem, na lehč�
 zvednout ruku z brzd. No, asi to mohlo být i horší... :-)
 
 [dualy]: https://en.wikipedia.org/wiki/Shimano_Total_Integration
-[dropvbrake]: http://www.phred.org/~alex/bikes/brakes.html
+[dropvbrake]: https://www.phred.org/~alex/bikes/brakes.html
 [travelagent]: https://problemsolversbike.com/products/travel-agent
-[Gevenalle]: https://gevenalle.com/product-category/shifters/
+[Gevenalle]: https://www.gevenalle.com/product-category/shifters/
 [sl-bs77]: https://www.jensonusa.com/Shimano-SL-BS77-9-SPEED-Bar-End-Shifters
-[trek520]: https://www.trekbikes.com/us/en/bikes/road/touring/520/
-[rohloff]: https://cyclingabout.com/rohloff-hubs-with-drop-handlebars/
+[trek520]: https://www.trekbikes.com/us/en_US/bikes/bikepacking-touring-bikes/520/520/p/24000/
+[rohloff]: https://www.cyclingabout.com/rohloff-hubs-with-drop-handlebars/
 
 ### Fotky z montáže
 
@@ -111,7 +111,7 @@ takže je třeba ty řadící trochu upravit:
 [proplt]: https://www.pro-bikegear.com/uk/road/handlebars/plt-compact-handlebar
 [blesak]: https://www.facebook.com/events/869841896392719/
 [rl520]: https://road.cc/content/review/12339-tektro-rl520-v-brake-compatible-drop-levers
-[token]: http://dily.maxbike.cz/eshop/staveci-doraz-bowdenu-token-cerne-2ks
+[token]: https://www.maxbike.cz/staveci-doraz-bowdenu-token-cerne-2ks/
 
 Celkem: **1703 Kč**
 

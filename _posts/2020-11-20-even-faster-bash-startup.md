@@ -47,7 +47,7 @@ script slow startup?][bash-profiling] Most Stack Overflow answers suggest some
 variant of `set -x`, which will help us find any single command that takes
 unusually long.
 
-[bash-profiling]: https://stackoverflow.com/questions/5014823/how-to-profile-a-bash-shell-script-slow-startup/20855353
+[bash-profiling]: https://stackoverflow.com/a/20855353/3407728
 
 #### man
 

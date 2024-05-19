@@ -20,13 +20,13 @@ not. So that's my motivation.
 
 The solution was obvious, I implemented the `do_bell` function in PuTTY for
 Symbian and made it vibrate for a few hundred milliseconds. The source code is
-here: <http://github.com/liskin/s2putty>.
+here: <https://github.com/liskin/s2putty>.
 
-[putty]: http://s2putty.sourceforge.net/
+[putty]: https://s2putty.sourceforge.net/
 [mutt]: http://www.mutt.org/
-[irssi]: http://www.irssi.org/
-[bitlbee]: http://www.bitlbee.org/
-[screen]: http://www.gnu.org/software/screen/
+[irssi]: https://irssi.org/
+[bitlbee]: https://www.bitlbee.org/
+[screen]: https://www.gnu.org/software/screen/
 
 <!-- A prebuilt package for s60v5 is in
 [downloads][]. Let me know if you need a binary for some other version of

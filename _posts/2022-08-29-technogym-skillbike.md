@@ -62,7 +62,7 @@ implementation of [smart trainer protocols][protocols] is worse, so not all
 3rd party apps work. More about that later.
 
 [dcr-ride]: https://www.dcrainmaker.com/2022/08/technogym-ride-smart-indoor-bike-in-depth-review.html
-[Zwift]: https://zwift.com/
+[Zwift]: https://www.zwift.com/
 [protocols]: https://www.dcrainmaker.com/2018/05/whats-baseline-on-a-smart-trainer-in-2018.html
 
 ### Attempts
@@ -317,7 +317,7 @@ having others ask me whether I'm waiting for the equipment they're currently
 using… I did end up looking like a mad man after all, it seems. Can't be
 blamed for not following up with Wahoo's support, can I? :-)
 
-[RGT]: https://www.rgtcycling.com/
+[RGT]: https://www.dcrainmaker.com/2023/10/wahoo-fitness-to-shut-down-rgt-virtual-cycling-app.html
 
 Pros:
 * No idea…

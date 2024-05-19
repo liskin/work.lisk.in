@@ -148,9 +148,9 @@ profiles and the following sections about my [strengths](#strengths) and
 [jenkins-job-builder]: https://docs.openstack.org/infra/jenkins-job-builder/
 [TeX]: https://en.wikipedia.org/wiki/TeX
 [bicycles]: https://en.wikipedia.org/wiki/Bicycle
-[xorg]: http://www.x.org/
+[xorg]: https://www.x.org/
 [GitHub Resume]: https://resume.github.io/?liskin
-[Open Hub profile]: https://www.openhub.net/accounts/Liskni_si
+[Open Hub profile]: https://openhub.net/accounts/Liskni_si
 [root cause]: https://en.wikipedia.org/wiki/Root_cause_analysis
 [program by coincidence]: https://dev.to/decoeur_/programming-by-coincidence-dont-do-it-7cp
 [technical debt]: https://blog.pragmaticengineer.com/tech-debt/
