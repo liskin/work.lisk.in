@@ -19,7 +19,7 @@
 [![liskin/foursquare-swarm-ical](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=foursquare-swarm-ical&show_owner=true)](https://github.com/liskin/foursquare-swarm-ical)
 [![liskin/covid19-bloom](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=covid19-bloom&show_owner=true)](https://github.com/liskin/covid19-bloom)
 [![liskin/locus-rflkt-addon](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=locus-rflkt-addon&show_owner=true)](https://github.com/liskin/locus-rflkt-addon)
-[![liskin/strava-segments-kml](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=strava-segments-kml&show_owner=true)](https://github.com/liskin/strava-segments-kml)
+[![liskin/gh-workflow-keepalive](https://github-readme-stats.vercel.app/api/pin/?username=liskin&repo=gh-workflow-keepalive&show_owner=true)](https://github.com/liskin/gh-workflow-keepalive)
 </div>
 
 ### Hidden gems
