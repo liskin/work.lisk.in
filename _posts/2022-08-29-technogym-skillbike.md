@@ -17,7 +17,7 @@ attempts.
 [Technogym]: https://www.technogym.com/
 [Skillbike]: https://www.technogym.com/int/skillbike.html
 [stationary bike]: https://en.wikipedia.org/wiki/Stationary_bicycle
-[smart-trainer]: https://www.dcrainmaker.com/2016/07/everything-you-ever-wanted-to-know-about-ant-fe-c-and-bike-trainers.html
+[smart-trainer]: https://www.dcrainmaker.com/2016/07/everything-wanted-trainers.html
 
 {% include toc.md %}
 
@@ -61,9 +61,9 @@ control podcasts or watch videos. Unfortunately it seems that Skillbike's
 implementation of [smart trainer protocols][protocols] is worse, so not all
 3rd party apps work. More about that later.
 
-[dcr-ride]: https://www.dcrainmaker.com/2022/08/technogym-ride-smart-indoor-bike-in-depth-review.html
+[dcr-ride]: https://www.dcrainmaker.com/2022/08/technogym-indoor-review.html
 [Zwift]: https://www.zwift.com/
-[protocols]: https://www.dcrainmaker.com/2018/05/whats-baseline-on-a-smart-trainer-in-2018.html
+[protocols]: https://www.dcrainmaker.com/2018/05/whats-baseline-trainer.html
 
 ### Attempts
 
@@ -225,7 +225,7 @@ Well, okay, but my free trial is running out and I'm not entirely convinced I
 want to put it my credit card details… :-/
 
 [Rouvy]: https://rouvy.com/
-[dcr-rouvy]: https://www.dcrainmaker.com/2018/12/rouvy-augmented-reality-training.html
+[dcr-rouvy]: https://www.dcrainmaker.com/2018/12/augmented-reality-training.html
 
 Pros:
 * Garmin officially supports this, so as with Zwift, I get all the benefits of
@@ -317,7 +317,7 @@ having others ask me whether I'm waiting for the equipment they're currently
 using… I did end up looking like a mad man after all, it seems. Can't be
 blamed for not following up with Wahoo's support, can I? :-)
 
-[RGT]: https://www.dcrainmaker.com/2023/10/wahoo-fitness-to-shut-down-rgt-virtual-cycling-app.html
+[RGT]: https://www.dcrainmaker.com/2023/10/fitness-virtual-cycling.html
 
 Pros:
 * No idea…
