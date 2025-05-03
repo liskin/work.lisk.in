@@ -6,6 +6,7 @@
 [![xmonad/X11](https://github-readme-stats.vercel.app/api/pin/?username=xmonad&repo=X11&show_owner=true)](https://github.com/xmonad/X11)
 [![ckilb/pocketbooksync.koplugin](https://github-readme-stats.vercel.app/api/pin/?username=ckilb&repo=pocketbooksync.koplugin&show_owner=true)](https://github.com/ckilb/pocketbooksync.koplugin)
 [![xmonad/X11-xft](https://github-readme-stats.vercel.app/api/pin/?username=xmonad&repo=X11-xft&show_owner=true)](https://github.com/xmonad/X11-xft)
+[![PassFort/http-signatures](https://github-readme-stats.vercel.app/api/pin/?username=PassFort&repo=http-signatures&show_owner=true)](https://github.com/PassFort/http-signatures)
 </div>
 
 ### Popular projects (author)
