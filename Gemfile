@@ -9,5 +9,6 @@ group :jekyll_plugins do
   gem "jekyll-paginate", "~> 1.1.0"
   gem "jekyll-redirect-from", "~> 0.16.0"
   gem "jekyll-relative-links", "~> 0.7.0"
+  gem "jekyll-sitemap", "~> 1.4.0"
   gem "jekyll-titles-from-headings", "~> 0.5.3"
 end

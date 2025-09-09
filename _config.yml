@@ -9,4 +9,10 @@ exclude:
   - Gemfile.lock
   - Makefile
 
+defaults:
+  - scope:
+      path: "{img/**,google*}"
+    values:
+      sitemap: false
+
 _newline: "\n"
