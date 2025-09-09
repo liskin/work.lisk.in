@@ -3,11 +3,6 @@ paginate_path: "/blog/page:num/"
 
 theme: null
 
-plugins:
-  - jekyll-redirect-from
-
-url: https://work.lisk.in
-
 exclude:
   - CNAME
   - Gemfile
