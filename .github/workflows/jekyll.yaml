@@ -4,11 +4,6 @@ on:
   workflow_dispatch:
   push:
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
@@ -17,6 +12,9 @@ concurrency:
 
 jobs:
   build:
+    permissions:
+      contents: read
+      pages: read
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -38,6 +36,9 @@ jobs:
         uses: actions/upload-pages-artifact@v3
 
   deploy:
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
