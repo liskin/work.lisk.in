@@ -104,7 +104,7 @@ kbd {
 	font-weight: bold;
 }
 
-emoji { font-family: emoji; }
+emoji { font-family: emoji; font-variant-emoji: emoji; }
 .larger { font-size: larger; }
 .smaller { font-size: smaller; }
 .x-smaller { font-size: 70%; }
