@@ -101,6 +101,7 @@ keypresses via [uinput][] and [bluetoothd][bluetoothd-uinput]) and call the
 
 <figure markdown="block">
 <figcaption markdown="span">[~/.xmonad/xmonad.hs][xmonad.hs-keys]</figcaption>
+
 ```haskell
 , ((0, xF86XK_AudioPlay ), spawn "liskin-media play")
 , ((0, xF86XK_AudioPause), spawn "liskin-media play")
@@ -109,6 +110,7 @@ keypresses via [uinput][] and [bluetoothd][bluetoothd-uinput]) and call the
 
 <figure markdown="block">
 <figcaption markdown="span">[~/bin/liskin-xsecurelock][liskin-xsecurelock-keys]</figcaption>
+
 ```bash
 export XSECURELOCK_KEY_XF86AudioPlay_COMMAND="liskin-media play"
 export XSECURELOCK_KEY_XF86AudioPause_COMMAND="liskin-media play"
@@ -123,6 +125,7 @@ of the last active player:
 
 <figure markdown="block">
 <figcaption markdown="span">[~/bin/liskin-media][liskin-media-daemon]</figcaption>
+
 {% raw %}
 ```bash
 playerctl --all-players --follow --format '{{playerName}} {{status}}' status \
@@ -145,6 +148,7 @@ to play/pause) and uses [playerctl][] to send commands to it:
 
 <figure markdown="block">
 <figcaption markdown="span">[~/bin/liskin-media][liskin-media-commands]</figcaption>
+
 ```bash
 function get-mpris-smart {
     get-mpris-playing || get-mpris-one-playing-or-paused || get-mpris-last

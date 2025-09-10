@@ -91,6 +91,7 @@ output of [`git range-diff`][git-range-diff] and turns it into something that
 
 <figure markdown="block">
 <figcaption markdown="span">[git-range-diff-delta-preproc][]</figcaption>
+
 ```bash
 #!/usr/bin/env bash
 
