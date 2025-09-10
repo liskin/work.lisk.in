@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 'Even faster bash startup'
+tags: bash
 comments_issue: 8
 image: summary.png
 large_image: true

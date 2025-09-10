@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Multiseat on demand: Split your computer into two whenever you want"
+tags: x11
 comments_issue: 3
 
 ---

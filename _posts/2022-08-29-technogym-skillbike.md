@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 'Technogym Skillbike: smart trainer usage and trying to get useful data out of it'
+tags: bicycles
 comments_issue: 11
 image: summary.png
 large_image: true

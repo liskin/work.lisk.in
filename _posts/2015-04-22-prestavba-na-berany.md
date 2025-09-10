@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Přestavba Agang Sin City na berany
+tags: bicycles
 lang: cs
 comments_issue: 5
 

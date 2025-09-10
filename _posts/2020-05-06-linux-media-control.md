@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Linux, media keys and multiple players (mpd, chromium, mpv, vlc, …)
+tags: x11
 comments_issue: 1
 image: https://user-images.githubusercontent.com/300342/81182729-8237d500-8fae-11ea-89eb-81ca7b3598fe.jpg
 large_image: true

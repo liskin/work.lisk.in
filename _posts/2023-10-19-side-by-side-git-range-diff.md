@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 'Side by side git-range-diff'
+tags: git
 comments_issue: 16
 image: summary.png
 large_image: true

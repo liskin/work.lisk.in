@@ -1,0 +1,22 @@
+---
+layout: default
+title: Blog (tags)
+permalink: /blog/tags/
+
+---
+
+<!-- -->
+			{% assign tags_sorted = site.tags | sort %}
+			{% for tag_posts in tags_sorted %}
+			{% assign tag = tag_posts[0] %}
+			{% assign posts = tag_posts[1] %}
+			<h2 id="tag-{{ tag }}">#{{ tag }}</h2>
+			<dl id="posts-all">
+			{% for post in posts %}
+				<dt>{{ post.date | date: "%Y-%m-%d" }}</dt>
+				<dd>
+					<a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+				</dd>
+			{% endfor %}
+			</dl>
+			{% endfor %}
