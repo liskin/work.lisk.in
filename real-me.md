@@ -1,5 +1,4 @@
 ---
-layout: default
 title: The real me
 permalink: /real-me/
 redirect_from:

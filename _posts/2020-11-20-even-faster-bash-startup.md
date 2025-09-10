@@ -1,5 +1,4 @@
 ---
-layout: default
 title: 'Even faster bash startup'
 tags: bash
 comments_issue: 8

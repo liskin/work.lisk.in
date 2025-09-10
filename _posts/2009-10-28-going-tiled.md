@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Going tiled
 tags: x11
 comments_issue: 2

@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Miscellaneous
 permalink: /misc/
 description: >

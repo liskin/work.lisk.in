@@ -1,5 +1,4 @@
 ---
-layout: default
 title: About me
 permalink: /about/
 image: icon400.png

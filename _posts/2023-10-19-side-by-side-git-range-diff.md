@@ -1,5 +1,4 @@
 ---
-layout: default
 title: 'Side by side git-range-diff'
 tags: git
 comments_issue: 16
