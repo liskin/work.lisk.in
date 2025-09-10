@@ -264,7 +264,7 @@ main {
 
 		dt { margin-top: 0.5em; }
 		dd { margin-inline-start: 2em; }
-		dd > a:first-child { font-size: 1.1em; }
+		dd > a:first-child { display: block; font-size: 1.1em; text-wrap: balance; }
 	}
 
 	dl#posts-all {
@@ -274,6 +274,7 @@ main {
 		grid-gap: 0.5em;
 
 		dd { margin: 0; }
+		dd > a:first-child { display: block; text-wrap: balance; }
 	}
 
 	> article > header {
@@ -286,8 +287,9 @@ main {
 		@media screen and (max-width: 30em) { hyphens: auto; }
 	}
 
-	h1 { font-size: 1.5em; }
-	h2 { font-size: 1.3em; }
+	h1 { font-size: 1.5em; text-wrap: balance; }
+	h2 { font-size: 1.3em; text-wrap: balance; }
+	h3 { text-wrap: balance; }
 
 	img, svg {
 		display: block;
@@ -486,6 +488,9 @@ details#toc {
 	main :target { animation: highlight 2s; }
 	@keyframes highlight { 10% { background: var(--anchor-target-highlight-color); } }
 }
+
+/* more space above anchor targets */
+:target { scroll-margin-block: 3ex; }
 
 abbr[title] {
 	@media screen {
