@@ -38,6 +38,11 @@
 		{%- elsif page.image %}
 		<meta property="og:image" content="{{ "/img" | absolute_url }}/{{ page.image }}">
 		{%- endif %}
+		{%- comment %}
+		JPG, PNG, WEBP, GIF supported; SVG not supported
+		summary_large_image:	aspect ratio of 2:1 with minimum dimensions of 300x157 or maximum of 4096x4096 pixels
+		summary:				aspect ratio of 1:1 with minimum dimensions of 144x144 or maximum of 4096x4096 pixels
+		{% endcomment %}
 
 		<!-- webmentions, pingbacks -->
 		<link rel="webmention" href="https://webmention.io/work.lisk.in/webmention">
