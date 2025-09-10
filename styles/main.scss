@@ -492,6 +492,15 @@ details#toc {
 /* more space above anchor targets */
 :target { scroll-margin-block: 3ex; }
 
+/* headerlinks */
+@media screen {
+	a.headerlink { text-decoration: none; opacity: 0; margin-left: 1em; }
+	h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover { a.headerlink { opacity: 1; } }
+}
+@media print {
+	a.headerlink { display: none; }
+}
+
 abbr[title] {
 	@media screen {
 		text-decoration-color: var(--abbr-underline-color);
