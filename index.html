@@ -4,15 +4,15 @@ title: Blog
 
 ---
 
-<!-- -->
+{% comment %}{% endcomment %}
 			<dl id="posts">
-			{% for post in paginator.posts %}
+			{%- for post in paginator.posts %}
 				<dt>
 					{{ post.date | date: "%Y-%m-%d" }}
-					{% unless post.tags == empty %}
-					{% assign tags_sorted = post.tags | sort %}
+					{%- unless post.tags == empty %}
+					{%- assign tags_sorted = post.tags | sort %}
 					{% for tag in tags_sorted %}<a class="tag" href="{{ "/blog/tags/" | relative_url }}#tag-{{ tag }}">#{{ tag }}</a> {% endfor %}
-					{% endunless %}
+					{%- endunless %}
 				</dt>
 				<dd>
 					<a href="{{ post.url | relative_url }}">{{ post.title }}</a>
@@ -23,27 +23,27 @@ title: Blog
 
 			<hr>
 			<div id="pagination">
-				{% if paginator.previous_page %}
+				{%- if paginator.previous_page %}
 				<a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
-				{% else %}
+				{%- else %}
 				<span>&laquo; Prev</span>
-				{% endif %}
+				{%- endif %}
 
-				{% for page in (1..paginator.total_pages) %}
-				{% if page == paginator.page %}
+				{%- for page in (1..paginator.total_pages) %}
+				{%- if page == paginator.page %}
 				<em>{{ page }}</em>
-				{% elsif page == 1 %}
+				{%- elsif page == 1 %}
 				<a href="{{ '/' | relative_url }}">{{ page }}</a>
-				{% else %}
+				{%- else %}
 				<a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
-				{% endif %}
-				{% endfor %}
+				{%- endif %}
+				{%- endfor %}
 
-				{% if paginator.next_page %}
+				{%- if paginator.next_page %}
 				<a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
-				{% else %}
+				{%- else %}
 				<span>Next &raquo;</span>
-				{% endif %}
+				{%- endif %}
 
 				&emsp;(<a href="{{ '/blog/all/' | relative_url }}">list of all posts</a>; <a href="{{ '/blog/tags/' | relative_url }}">by tags</a>)
 			</div>

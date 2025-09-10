@@ -15,29 +15,29 @@
 		<meta property="og:url" content="{{ page.url | absolute_url }}">
 		<meta property="og:site_name" content="Tomáš Janoušek">
 		<meta property="twitter:site" content="@Liskni_si">
-		{% if page.date %}
+		{%- if page.date %}
 		<meta property="og:type" content="article">
 		<meta property="og:title" content="{{ page.title }}">
 		<meta property="og:description" content="{% if page.summary %}{{ page.summary | markdownify | strip_html | strip }}{% else %}{{ page.excerpt | strip_html | replace: site._newline, ' ' | strip }}{% endif %}">
 		<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
 		<meta property="article:author" content="Tomáš Janoušek">
-		{% else %}
+		{%- else %}
 		<meta property="og:type" content="website">
 		<meta property="og:title" content="{{ page.title }} (Tomáš Janoušek)">
 		<meta property="og:description" content="{{ page.description | strip | xml_escape }}">
-		{% endif %}
-		{% if page.large_image %}
+		{%- endif %}
+		{%- if page.large_image %}
 		<meta name="twitter:card" content="summary_large_image" />
-		{% elsif page.image %}
+		{%- elsif page.image %}
 		<meta name="twitter:card" content="summary" />
-		{% endif %}
-		{% if page.image contains "https://" or page.image contains "http://" %}
+		{%- endif %}
+		{%- if page.image contains "https://" or page.image contains "http://" %}
 		<meta property="og:image" content="{{ page.image }}">
-		{% elsif page.image and page.date %}
+		{%- elsif page.image and page.date %}
 		<meta property="og:image" content="{{ "/img" | absolute_url }}/{{ page.slug }}/{{ page.image }}">
-		{% elsif page.image %}
+		{%- elsif page.image %}
 		<meta property="og:image" content="{{ "/img" | absolute_url }}/{{ page.image }}">
-		{% endif %}
+		{%- endif %}
 
 		<!-- webmentions, pingbacks -->
 		<link rel="webmention" href="https://webmention.io/work.lisk.in/webmention">
@@ -47,7 +47,7 @@
 		<link rel="alternate" title="Tomáš Janoušek, Blog" type="application/atom+xml" href="{{ "/atom.xml" | relative_url }}">
 
 		<!-- analytics -->
-		{% if site.url contains "work.lisk.in" %}
+		{%- if site.url contains "work.lisk.in" %}
 		<script data-goatcounter="https://liskin.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 		{% endif %}
 
@@ -75,28 +75,28 @@
 		</nav></header>
 
 		<main>
-		{% if page.date %}
+		{%- if page.date %}
 			<article class="hyphenate" {% if page.lang %} lang="{{ page.lang }}" {% endif %} >
 				<header>
 					<h1>{{ page.title }}</h1>
 					<p>
 						published <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%Y-%m-%d" }}</time>
 						<a href="https://github.com/liskin/work.lisk.in/commits/master/{{ page.path }}">(revision history)</a>
-						{% unless page.tags == empty %}
-						{% assign tags_sorted = page.tags | sort %}
+						{%- unless page.tags == empty %}
+						{%-assign tags_sorted = page.tags | sort %}
 						in {% for tag in tags_sorted %}<a class="tag" href="{{ "/blog/tags/" | relative_url }}#tag-{{ tag }}">#{{ tag }}</a> {% endfor %}
-						{% endunless %}
+						{%- endunless %}
 					</p>
 				</header>
 				{{ content }}
 			</article>
-		{% else %}
+		{%- else %}
 			{{ content }}
-		{% endif %}
+		{%- endif %}
 		</main>
 
 		<footer>
-			{% if page.date or page.name == "index.html" %}
+			{%- if page.date or page.name == "index.html" %}
 			<p>
 				Subscribe to my blog:
 				<span class="larger">
@@ -104,12 +104,12 @@
 					<a href="https://blogtrottr.com/?subscribe={{ "/atom.xml" | absolute_url }}" data-goatcounter-click="footer-sub-mail" title="subscribe via mail">{% include icons/mail.svg %}</a>
 				</span>
 			</p>
-			{% endif %}
+			{%- endif %}
 			<p>
 				Ⓒ
 				{% if page.date %}{{ page.date | date: "%Y" }}{% else %}{{ site.time | date: "%Y" }}{% endif %}
 				Tomáš Janoušek
-				{% unless page.name == "contact.md" %}
+				{%- unless page.name == "contact.md" %}
 				<span class="larger">
 					|
 					<a href="mailto:tomi@nomi.cz" rel="me" data-goatcounter-click="footer-mail" title="mail">{% include icons/mail.svg %}</a>
@@ -120,7 +120,7 @@
 					<a href="https://www.linkedin.com/in/pivnik" rel="me" data-goatcounter-click="footer-linkedin" title="linkedin">{% include icons/linkedin.svg %}</a>
 					<a href="https://stackoverflow.com/users/3407728/tom%c3%a1%c5%a1-janou%c5%a1ek" rel="me" data-goatcounter-click="footer-stackoverflow" title="stack overflow">{% include icons/stackoverflow.svg %}</a>
 				</span>
-				{% endunless %}
+				{%- endunless %}
 			</p>
 		</footer>
 
