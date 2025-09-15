@@ -21,7 +21,7 @@ attempts.
 
 {% include toc.md %}
 
-### Goal
+## Goal
 
 What I'm actually trying to do:
 
@@ -45,7 +45,7 @@ it with one of the apps made for them.
 
 [power-training]: https://www.dcrainmaker.com/2009/08/power-primer-cycling-with-power-101.html
 
-### Skillbike
+## Skillbike
 
 <figure markdown="block" class="half-size">
 [![Technogym Skillbike]({% include imgdir.txt %}/skillbike.jpg)]({% include imgdir.txt %}/skillbike-full.jpg)
@@ -65,9 +65,9 @@ implementation of [smart trainer protocols][protocols] is worse, so not all
 [Zwift]: https://www.zwift.com/
 [protocols]: https://www.dcrainmaker.com/2018/05/whats-baseline-trainer.html
 
-### Attempts
+## Attempts
 
-#### Skillbike itself
+### Skillbike itself
 
 The simplest thing I could do would be to just use [what the Skillbike itself
 offers][skillbike-workouts]. That isn't much, but at least it's free (gratis)
@@ -102,7 +102,7 @@ Cons:
 [mywellness]: https://www.mywellness.com/
 [skillbike-tcx]: https://github.com/liskin/dotfiles/blob/33590ee7997c1d8326693e3d61504baf2824c097/bin/technogym-tcx-to-garmin-tcx
 
-#### Garmin watch
+### Garmin watch
 
 <figure markdown="block" class="half-size">
 [![Suggested workout on Garmin Fenix 7S]({% include imgdir.txt %}/garmin-dsw.jpg)]({% include imgdir.txt %}/garmin-dsw.jpg)
@@ -140,7 +140,7 @@ Cons:
 * It's a watch: small screen, and not in front of eyes. Not ideal if I want to
   see/adjust the workout.
 
-#### Zwift
+### Zwift
 
 Next thing to try is [Zwift][]. My current smartphone ([Samsung Galaxy S22][])
 doesn't support ANT+ (the previous one, [S10e][], did) so I was worried this
@@ -190,7 +190,7 @@ Cons:
 
 [Physio TrueUp]: https://support.garmin.com/en-GB/?faq=EjPECQK58qA0xzJ5X74vm7
 
-#### Rouvy
+### Rouvy
 
 Next on the list is [Rouvy][], a competitor to Zwift developed in my home
 country, Czechia. The main difference between the two is that [Zwift is
@@ -246,7 +246,7 @@ Cons:
   afterthought.
 * Can't watch a video, only podcasts/audiobooks.
 
-#### TrainerRoad
+### TrainerRoad
 
 After having success connecting the Skillbike with both Zwift and Rouvy, I
 thought anything that connects via Bluetooth would just work. [TrainerRoad][]
@@ -284,7 +284,7 @@ Cons:
 * Subscription fee. Additionally, free trial isn't free—it's give us your
   credit card details and we'll refund if you're not satisfied.
 
-#### Wahoo SYSTM
+### Wahoo SYSTM
 
 There's an alternative to TrainerRoad from Wahoo: formerly called the
 Sufferfest, now [Wahoo SYSTM][SYSTM]. On paper, it should be more or less the
@@ -305,7 +305,7 @@ Pros:
 Cons:
 * Same as TrainerRoad.
 
-#### Wahoo RGT
+### Wahoo RGT
 
 [Wahoo RGT][RGT], a recent (2022) acquisition of theirs, is a virtual cycling
 game like Zwift. I managed to log into the app exactly once, but when I
@@ -329,7 +329,7 @@ Cons:
 * Likely to have similar cons as Zwift: not what I'm looking for with just a
   small smartphone screen.
 
-#### Skillbike itself revisited
+### Skillbike itself revisited
 
 I think I've tried everything but still don't have a winner:
 
@@ -387,7 +387,7 @@ Cons:
   to repeat a previous workout (by date, not by name), but I haven't tested
   this yet.
 
-### Conclusion
+## Conclusion
 
 After having spent a weekend hacking the TCX→FIT conversion tool, I'm
 obviously a victim of the sunken cost fallacy and will prefer riding the
@@ -407,7 +407,7 @@ Strava.)
 
 [Skillrow]: https://www.technogym.com/int/skillrow.html
 
-### Appendix A: Technogym/mywellness apps and logging into the Skillbike
+## Appendix A: Technogym/mywellness apps and logging into the Skillbike
 
 In order to not disrupt the post with unimportant details, I didn't mention
 one other hurdle when connecting the Skillbike with external devices. Despite

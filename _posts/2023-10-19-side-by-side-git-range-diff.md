@@ -15,7 +15,7 @@ if we used two dimensions and some nice colors?
 
 {% include toc.md %}
 
-### Motivation/Example
+## Motivation/Example
 
 To illustrate my point, let's take a work-in-progress[^at-the-time-of-writing]
 [pull request from
@@ -75,7 +75,7 @@ lines appearing in the context of neighbouring diff hunks):
 </figure>
 </details>
 
-### Implementation
+## Implementation
 
 Ideally, this side-by-side view of [`git range-diff`][git-range-diff] would
 just appear after I configure `pager.range-diff='delta -s'` in
@@ -157,7 +157,7 @@ config](https://github.com/liskin/dotfiles/blob/b13cc7da57c223a6d2e00acd99234731
 
 Yeah, I know, it's a massive hack. <emoji>😞</emoji>
 
-### Next steps
+## Next steps
 
 To make this easier to use for the general public, we'd need:
 

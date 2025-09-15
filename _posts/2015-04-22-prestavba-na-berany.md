@@ -15,13 +15,13 @@ Před:
 Po:  
 [![][berany_final_small]][berany_final]
 
-### Proč?
+## Proč?
 
 Protože mě bolívá za krkem a mám pocit, že by nemuselo, kdybych to moh držet
 jinak. A protože to prostě stejně chci mít možnost držet jinak. Ostatně,
 fitnessovej rám to asi má, silniční řídítka tomu nemůžou moc uškodit.
 
-### Jak?
+## Jak?
 
 Problém je, že silniční brzdy potřebují poloviční tah lanka a skoro všechny
 páčky, zejména [dualy][], tak nejdou použít s mými V-brzdami. Silniční brzdy
@@ -57,7 +57,7 @@ zvednout ruku z brzd. No, asi to mohlo být i horší... :-)
 [trek520]: https://www.trekbikes.com/us/en_US/bikes/bikepacking-touring-bikes/520/520/p/24000/
 [rohloff]: https://www.cyclingabout.com/rohloff-hubs-with-drop-handlebars/
 
-### Fotky z montáže
+## Fotky z montáže
 
 Když jsem si ještě neuvědomoval, jak moc velký průšvih je, že ve Feroně neměli
 trubku s průměrem 22 mm a vzal jsem jen 20 mm:  
@@ -97,7 +97,7 @@ takže je třeba ty řadící trochu upravit:
 [![][berany_barrel1_small]][berany_barrel1]
 [![][berany_barrel2_small]][berany_barrel2]
 
-### Za kolik?
+## Za kolik?
 
   - [řídítka Pro PLT][proplt] z [blešáku][blesak]: 500 Kč
   - [páčky Tektro RL-520][rl520] + poštovné: 534 Kč

@@ -12,7 +12,7 @@ Why and how did I do it?
 
 {% include toc.md %}
 
-### Motivation
+## Motivation
 
 Whenever I need to quickly look something up (or use a calculator), I open a
 new terminal (using a keyboard shortcut) and start typing into it. Slow bash
@@ -28,7 +28,7 @@ will be needed.
 [Daniel Parker]: https://twitter.com/danpker
 [Faster Bash Startup]: https://danpker.com/posts/faster-bash-startup/
 
-### Investigation
+## Investigation
 
 [hyperfine]: https://github.com/sharkdp/hyperfine
 
@@ -49,7 +49,7 @@ unusually long.
 
 [bash-profiling]: https://stackoverflow.com/a/20855353/3407728
 
-#### man
+### man
 
 In my case, that command was `man -w`, specifically [this piece of my
 `.bashrc.d/​10_env.sh`](https://github.com/liskin/dotfiles/blob/7d14190467fe22bf5d4f85a7b202118d2341e3ed/.bashrc.d/10_env.sh#L8-L10):
@@ -69,7 +69,7 @@ Turns out none of this is needed any more, `man` and `manpath` now add
     thanks to [several performance improvements in
     libseccomp](https://github.com/seccomp/libseccomp/blob/2366f6380198c7af23d145a153ccaa9ba37f9db1/CHANGELOG#L13-L14)
 
-#### death by a thousand cuts
+### death by a thousand cuts
 
 But that's it. No other single command stands out, it's just a lot of small
 things that add up. Daniel says “it has to take _some_ time,” and he's mostly
@@ -111,7 +111,7 @@ Let's see what happens…
 
 118 ms in `10_env.sh` was caused by `man -w` and we know what to do with that.
 
-#### completions
+### completions
 
 11 ms in `31_​completion.sh` which loads [bash-completion][]. That's
 certainly better than Daniel's 235 ms, probably because up-to-date
@@ -138,7 +138,7 @@ becomes:
 complete -F _git git-dotfiles
 ```
 
-#### fzf
+### fzf
 
 `90_fzf.sh` loads key bindings and completions code so that [fzf][] is used
 when searching through history, completing `**` in filenames, etc. Well worth
@@ -154,7 +154,7 @@ the 11 ms it needs to load[^fzf].
     [#2250](https://github.com/junegunn/fzf/pull/2250), but it might take a
     short while to be released and find its way to distributions.
 
-#### are we done yet?
+### are we done yet?
 
 After these changes, I got:
 
@@ -182,7 +182,7 @@ Benchmark #1: bash -i
   Range (min … max):    54.8 ms …  58.9 ms    53 runs
 ```
 
-#### history
+### history
 
 Some of those additional 26 ms are spent reading my huge
 (`HISTSIZE=​50000`) `.bash_​history` file. I will skip the details
@@ -220,7 +220,7 @@ Benchmark #1: bash -i
     history](https://superuser.com/questions/137438/how-to-unlimited-bash-shell-history)
     without slowdown. I will address this in another post soon.
 
-### Conclusion
+## Conclusion
 
 By dropping unnecessary invocation of `man -w`, deferring loading of git
 completions to when they're needed, and shortening my shell history file, I
@@ -254,7 +254,7 @@ only have diminishing returns[^latency]. <emoji>😊</emoji>
 
 ---
 
-### Update 1: Why not fix typing before the prompt instead?
+## Update 1: Why not fix typing before the prompt instead?
 
 Redditor _buttellmewhynot_ (pun intended)
 [comments](https://old.reddit.com/r/linux/comments/jxfm2y/even_faster_bash_startup_165_ms_40_ms/gcxiigg/):

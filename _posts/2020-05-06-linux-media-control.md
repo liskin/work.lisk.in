@@ -36,7 +36,7 @@ which is something that even majority [operating systems][h4-win10] and
 
 {% include toc.md %}
 
-### Goal
+## Goal
 
 My use cases:
 
@@ -59,7 +59,7 @@ buttons were hardwired to mpd, but it's a hack and likely against the ToS.
 
 [youtube-dl-mpd]: https://github.com/liskin/dotfiles/blob/15c2cd83ce7297c38830053a9fd2be2f3678f4b0/bin/youtube-dl-mpd
 
-### Solution
+## Solution
 
 There is a standard [D-Bus][dbus] interface for controlling media players on a
 modern Linux desktop: [MPRIS][]. It seems to be supported by both
@@ -235,12 +235,12 @@ either.)
 <figcaption markdown="span">demonstration of my setup</figcaption>
 </figure>
 
-### State of the art
+## State of the art
 
 Out of curiosity, I wanted to know if this is a solved problem if one uses a
 less weird operating system or desktop environment. Turns out, not really… :-)
 
-#### [GNOME][] (popular Linux desktop environment)
+### [GNOME][] (popular Linux desktop environment)
 
 [h4-gnome]: #gnome-popular-linux-desktop-environment
 
@@ -270,13 +270,13 @@ some of those experiments: <https://youtu.be/1fN6NMDBFNI>,
 <https://youtu.be/FCStseDBwC4>)
 </i>
 
-##### Update 2021-03-10: workaround using [playerctld][]
+#### Update 2021-03-10: workaround using [playerctld][]
 
 There is now a workaround in [playerctl][playerctld]: `playerctl daemon`
 starts an [MPRIS][] proxy that provides the “last active player” logic to
 environments that don't implement it themselves, like GNOME.
 
-##### Update 2023-01-03: works out of the box now
+#### Update 2023-01-03: works out of the box now
 
 Since [this commit to
 gnome-settings-daemon](https://gitlab.gnome.org/GNOME/gnome-settings-daemon/-/commit/ae95b871d2ea4409a95c750d8ce63c9e5b29a6b8),
@@ -291,7 +291,7 @@ active player” logic is builtin and GNOME does the right thing out of the box.
 [Fedora]: https://fedoraproject.org/
 [playerctld]: https://github.com/altdesktop/playerctl#selecting-players-to-control
 
-#### [KDE Plasma 5][]
+### [KDE Plasma 5][]
 
 [h4-kde]: #kde-plasma-5
 
@@ -337,7 +337,7 @@ Recordings of some of those experiments: <https://youtu.be/-vpHDXg5jW8>,
 [plasma-chromium-blacklist]: https://old.reddit.com/r/kde/comments/eih9jb/if_you_use_chromium_with_kde_plasma_integration/fcqduij/
 [chromium-cancontrol]: https://bugs.chromium.org/p/chromium/issues/detail?id=1052609
 
-#### [Windows 10][]
+### [Windows 10][]
 
 [h4-win10]: #windows-10
 
@@ -387,7 +387,7 @@ preceding paragraphs, and for completeness also listed here:
 <https://youtu.be/uKRqZ3p76Gw>.)
 </i>
 
-#### [macOS Catalina][]
+### [macOS Catalina][]
 
 I expected this to work almost flawlessly as Apple is known for their focus on
 UX, but it seems worse than Windows 10, unfortunately. Worse than Windows 10
@@ -420,7 +420,7 @@ software installed. Recordings of some of those experiments:
 [macOS Catalina]: https://en.wikipedia.org/wiki/MacOS_Catalina
 [MPRemoteCommandCenter]: https://developer.apple.com/documentation/mediaplayer/mpremotecommandcenter
 
-#### Android 10 (Samsung One UI 2.1)
+### Android 10 (Samsung One UI 2.1)
 
 Had I not been a longtime Android user, I would expect this to work flawlessly
 as smartphones are the primary means of media consumption for many (most?)
@@ -482,7 +482,7 @@ volume effectively becomes 14-bit. [pulseaudio][] doesn't do this, but
 [mobile-chrome]: https://play.google.com/store/apps/details?id=com.android.chrome
 [android-mediasession]: https://developer.android.com/reference/android/media/session/MediaSession
 
-#### Summary
+### Summary
 
 None of the mainstream environments except [KDE][h4-kde] supports media
 keys/buttons well enough to cover my use cases. It seems, therefore, that
