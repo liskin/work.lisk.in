@@ -1,6 +1,6 @@
 # inspired by https://euandre.org/til/2020/08/13/anchor-headers-and-code-lines-in-jekyll.html
 
-Jekyll::Hooks.register :pages, :post_render do |doc|
+Jekyll::Hooks.register [:pages, :documents], :post_render do |doc|
   if doc.output_ext == ".html"
     doc.output =
       doc.output.gsub(
