@@ -1,0 +1,1 @@
+{{ "/img" | relative_url }}/{{ page.slug -}}

@@ -2,7 +2,7 @@
 title: Linux, media keys and multiple players (mpd, chromium, mpv, vlc, …)
 tags: x11
 comments_issue: 1
-image: https://user-images.githubusercontent.com/300342/81182729-8237d500-8fae-11ea-89eb-81ca7b3598fe.jpg
+image: media-keys.jpg
 large_image: true
 summary:
     This post explains how to get media keys (play, pause, …) on keyboards and
@@ -30,7 +30,7 @@ which is something that even majority [operating systems][h4-win10] and
 [mpd]: https://www.musicpd.org/
 
 <figure markdown="block">
-[![media-keys](https://user-images.githubusercontent.com/300342/81182729-8237d500-8fae-11ea-89eb-81ca7b3598fe.jpg)](https://user-images.githubusercontent.com/300342/81182740-8663f280-8fae-11ea-9b0d-db91eb6febaf.jpg)
+[![media-keys]({% include imgdir.txt %}/media-keys.jpg)]({% include imgdir.txt %}/media-keys-full.jpg)
 <figcaption>ThinkPad 25 media keys</figcaption>
 </figure>
 

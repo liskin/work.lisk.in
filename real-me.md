@@ -220,7 +220,7 @@ profiles and the following sections about my [strengths](#strengths) and
 [neurotypical]: https://en.wikipedia.org/wiki/Neurotypical
 [FOSS]: https://en.wikipedia.org/wiki/Free_and_open-source_software
 [strava-profile]: https://www.strava.com/athletes/480858
-[thinkpad-25]: https://user-images.githubusercontent.com/300342/81182740-8663f280-8fae-11ea-9b0d-db91eb6febaf.jpg
+[thinkpad-25]: {{ "/img" | relative_url }}/linux-media-control/media-keys-full.jpg
 [Vim]: https://www.vim.org/
 [tabs]: https://softwareengineering.stackexchange.com/a/72
 [Slack]: https://slack.com/

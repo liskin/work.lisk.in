@@ -21,6 +21,7 @@ jobs:
         uses: actions/checkout@v5
         with:
           fetch-depth: 0 # jekyll-last-modified-at needs a full clone
+          lfs: true # images in Large File Storage
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:

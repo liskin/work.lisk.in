@@ -48,7 +48,7 @@ it with one of the apps made for them.
 ### Skillbike
 
 <figure markdown="block" class="half-size">
-[![Technogym Skillbike](https://user-images.githubusercontent.com/300342/187048238-55125c58-87cd-4a88-a7bf-2f99ddc54758.jpg)](https://user-images.githubusercontent.com/300342/187048205-bec6edcc-10c4-4811-b11b-1a9f3ade3439.jpg)
+[![Technogym Skillbike]({% include imgdir.txt %}/skillbike.jpg)]({% include imgdir.txt %}/skillbike-full.jpg)
 <figcaption>Technogym Skillbike</figcaption>
 </figure>
 
@@ -105,7 +105,7 @@ Cons:
 #### Garmin watch
 
 <figure markdown="block" class="half-size">
-[![Suggested workout on Garmin Fenix 7S](https://user-images.githubusercontent.com/300342/187266942-50b34e06-0fa0-4241-a478-d330c74add2f.jpg)](https://user-images.githubusercontent.com/300342/187266942-50b34e06-0fa0-4241-a478-d330c74add2f.jpg)
+[![Suggested workout on Garmin Fenix 7S]({% include imgdir.txt %}/garmin-dsw.jpg)]({% include imgdir.txt %}/garmin-dsw.jpg)
 <figcaption>Suggested workout on Garmin Fenix 7S</figcaption>
 </figure>
 

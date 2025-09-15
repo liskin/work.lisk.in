@@ -18,7 +18,7 @@ Whenever I need to quickly look something up (or use a calculator), I open a
 new terminal (using a keyboard shortcut) and start typing into it. Slow bash
 startup disrupts this workflow as I would often type before the shell prompt:
 
-![messed up prompt]({{ "/img" | relative_url }}/{{ page.slug }}/mistype.png)
+![messed up prompt]({% include imgdir.txt %}/mistype.png)
 
 [Daniel Parker][] recently wrote an excellent blog post [Faster Bash
 Startup][] detailing his journey from 1.7 seconds to 210 ms. I start at 165 ms
@@ -240,7 +240,7 @@ Benchmark #1: bash -i
 
 More importantly, I no longer type before the prompt, even if I try!
 
-![not messed up prompt]({{ "/img" | relative_url }}/{{ page.slug }}/corrtype.png)
+![not messed up prompt]({% include imgdir.txt %}/corrtype.png)
 
 And at this point I can finally agree with Daniel that further tweaking will
 only have diminishing returns[^latency]. <emoji>😊</emoji>
@@ -275,12 +275,12 @@ fine: try running `sleep 5` and type some input in the meantime:
 <table>
 <thead><tr><th>zsh</th><th>bash</th></tr></thead>
 <tr>
-<td markdown="span">![zsh no lf]({{ "/img" | relative_url }}/{{ page.slug }}/zsh-nolf.png)</td>
-<td markdown="span">![bash no lf]({{ "/img" | relative_url }}/{{ page.slug }}/bash-nolf.png)</td>
+<td markdown="span">![zsh no lf]({% include imgdir.txt %}/zsh-nolf.png)</td>
+<td markdown="span">![bash no lf]({% include imgdir.txt %}/bash-nolf.png)</td>
 </tr>
 <tr>
-<td markdown="span">![zsh lf]({{ "/img" | relative_url }}/{{ page.slug }}/zsh-lf.png)</td>
-<td markdown="span">![bash lf]({{ "/img" | relative_url }}/{{ page.slug }}/bash-lf.png)</td>
+<td markdown="span">![zsh lf]({% include imgdir.txt %}/zsh-lf.png)</td>
+<td markdown="span">![bash lf]({% include imgdir.txt %}/bash-lf.png)</td>
 </tr>
 </table>
 <figcaption>pending input handling without custom prompt</figcaption>
@@ -306,7 +306,7 @@ printing `$COLUMNS` spaces and then a carriage return
 up copy/paste. But I [managed to improve my solution][new-prompt-command] to
 correctly detect pending input and not discard it.
 
-![not messed up prompt after early typing]({{ "/img" | relative_url }}/{{ page.slug }}/earlytype.png)
+![not messed up prompt after early typing]({% include imgdir.txt %}/earlytype.png)
 
 It's not perfect (so I'll still try to keep bash startup fast), but it's
 definitely an improvement, and it will be useful whenever I get impatient with
