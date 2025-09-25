@@ -81,11 +81,11 @@
 
 		<main>
 		{%- if page.date %}
-			<article class="hyphenate" {% if page.lang %} lang="{{ page.lang }}" {% endif %} >
+			<article class="hyphenate" itemscope itemtype="http://schema.org/BlogPosting" {% if page.lang %} lang="{{ page.lang }}" {% endif %} >
 				<header>
-					<h1>{{ page.title }}</h1>
+					<h1 itemprop="headline">{{ page.title }}</h1>
 					<p>
-						published <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%Y-%m-%d" }}</time>
+						published <time datetime="{{ page.date | date: "%Y-%m-%d" }}" itemprop="dateCreated datePublished">{{ page.date | date: "%Y-%m-%d" }}</time>
 						<a href="https://github.com/liskin/work.lisk.in/commits/master/{{ page.path }}">(revision history)</a>
 						{%- unless page.tags == empty %}
 						{%-assign tags_sorted = page.tags | sort %}
@@ -93,7 +93,9 @@
 						{%- endunless %}
 					</p>
 				</header>
+				<div itemprop="articleBody">
 				{{ content }}
+				</div>
 			</article>
 		{%- else %}
 			{{ content }}
