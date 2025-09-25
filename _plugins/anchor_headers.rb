@@ -5,7 +5,7 @@ Jekyll::Hooks.register [:pages, :documents], :post_render do |doc|
     doc.output =
       doc.output.gsub(
         /<h([1-6])(.*?)id="([\w-]+)"(.*?)>(.*?)<\/h[1-6]>/,
-        '<h\1\2id="\3"\4>\5<a href="#\3" class="headerlink" title="Link to this heading"><emoji>🔗</emoji></a></h\1>'
+        '<h\1\2id="\3"\4>\5<a href="#\3" class="headerlink" title="Link to this heading"><emoji></emoji></a></h\1>'
       )
   end
 end
