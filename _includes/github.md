@@ -3,8 +3,8 @@
 [![xmonad/xmonad](https://github-readme-stats.vercel.app/api/pin/?username=xmonad&repo=xmonad&show_owner=true)](https://github.com/xmonad/xmonad)
 [![tbabej/taskwiki](https://github-readme-stats.vercel.app/api/pin/?username=tbabej&repo=taskwiki&show_owner=true)](https://github.com/tbabej/taskwiki)
 [![xmonad/xmonad-contrib](https://github-readme-stats.vercel.app/api/pin/?username=xmonad&repo=xmonad-contrib&show_owner=true)](https://github.com/xmonad/xmonad-contrib)
-[![xmonad/X11](https://github-readme-stats.vercel.app/api/pin/?username=xmonad&repo=X11&show_owner=true)](https://github.com/xmonad/X11)
 [![ckilb/pocketbooksync.koplugin](https://github-readme-stats.vercel.app/api/pin/?username=ckilb&repo=pocketbooksync.koplugin&show_owner=true)](https://github.com/ckilb/pocketbooksync.koplugin)
+[![xmonad/X11](https://github-readme-stats.vercel.app/api/pin/?username=xmonad&repo=X11&show_owner=true)](https://github.com/xmonad/X11)
 [![xmonad/X11-xft](https://github-readme-stats.vercel.app/api/pin/?username=xmonad&repo=X11-xft&show_owner=true)](https://github.com/xmonad/X11-xft)
 </div>
 
