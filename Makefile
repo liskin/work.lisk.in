@@ -26,6 +26,14 @@ pushl:
 	$(BUNDLE) install
 	touch $@
 
+.PHONY: bundle-outdated
+bundle-outdated: .bundle/.done
+	$(BUNDLE) outdated --only-explicit
+
+.PHONY: bundle-update
+bundle-update: .bundle/.done
+	$(BUNDLE) update
+
 .PHONY: clean
 clean:
-	$(RM) -r Gemfile.lock .bundle .sass-cache _site
+	git clean -ffdX -e '!/_pushl_cache/'
