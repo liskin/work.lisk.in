@@ -72,7 +72,7 @@ function format-pin {
 	: "${1:?}"
 	user=${1%%/*}
 	repo=${1#*/}
-	echo "[![$1](https://github-readme-stats.vercel.app/api/pin/?username=$user&repo=$repo&show_owner=true)](https://github.com/$1)"
+	echo "[![$1](https://github-stats-extended.vercel.app/api/pin/?username=$user&repo=$repo&show_owner=true)](https://github.com/$1)"
 }
 
 function format-pins {
