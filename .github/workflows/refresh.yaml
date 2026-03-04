@@ -23,7 +23,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git diff --quiet --exit-code && exit
-          git commit -a -m 'Refresh github projects'
+          git commit -a -m 'chore: Refresh github projects'
           git push
 
   workflow-keepalive:
