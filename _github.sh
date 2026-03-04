@@ -47,6 +47,10 @@ function filter-pushed-recently {
 	jq --compact-output --slurp --arg date "$date" 'map(select(.pushed_at > $date)) | .[]'
 }
 
+function filter-stars-at-least {
+	jq --compact-output --slurp --argjson min "${1:?min}" 'map(select(.stargazers_count >= $min)) | .[]'
+}
+
 function sort-by-stars {
 	jq --compact-output --slurp 'sort_by(.stargazers_count) | reverse | .[]'
 }
@@ -56,7 +60,7 @@ function sort-by-modification {
 }
 
 function set-difference {
-	jq --null-input --raw-output --arg a "${1?}" --arg b "${2?}" '($a | split("\\s+";"")) - ($b | split("\\s+";"")) | .[]'
+	jq --null-input --raw-input --raw-output --arg b "${1?}" '[inputs] - ($b | split("\\s+";"")) | .[]'
 }
 
 function names {
@@ -84,20 +88,34 @@ function format-pins {
 
 function report {
 	user=${1:-liskin}
-	hidden_gems="liskin/strava-ical liskin/cervi liskin/emoji-rofi-menu liskin/empty-tab"
-	maintained_ignore="xmonad/xmonad-extras xmonad/xmonad-web xmonad/xmonad-docs xmonad/xmonad-testing xmonad/.github"
+	hidden_gems_list=(
+		liskin/strava-ical
+		liskin/foursquare-swarm-ical
+		liskin/arbtt-chart
+		liskin/empty-tab
+	)
+	ignore_list=(
+		liskin/covid19-bloom
+		liskin/patches
+		xmonad/.github
+		xmonad/X11-xft
+		xmonad/xmonad-docs
+		xmonad/xmonad-extras
+		xmonad/xmonad-testing
+		xmonad/xmonad-web
+	)
 
 	repos=$(github-user-repos "$user" | filter-public | filter-original)
 	active_repos=$(filter-active <<<"$repos")
 	archived_repos=$(filter-archived <<<"$repos")
 
-	starred_active=$(<<<"$active_repos" sort-by-stars | full-names | head -10)
-	hidden_gems=$(set-difference "$hidden_gems" "$starred_active")
-	starred_archived=$(<<<"$archived_repos" sort-by-stars | full-names | head -2)
+	starred_active=$(<<<"$active_repos" filter-stars-at-least 25 | sort-by-stars | full-names | set-difference "${ignore_list[*]}")
+	hidden_gems=$(<<<"${hidden_gems_list[*]}" xargs -n1 | set-difference "$starred_active")
+	starred_archived=$(<<<"$archived_repos" filter-stars-at-least 10 | sort-by-stars | full-names | set-difference "${ignore_list[*]}")
 
 	watched_active=$(github-watched-repos "$user" | filter-public | filter-original | filter-active)
 	maintained=$(<<<"$watched_active" filter-not-owned-by "$user" | filter-push | sort-by-stars | full-names)
-	maintained=$(set-difference "$maintained" "$maintained_ignore" | head -10)
+	maintained=$(<<<"$maintained" set-difference "${ignore_list[*]}")
 
 	echo '### Popular projects (co-maintainer)'
 	echo '<div markdown="span" class="grid-2 dark-img-filter">'
