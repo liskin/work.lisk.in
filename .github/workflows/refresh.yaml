@@ -11,6 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
+      - name: Install just
+        uses: taiki-e/install-action@just
       - name: Refresh github projects
         env:
           GITHUB_TOKEN: ${{ secrets.ABOUT_GITHUB_TOKEN }}
