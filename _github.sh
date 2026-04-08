@@ -3,7 +3,19 @@
 set -eu -o pipefail
 shopt -s lastpipe inherit_errexit
 
-function o { printf -->&2 "%s:%s\\n" "${0##*/}" "$(printf " %q" "$@")"; "$@"; }
+## include ~/bin/.o
+#!  bash
+# shellcheck disable=SC2239
+
+# shellcheck disable=SC2218
+exec {_o_stderr}>&2
+# shellcheck disable=SC2120
+function exec { if (( $# )); then builtin exec {_o_stderr}>&- "$@"; else builtin exec "$@"; fi; }
+
+if [[ -t $_o_stderr ]]; then _o_tput_bold=$(tput bold || :); _o_tput_reset=$(tput sgr0 || :); else _o_tput_bold=; _o_tput_reset=; fi
+function o { printf -->&$_o_stderr "%s%s:%s%s\\n" "$_o_tput_bold" "${0##*/}" "$_o_tput_reset" "$(printf " %q" "$@")"; "$@"; }
+function oo { printf -->&$_o_stderr "%s%s:%s %s\\n" "$_o_tput_bold" "${0##*/}" "$_o_tput_reset" "$*"; }
+## end include ~/bin/.o
 
 function github-user-repos {
 	o gh api --paginate users/"${1:?user}"/repos | jq --compact-output '.[]'
@@ -142,9 +154,18 @@ function not-watching {
 	user=${1:-liskin}
 	repos=$(github-user-repos "$user" | full-names)
 	watching=$(github-watched-repos "$user" | full-names)
-	not_watching=$(set-difference "$repos" "$watching")
-	for repo in $not_watching; do
+	set-difference <<<"$repos" "$watching"
+}
+
+function list-not-watching {
+	not-watching | while read -r repo; do
 		echo "https://github.com/$repo"
+	done
+}
+
+function watch-not-watching {
+	not-watching | while read -r repo; do
+		o gh api -X PUT /repos/"$repo"/subscription -f subscribed=true
 	done
 }
 
