@@ -22,6 +22,7 @@ jobs:
         with:
           fetch-depth: 0 # jekyll-last-modified-at needs a full clone
           lfs: true # images in Large File Storage
+          persist-credentials: false
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
