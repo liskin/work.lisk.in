@@ -37,7 +37,9 @@ jobs:
           JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PAGES_REPO_NWO: ${{ github.repository }}
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
+        with:
+          include-hidden-files: true
 
   deploy:
     permissions:
