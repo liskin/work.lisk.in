@@ -9,8 +9,12 @@ on:
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v6
+        with:
+          persist-credentials: true
       - name: Install just
         uses: taiki-e/install-action@just
       - name: Refresh github projects

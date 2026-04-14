@@ -10,6 +10,7 @@ jobs:
   # internal and external links and anchors
   linkchecker:
     runs-on: ubuntu-latest
+    permissions: {}
     steps:
       - uses: liskin/gh-linkchecker@v0.1.0
         with:
