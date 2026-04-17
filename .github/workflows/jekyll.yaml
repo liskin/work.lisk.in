@@ -24,7 +24,7 @@ jobs:
           lfs: true # images in Large File Storage
           persist-credentials: false
       - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
+        uses: ruby/setup-ruby@v1.300.0
         with:
           ruby-version: '3.3'
           bundler-cache: true
