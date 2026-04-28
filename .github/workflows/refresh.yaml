@@ -9,8 +9,8 @@ on:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
+    # permissions:
+    #   contents: write
     steps:
       - uses: actions/checkout@v6
         with:
@@ -22,7 +22,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.ABOUT_GITHUB_TOKEN }}
         run: |
           set -ex
-          make github-report
+          just github-report
+          bash -x ./_github.sh github-watched-repos liskin
+          gh api --verbose --paginate users/liskin/subscriptions
       - name: Commit, Push
         run: |
           set -ex
