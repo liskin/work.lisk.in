@@ -2,9 +2,9 @@ name: Refresh
 
 on:
   workflow_dispatch:
-  schedule:
-    # Refresh every weekend
-    - cron: '0 2 * * 6'
+  # schedule:
+  #   # Refresh every weekend
+  #   - cron: '0 2 * * 6'
 
 jobs:
   refresh:
