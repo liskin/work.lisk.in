@@ -22,7 +22,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.ABOUT_GITHUB_TOKEN }}
         run: |
           set -ex
-          make github-report
+          just github-report
       - name: Commit, Push
         run: |
           set -ex
