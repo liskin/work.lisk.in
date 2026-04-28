@@ -1,6 +1,10 @@
 ### Popular projects (co-maintainer)
 <div markdown="span" class="grid-2 dark-img-filter">
 [![xmonad/xmonad](https://github-stats-extended.vercel.app/api/pin/?username=xmonad&repo=xmonad&show_owner=true)](https://github.com/xmonad/xmonad)
+[![tbabej/taskwiki](https://github-stats-extended.vercel.app/api/pin/?username=tbabej&repo=taskwiki&show_owner=true)](https://github.com/tbabej/taskwiki)
+[![xmonad/xmonad-contrib](https://github-stats-extended.vercel.app/api/pin/?username=xmonad&repo=xmonad-contrib&show_owner=true)](https://github.com/xmonad/xmonad-contrib)
+[![ckilb/pocketbooksync.koplugin](https://github-stats-extended.vercel.app/api/pin/?username=ckilb&repo=pocketbooksync.koplugin&show_owner=true)](https://github.com/ckilb/pocketbooksync.koplugin)
+[![xmonad/X11](https://github-stats-extended.vercel.app/api/pin/?username=xmonad&repo=X11&show_owner=true)](https://github.com/xmonad/X11)
 </div>
 
 ### Popular projects (author)
