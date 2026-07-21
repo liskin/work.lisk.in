@@ -157,8 +157,8 @@ profiles and the following sections about my [strengths](#strengths) and
 
 ## Quirks
 
-* Not [neurotypical][]: suspected ADHD (attention inconsistency),
-  self-medicated with beer, coffee, exercise and afternoon naps.
+* Not [neurotypical][]: most likely AuDHD, self-medicated with beer, coffee,
+  exercise and afternoon naps. It could be a superpower, in the right environment…
 
 * The performance difference between my motivated self and my unmotivated self
   is hundredfold. If you manage to get me excited about something[^exciting],
@@ -175,23 +175,20 @@ profiles and the following sections about my [strengths](#strengths) and
   I still value meaningful in-person interactions: brainstorming with a
   whiteboard or over a beer is hard to replace.
 
-* Obsessive about hardware/software choice. I need my [7-row ThinkPad
-  keyboard][thinkpad-25], and I can't be expected to install corporate spyware
-  of any kind. If you don't trust me to keep my laptop secure, why would you
-  trust the code I write for you? By the way, the last time I had to reinstall
-  Debian on my laptop was 2005 (netinst was 3 floppies back then).
+* Care deeply about the tools I use daily. Non-negotiable: ThinkPad, Linux, my
+  choice of window manager.
 
   Unsurprisingly, I'm a strong advocate of [free and open-source
   software][FOSS]. I believe all software (and ideally also hardware) should
   be fixable by users.
 
-* I use [Vim][]. I believe [tabs are fine][tabs] (but I don't really care,
+* I use [Neovim][]. I believe [tabs are fine][tabs] (but I don't really care,
   consistency is more important anyway). I prefer [IRC][], and yeah, I'm [that
   _one_ guy from xkcd](https://xkcd.com/1782/) (my IRC client handles
   [Slack][] threads fine, though).
 
-* Road/gravel/urban/fixed-gear/uni [cyclist][strava-profile]{:rel="me"}.
-  Against cars in cities. Still better driver than many, though.
+* Active travel advocate (personally: fixed-gear bicycle, inline skates, walking).
+  Might get into arguments with people commuting 10 minutes by car.
 
 * Not ready to relocate, I live with my [wife][] near her
   [university][eva-uni]. Now that the [world has returned to (new) normal][COVID-19],
@@ -222,6 +219,7 @@ profiles and the following sections about my [strengths](#strengths) and
 [strava-profile]: https://www.strava.com/athletes/480858
 [thinkpad-25]: {{ "/img" | relative_url }}/linux-media-control/media-keys-full.jpg
 [Vim]: https://www.vim.org/
+[Neovim]: https://neovim.io/
 [tabs]: https://softwareengineering.stackexchange.com/a/72
 [Slack]: https://slack.com/
 [wife]: https://www.linkedin.com/in/eva-janou%C5%A1kov%C3%A1-2a53a5162/
