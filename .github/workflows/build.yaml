@@ -42,13 +42,6 @@ jobs:
           PAGES_REPO_NWO: ${{ github.repository }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
-        if: inputs.artifact-name == 'github-pages'
-        with:
-          include-hidden-files: true
-      - name: Upload artifact (custom name)
-        uses: actions/upload-artifact@v4
-        if: inputs.artifact-name != 'github-pages'
         with:
           name: ${{ inputs.artifact-name }}
-          path: _site/
           include-hidden-files: true
