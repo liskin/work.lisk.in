@@ -17,12 +17,16 @@ function o { printf -->&$_o_stderr "%s%s:%s%s\\n" "$_o_tput_bold" "${0##*/}" "$_
 function oo { printf -->&$_o_stderr "%s%s:%s %s\\n" "$_o_tput_bold" "${0##*/}" "$_o_tput_reset" "$*"; }
 ## end include ~/bin/.o
 
+function github-user-login {
+	o gh api user --jq '.login'
+}
+
 function github-user-repos {
 	o gh api --paginate users/"${1:?user}"/repos | jq --compact-output '.[]'
 }
 
 function github-watched-repos {
-	o gh api --paginate users/"${1:?user}"/subscriptions | jq --compact-output '.[]'
+	o gh api --paginate user/subscriptions | jq --compact-output '.[]'
 }
 
 function filter-original {
@@ -99,7 +103,7 @@ function format-pins {
 }
 
 function report {
-	user=${1:-liskin}
+	user=$(github-user-login)
 	hidden_gems_list=(
 		liskin/strava-ical
 		liskin/foursquare-swarm-ical
@@ -125,7 +129,7 @@ function report {
 	hidden_gems=$(<<<"${hidden_gems_list[*]}" xargs -n1 | set-difference "$starred_active")
 	starred_archived=$(<<<"$archived_repos" filter-stars-at-least 10 | sort-by-stars | full-names | set-difference "${ignore_list[*]}")
 
-	watched_active=$(github-watched-repos "$user" | filter-public | filter-original | filter-active)
+	watched_active=$(github-watched-repos | filter-public | filter-original | filter-active)
 	maintained=$(<<<"$watched_active" filter-not-owned-by "$user" | filter-push | sort-by-stars | full-names)
 	maintained=$(<<<"$maintained" set-difference "${ignore_list[*]}")
 
@@ -151,9 +155,9 @@ function report {
 }
 
 function not-watching {
-	user=${1:-liskin}
+	user=$(github-user-login)
 	repos=$(github-user-repos "$user" | full-names)
-	watching=$(github-watched-repos "$user" | full-names)
+	watching=$(github-watched-repos | full-names)
 	set-difference <<<"$repos" "$watching"
 }
 
