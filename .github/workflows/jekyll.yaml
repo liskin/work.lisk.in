@@ -12,34 +12,11 @@ concurrency:
 
 jobs:
   build:
+    uses: ./.github/workflows/build.yaml
     permissions:
       contents: read
       pages: read
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v7
-        with:
-          fetch-depth: 0 # jekyll-last-modified-at needs a full clone
-          lfs: true # images in Large File Storage
-          persist-credentials: false
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.3'
-          bundler-cache: true
-          cache-version: 0
-      - name: Build with Jekyll
-        run: bundle exec jekyll build --verbose --trace
-        env:
-          # jekyll-github-metadata
-          JEKYLL_ENV: "production"
-          JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PAGES_REPO_NWO: ${{ github.repository }}
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v5
-        with:
-          include-hidden-files: true
+    secrets: inherit
 
   deploy:
     permissions:
