@@ -12,7 +12,6 @@ jobs:
     permissions:
       contents: read
       pages: read
-    secrets: inherit
 
   build-base:
     uses: ./.github/workflows/build.yaml
@@ -22,7 +21,6 @@ jobs:
     permissions:
       contents: read
       pages: read
-    secrets: inherit
 
   diff:
     runs-on: ubuntu-latest
