@@ -30,7 +30,7 @@ jobs:
           bundler-cache: true
           cache-version: 0
       - name: Build with Jekyll
-        run: bundle exec jekyll build --verbose --trace
+        run: bundle exec make build-prod
         env:
           # jekyll-github-metadata
           JEKYLL_ENV: "production"
