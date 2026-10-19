@@ -7,7 +7,7 @@ on:
         type: string
       artifact-name:
         type: string
-        default: 'github-pages'
+        default: 'pages'
 
 jobs:
   build:
@@ -31,11 +31,6 @@ jobs:
           cache-version: 0
       - name: Build with Jekyll
         run: bundle exec make build-prod
-        env:
-          # jekyll-github-metadata
-          JEKYLL_ENV: "production"
-          JEKYLL_GITHUB_TOKEN: ${{ github.token }}
-          PAGES_REPO_NWO: ${{ github.repository }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
         with:

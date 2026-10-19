@@ -14,6 +14,8 @@ jobs:
     steps:
       - uses: liskin/gh-linkchecker@v0.1.0
         with:
+          urls: "https://lisk.in/"
+
           retries: 3
 
           linkcheckerrc: |
