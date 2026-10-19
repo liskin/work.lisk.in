@@ -202,4 +202,4 @@ DEPENDENCIES
   jekyll-titles-from-headings (~> 0.5.7)
 
 BUNDLED WITH
-   2.6.7
+  4.0.22
