@@ -1,4 +1,4 @@
-url: https://lisk.in
+_cf_url: https://lisk.in
 
 paginate: 10
 paginate_path: "/blog/page:num/"
