@@ -6,11 +6,11 @@ paginate_path: "/blog/page:num/"
 theme: null
 
 exclude:
-  - CNAME
-  - Gemfile
-  - Gemfile.lock
   - Justfile
   - Makefile
+
+include:
+  - _redirects
 
 defaults:
   - scope:
