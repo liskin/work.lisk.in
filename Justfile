@@ -22,7 +22,7 @@ github-report:
     ./_github.sh report >_includes/github.md
 
 pushl:
-    pushl --cache _pushl_cache -vv https://work.lisk.in/atom.xml
+    pushl --cache _pushl_cache -vv https://lisk.in/atom.xml
 
 bundle-install:
     {{ BUNDLE }} install
